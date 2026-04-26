@@ -228,41 +228,31 @@ footer {
 
 .socials {
 
-  margin-top: 10px;
+  margin-top: 20px;
 
 }
 
-.socials a {
+.icon {
+
+  display: inline-flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  width: 55px;
+
+  height: 55px;
 
   margin: 0 10px;
 
-  text-decoration: none;
+  border-radius: 50%;
+
+  background: white;
 
   color: #2b6cb0;
 
-  font-weight: 500;
-
-}
-
-.socials a:hover {
-
-  text-decoration: underline;
-
-}
-
-.socials {
-
-  margin-top: 15px;
-
-}
-
-.socials a {
-
-  margin: 0 10px;
-
-  font-size: 22px;
-
-  color: #2b6cb0;
+  font-size: 24px;
 
   text-decoration: none;
 
@@ -270,8 +260,12 @@ footer {
 
 }
 
-.socials a:hover {
+.icon:hover {
 
-  color: #1a4f80;
+  background: #2b6cb0;
+
+  color: white;
+
+  transform: scale(1.1);
 
 }
