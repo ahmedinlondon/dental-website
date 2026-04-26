@@ -248,9 +248,7 @@ footer {
 
   border-radius: 50%;
 
-  background: white;
-
-  color: #2b6cb0;
+  color: white;
 
   font-size: 24px;
 
@@ -260,12 +258,22 @@ footer {
 
 }
 
+/* BRAND COLORS */
+
+.icon.instagram { background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf); }
+
+.icon.facebook { background: #1877f2; }
+
+.icon.whatsapp { background: #25D366; }
+
+.icon.twitter { background: #000000; }
+
+.icon.youtube { background: #FF0000; }
+
 .icon:hover {
 
-  background: #2b6cb0;
-
-  color: white;
-
   transform: scale(1.1);
+
+  opacity: 0.85;
 
 }
