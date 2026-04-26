@@ -249,3 +249,29 @@ footer {
   text-decoration: underline;
 
 }
+
+.socials {
+
+  margin-top: 15px;
+
+}
+
+.socials a {
+
+  margin: 0 10px;
+
+  font-size: 22px;
+
+  color: #2b6cb0;
+
+  text-decoration: none;
+
+  transition: 0.3s;
+
+}
+
+.socials a:hover {
+
+  color: #1a4f80;
+
+}
