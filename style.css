@@ -200,6 +200,8 @@ footer {
 
   }
 
+}
+
 /* WhatsApp button */
 
 .whatsapp {
@@ -218,12 +220,6 @@ footer {
 
   border-radius: 50px;
 
-  text-decoration: none;
-
-  font-weight: bold;
-
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-
 }
 
 /* Call button */
@@ -232,7 +228,7 @@ footer {
 
   position: fixed;
 
-  bottom: 80px; /* pushes it ABOVE WhatsApp */
+  bottom: 80px;
 
   right: 20px;
 
@@ -244,12 +240,10 @@ footer {
 
   border-radius: 50px;
 
-  text-decoration: none;
+}
 
-  font-weight: bold;
+/* SOCIAL ICONS */
 
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  
 .socials {
 
   margin-top: 20px;
@@ -275,10 +269,6 @@ footer {
   color: white;
 
   font-size: 24px;
-
-  text-decoration: none;
-
-  transition: 0.3s;
 
 }
 
