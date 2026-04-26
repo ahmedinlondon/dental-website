@@ -249,9 +249,7 @@ footer {
   font-weight: bold;
 
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-
-}
-
+  
 .socials {
 
   margin-top: 20px;
@@ -283,8 +281,6 @@ footer {
   transition: 0.3s;
 
 }
-
-/* BRAND COLORS */
 
 .icon.instagram { background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf); }
 
