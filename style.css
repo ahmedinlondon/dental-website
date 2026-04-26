@@ -202,51 +202,53 @@ footer {
 
 }
 
-/* WhatsApp button */
+/* FLOATING BUTTONS (NEW CLEAN VERSION) */
 
-.whatsapp {
+.whatsapp-btn, .call-btn {
 
   position: fixed;
 
-  bottom: 20px;
-
   right: 20px;
+
+  width: 55px;
+
+  height: 55px;
+
+  border-radius: 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: white;
+
+  font-size: 22px;
+
+  text-decoration: none;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+}
+
+/* WhatsApp (top) */
+
+.whatsapp-btn {
+
+  bottom: 90px;
 
   background: #25D366;
 
-  color: white;
-
-  padding: 12px 16px;
-
-  border-radius: 50px;
-
 }
 
-/* Call button */
+/* Call (bottom) */
 
-.call {
+.call-btn {
 
-  position: fixed;
-
-  bottom: 80px;
-
-  right: 20px;
+  bottom: 20px;
 
   background: #2b6cb0;
-
-  color: white;
-
-  padding: 12px 16px;
-
-  border-radius: 50px;
-
-}
-
-/* SOCIAL ICONS */
-
-.socials {
-
-  margin-top: 20px;
 
 }
 
