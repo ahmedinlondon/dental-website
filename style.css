@@ -200,7 +200,7 @@ footer {
 
   }
 
-}
+/* WhatsApp button */
 
 .whatsapp {
 
@@ -211,6 +211,32 @@ footer {
   right: 20px;
 
   background: #25D366;
+
+  color: white;
+
+  padding: 12px 16px;
+
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+}
+
+/* Call button */
+
+.call {
+
+  position: fixed;
+
+  bottom: 80px; /* pushes it ABOVE WhatsApp */
+
+  right: 20px;
+
+  background: #2b6cb0;
 
   color: white;
 
