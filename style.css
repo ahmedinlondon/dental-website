@@ -366,13 +366,13 @@ footer .icon {
 
 }
 
-/* HERO UPGRADE */
+/* PREMIUM HERO */
 
 .hero {
 
-  padding: 80px 40px;
+  padding: 100px 40px;
 
-  background: linear-gradient(to right, #eaf4ff, #ffffff);
+  background: linear-gradient(135deg, #eef5ff, #ffffff);
 
 }
 
@@ -384,21 +384,23 @@ footer .icon {
 
   justify-content: space-between;
 
-  gap: 40px;
+  gap: 60px;
+
+  max-width: 1200px;
+
+  margin: auto;
 
 }
 
-/* TEXT */
-
-.hero-text {
-
-  flex: 1;
-
-}
+/* TEXT SIDE */
 
 .hero-text h1 {
 
-  font-size: 42px;
+  font-size: 48px;
+
+  font-weight: 700;
+
+  margin-bottom: 10px;
 
 }
 
@@ -406,29 +408,77 @@ footer .icon {
 
   color: #2b6cb0;
 
-  margin: 10px 0 20px;
+  font-size: 20px;
+
+  margin-bottom: 20px;
 
 }
 
-/* IMAGE */
+.hero-text p {
 
-.hero-image {
+  font-size: 17px;
 
-  flex: 1;
+  color: #555;
 
-  display: flex;
+  margin-bottom: 25px;
 
-  justify-content: center;
+  line-height: 1.6;
 
 }
+
+/* BUTTONS UPGRADE */
+
+.btn {
+
+  padding: 14px 22px;
+
+  border-radius: 10px;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+
+}
+
+.primary {
+
+  background: #2b6cb0;
+
+  color: white;
+
+}
+
+.primary:hover {
+
+  background: #1e4e8c;
+
+}
+
+.secondary {
+
+  border: 2px solid #2b6cb0;
+
+  color: #2b6cb0;
+
+}
+
+.secondary:hover {
+
+  background: #2b6cb0;
+
+  color: white;
+
+}
+
+/* IMAGE SIDE */
 
 .image-placeholder {
 
-  width: 300px;
+  width: 320px;
 
-  height: 350px;
+  height: 380px;
 
-  background: #e2e8f0;
+  background: linear-gradient(135deg, #dbeafe, #f0f4ff);
 
   border-radius: 20px;
 
@@ -438,9 +488,11 @@ footer .icon {
 
   justify-content: center;
 
-  color: #666;
+  color: #2b6cb0;
 
-  font-weight: bold;
+  font-weight: 600;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 
 }
 
@@ -453,6 +505,12 @@ footer .icon {
     flex-direction: column;
 
     text-align: center;
+
+  }
+
+  .hero-text h1 {
+
+    font-size: 34px;
 
   }
 
