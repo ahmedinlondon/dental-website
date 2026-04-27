@@ -351,3 +351,17 @@ footer .icon {
   }
 
 }
+
+.section iframe {
+
+  width: 100%;
+
+  height: 250px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  margin: 20px 0;
+
+}
