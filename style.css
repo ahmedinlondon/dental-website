@@ -295,3 +295,59 @@ footer .icon {
   opacity: 0.85;
 
 }
+
+/* CONTACT PAGE LAYOUT */
+
+.contact-container {
+
+  display: flex;
+
+  gap: 40px;
+
+  padding: 60px 40px;
+
+  align-items: flex-start;
+
+}
+
+/* FORM SIDE */
+
+.contact-form {
+
+  flex: 1;
+
+}
+
+/* MAP SIDE */
+
+.contact-map {
+
+  flex: 1;
+
+}
+
+.contact-map iframe {
+
+  width: 100%;
+
+  height: 350px;
+
+  border-radius: 12px;
+
+  border: none;
+
+  margin-bottom: 15px;
+
+}
+
+/* RESPONSIVE (MOBILE) */
+
+@media (max-width: 768px) {
+
+  .contact-container {
+
+    flex-direction: column;
+
+  }
+
+}
