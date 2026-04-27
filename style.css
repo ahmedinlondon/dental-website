@@ -365,3 +365,103 @@ footer .icon {
   margin: 20px 0;
 
 }
+
+/* HERO UPGRADE */
+
+.hero {
+
+  padding: 80px 40px;
+
+  background: linear-gradient(to right, #eaf4ff, #ffffff);
+
+}
+
+.hero-container {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 40px;
+
+}
+
+/* TEXT */
+
+.hero-text {
+
+  flex: 1;
+
+}
+
+.hero-text h1 {
+
+  font-size: 42px;
+
+}
+
+.hero-text h3 {
+
+  color: #2b6cb0;
+
+  margin: 10px 0 20px;
+
+}
+
+/* IMAGE */
+
+.hero-image {
+
+  flex: 1;
+
+  display: flex;
+
+  justify-content: center;
+
+}
+
+.image-placeholder {
+
+  width: 300px;
+
+  height: 350px;
+
+  background: #e2e8f0;
+
+  border-radius: 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #666;
+
+  font-weight: bold;
+
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .hero-container {
+
+    flex-direction: column;
+
+    text-align: center;
+
+  }
+
+  .image-placeholder {
+
+    width: 100%;
+
+    max-width: 300px;
+
+  }
+
+}
