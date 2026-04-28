@@ -524,31 +524,27 @@ footer .icon {
 
 }
 
-/* FAQ IMPROVED */
+/* FAQ LAYOUT UPGRADE */
 
 .faq {
 
-  max-width: 700px;
+  width: 60%;
 
-  margin: auto;
+  margin-left: 40px; /* pushes from left edge slightly */
 
 }
 
 .faq-intro {
 
-  max-width: 700px;
+  width: 60%;
 
-  margin: 0 auto 30px;
+  margin-left: 40px;
 
-  text-align: left;
+  margin-bottom: 30px;
+
+  text-align: justify;
 
   color: #555;
-
-}
-
-.faq-item {
-
-  margin-bottom: 12px;
 
 }
 
@@ -570,9 +566,9 @@ footer .icon {
 
   color: white;
 
-  /* LIGHT SKY BLUE GRADIENT */
+  /* SOFTER REAL GRADIENT (more visible) */
 
-  background: linear-gradient(135deg, #60a5fa, #93c5fd);
+  background: linear-gradient(135deg, #93c5fd, #60a5fa, #3b82f6);
 
   display: flex;
 
@@ -582,7 +578,7 @@ footer .icon {
 
 }
 
-/* REMOVE ROUNDED CORNERS */
+/* SHARP BOXES */
 
 .faq-question,
 
@@ -592,7 +588,13 @@ footer .icon {
 
 }
 
-/* ANSWER BOX */
+.faq-item {
+
+  margin-bottom: 12px;
+
+}
+
+/* ANSWER */
 
 .faq-answer {
 
