@@ -391,3 +391,72 @@
 </body>
 
 </html>
+<script>
+
+  const questions = document.querySelectorAll(".faq-question");
+
+  questions.forEach(q => {
+
+    q.addEventListener("click", () => {
+
+      questions.forEach(item => {
+
+        if (item !== q) {
+
+          item.classList.remove("active");
+
+          item.nextElementSibling.style.display = "none";
+
+        }
+
+      });
+
+      q.classList.toggle("active");
+
+      const answer = q.nextElementSibling;
+
+      if (answer.style.display === "block") {
+
+        answer.style.display = "none";
+
+      } else {
+
+        answer.style.display = "block";
+
+      }
+
+    });
+
+  });
+
+</script>
+
+<!-- 👇 ADD THIS NEW SCRIPT BELOW -->
+
+<script>
+
+function openSection(id) {
+
+  // hide all sections
+
+  document.querySelectorAll('.faq-section').forEach(sec => {
+
+    sec.style.display = "none";
+
+  });
+
+  // show selected section
+
+  document.getElementById(id).style.display = "block";
+
+}
+
+// optional: show first section on load
+
+window.onload = function() {
+
+  openSection('pre');
+
+}
+
+</script>
