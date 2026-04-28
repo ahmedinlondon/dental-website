@@ -1,6 +1,6 @@
 
 
-.body {
+body {
 
   margin: 0;
 
@@ -254,12 +254,14 @@ footer {
 
 }
 
-.icon {
 footer .icon {
 
   position: static !important;
 
 }
+
+.icon {
+
   display: inline-flex;
 
   justify-content: center;
