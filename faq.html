@@ -192,6 +192,24 @@
 
     q.addEventListener("click", () => {
 
+      // CLOSE ALL
+
+      questions.forEach(item => {
+
+        if (item !== q) {
+
+          item.classList.remove("active");
+
+          item.nextElementSibling.style.display = "none";
+
+        }
+
+      });
+
+      // TOGGLE CURRENT
+
+      q.classList.toggle("active");
+
       const answer = q.nextElementSibling;
 
       if (answer.style.display === "block") {
@@ -208,8 +226,7 @@
 
   });
 
-</script>
-  
+</script>  
 </body>
 
 </html>
