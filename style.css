@@ -525,12 +525,11 @@ footer .icon {
 }
 
 /* FAQ LAYOUT UPGRADE */
-
 .faq {
 
-  width: 40%;
+  width: 10%;
 
-  margin-left: 40px; 
+  background: red;
 
 }
 
