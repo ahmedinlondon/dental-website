@@ -528,23 +528,25 @@ footer .icon {
 
 .faq {
 
-  width: 60%;
+  width: 40%;
 
-  margin-left: 40px; /* pushes from left edge slightly */
+  margin-left: 40px; 
 
 }
 
 .faq-intro {
 
-  width: 60%;
+  width: 40%;
 
   margin-left: 40px;
 
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+
+  padding: 20px;
+
+  background: rgba(255,255,255,0.85);
 
   text-align: justify;
-
-  color: #555;
 
 }
 
@@ -619,6 +621,18 @@ footer .icon {
 .faq-question.active .arrow {
 
   transform: rotate(180deg);
+
+}
+
+.faq-title {
+
+  width: 40%;
+
+  margin-left: 40px;
+
+  margin-bottom: 10px;
+
+  text-align: left;
 
 }
 
