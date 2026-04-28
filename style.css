@@ -527,9 +527,9 @@ footer .icon {
 /* FAQ LAYOUT UPGRADE */
 .faq {
 
-  width: 10%;
+  width: 40%;
 
-  background: red;
+  margin-left: 40px;
 
 }
 
