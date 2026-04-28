@@ -621,3 +621,137 @@ footer .icon {
   transform: rotate(180deg);
 
 }
+
+/* GLOBAL FONT UPGRADE */
+
+body {
+
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+
+}
+
+/* LOAD FONT (add in HTML head later) */
+
+/* INFO BOX (for paragraphs) */
+
+.info-box {
+
+  width: 40%;
+
+  margin-left: 40px;
+
+  margin-bottom: 20px;
+
+  padding: 20px;
+
+  background: rgba(255,255,255,0.75);
+
+  backdrop-filter: blur(6px);
+
+  border-radius: 0;
+
+  text-align: justify;
+
+}
+
+/* FAQ TITLE */
+
+.faq-title {
+
+  margin-left: 40px;
+
+  text-align: left;
+
+}
+
+/* FAQ WIDTH FIX */
+
+.faq {
+
+  width: 40%;
+
+  margin-left: 40px;
+
+}
+
+/* BETTER GRADIENT (RIGHT → LEFT softer) */
+
+.faq-question {
+
+  background: linear-gradient(135deg, #3b82f6, #60a5fa, #93c5fd);
+
+}
+
+/* REMOVE ALL ROUNDING SITE-WIDE */
+
+.card, .btn, .faq-question, .faq-answer {
+
+  border-radius: 0 !important;
+
+}
+
+/* BUTTON SYSTEM (CONNECTED STYLE) */
+
+.btn {
+
+  border-radius: 0;
+
+  margin: 0;
+
+}
+
+.hero-buttons .btn {
+
+  display: inline-block;
+
+}
+
+.hero-buttons .btn + .btn {
+
+  margin-left: -5px; /* connects buttons */
+
+}
+
+/* NAVBAR LINKS AS BLOCKS */
+
+.navbar a {
+
+  padding: 10px 15px;
+
+  background: rgba(43,108,176,0.1);
+
+  margin-left: 0;
+
+  border-radius: 0;
+
+}
+
+.navbar a + a {
+
+  border-left: 1px solid #ddd;
+
+}
+
+/* SERVICE CARDS (CONNECTED) */
+
+.grid {
+
+  gap: 0;
+
+}
+
+.card {
+
+  border-right: 1px solid #eee;
+
+}
+
+/* OPTIONAL LIGHT COLORS */
+
+.card:nth-child(1) { background: rgba(96,165,250,0.15); }
+
+.card:nth-child(2) { background: rgba(52,211,153,0.15); }
+
+.card:nth-child(3) { background: rgba(125,211,252,0.15); }
+
+.card:nth-child(4) { background: rgba(165,243,252,0.15); }
