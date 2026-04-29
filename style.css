@@ -655,3 +655,93 @@ body {
   }
 
 }
+
+/* ===== FAQ LEFT PANEL FINAL POLISH ===== */
+
+.faq-container {
+
+  background: rgba(255, 255, 255, 0.42) !important;
+
+  backdrop-filter: blur(10px);
+
+  padding: 28px !important;
+
+}
+
+.info-box {
+
+  background: rgba(255, 255, 255, 0.58) !important;
+
+  backdrop-filter: blur(10px);
+
+  padding: 24px !important;
+
+}
+
+.faq-title {
+
+  margin-bottom: 24px !important;
+
+}
+
+.faq-grid {
+
+  gap: 14px !important;
+
+  margin-top: 26px !important;
+
+}
+
+/* softer pastel FAQ blocks */
+
+.faq-box {
+
+  background: rgba(255,255,255,0.45) !important;
+
+  backdrop-filter: blur(8px);
+
+  opacity: 1 !important;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+
+}
+
+/* individual soft tones */
+
+.faq-box:nth-child(1) {
+
+  background: rgba(147, 197, 253, 0.55) !important;
+
+}
+
+.faq-box:nth-child(2) {
+
+  background: rgba(110, 231, 183, 0.50) !important;
+
+}
+
+.faq-box:nth-child(3) {
+
+  background: rgba(186, 230, 253, 0.55) !important;
+
+}
+
+.faq-box:nth-child(4) {
+
+  background: rgba(204, 251, 241, 0.55) !important;
+
+}
+
+/* optional icon style */
+
+.faq-box i {
+
+  display: block;
+
+  font-size: 28px;
+
+  margin-bottom: 12px;
+
+  opacity: 0.65;
+
+}
