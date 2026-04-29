@@ -225,20 +225,58 @@ Orthodontic treatment is a carefully planned journey designed to create healthy,
 
 <script>
 
-// SHOW RIGHT PANEL
+// TOGGLE PANEL (OPEN / CLOSE)
+let activeSection = null;
 function openSection(id) {
+  const panel = document.getElementById('faq-panel');
+  const section = document.getElementById(id);
+
+  // If same section clicked → CLOSE
+  if (activeSection === id) {
+    panel.style.display = 'none';
+    activeSection = null;
+    return;
+
+  }
+
+  // Show panel
+  panel.style.display = 'block';
+
+  // Hide all sections
   document.querySelectorAll('.faq-section').forEach(sec => sec.style.display = 'none');
-  document.getElementById(id).style.display = 'block';
-  document.getElementById('faq-panel').style.display = 'block';
+
+  // Show selected
+  section.style.display = 'block';
+
+  activeSection = id;
+
 }
 
+// CLICK OUTSIDE TO CLOSE
+
+document.addEventListener("click", function(e) {
+  const panel = document.getElementById("faq-panel");
+  const boxes = document.querySelector(".faq-grid");
+  if (!panel.contains(e.target) && !boxes.contains(e.target)) {
+    panel.style.display = "none";
+    activeSection = null;
+
+  }
+
+});
+
 // ACCORDION
+
 document.addEventListener("click", function(e){
   if(e.target.classList.contains("faq-question")){
     const answer = e.target.nextElementSibling;
     answer.style.display = answer.style.display === "block" ? "none" : "block";
+
   }
+
 });
+
+</script>
 
 </script>
 
