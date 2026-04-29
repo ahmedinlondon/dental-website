@@ -982,3 +982,5 @@ body {
   display: block;
 
 }
+
+sec.classList.remove('active');
