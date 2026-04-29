@@ -589,55 +589,7 @@ footer {
 
 }
 
-/* ===== FAQ BACKGROUND IMAGE ===== */
-
-body {
-
-  background: url("family.jpg") no-repeat center center fixed;
-
-  background-size: cover;
-
-}
-
-/* SOFT WHITE OVERLAY (so text is readable) */
-
-.section {
-
-  background: rgba(255, 255, 255, 0.75);
-
-}
-
-/* LEFT SIDE BOX (intro + title) */
-
-.faq-container {
-
-  background: rgba(255, 255, 255, 0.6);
-
-  padding: 20px;
-
-}
-
-/* RIGHT Q&A PANEL (already good but slightly refined) */
-
-.faq-panel {
-
-  background: rgba(255, 255, 255, 0.85) !important;
-
-  backdrop-filter: blur(6px);
-
-}
-
-/* FAQ BACKGROUND IMAGE */
-
-body {
-
-  background: url("family.PNG") no-repeat center center fixed;
-
-  background-size: cover;
-
-}
-
-/* ===== FAQ BACKGROUND FINAL TUNING ===== */
+/* ===== FAQ BACKGROUND FINAL CLEAN VERSION ===== */
 
 body {
 
@@ -647,11 +599,13 @@ body {
 
       to right,
 
-      rgba(247,249,252,0.88) 0%,
+      rgba(247,249,252,0.65) 0%,
 
-      rgba(247,249,252,0.72) 42%,
+      rgba(247,249,252,0.45) 40%,
 
-      rgba(247,249,252,0.38) 100%
+      rgba(247,249,252,0.18) 70%,
+
+      rgba(20,40,50,0.18) 100%
 
     ),
 
@@ -659,36 +613,46 @@ body {
 
   background-repeat: no-repeat;
 
-  background-size: cover;
+  background-position: center top;
 
-  background-position: center 35%;
+  background-size: 100% auto;
 
   background-attachment: fixed;
 
+  background-color: #eef7f1;
+
 }
 
-/* Make page panels slightly glass-like */
+/* remove section white */
+
+.section {
+
+  background: transparent !important;
+
+}
+
+/* glass effect */
 
 .faq-container,
 
 .info-box {
 
-  background: rgba(255,255,255,0.70) !important;
+  background: rgba(255,255,255,0.55) !important;
 
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(6px);
 
 }
 
 .faq-box {
 
-  opacity: 0.88;
+  opacity: 0.82;
 
 }
 
 .faq-panel {
 
-  background: rgba(255,255,255,0.82) !important;
+  background: rgba(255,255,255,0.78) !important;
 
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(8px);
 
 }
