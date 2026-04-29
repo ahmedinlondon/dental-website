@@ -597,10 +597,10 @@ body {
 
   background-repeat: no-repeat !important;
 
-  background-size: cover !important;
+  background-size: 120% auto !important;
 
- background-position: 45% center !important;
-  
+  background-position: 45% bottom !important;
+
   background-attachment: fixed !important;
 
   background-color: #eef7f1 !important;
