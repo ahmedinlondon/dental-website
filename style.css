@@ -636,3 +636,22 @@ body {
   backdrop-filter: blur(8px);
 
 }
+
+
+@media (max-width: 768px) {
+
+  body {
+
+    background-size: 160% auto !important;
+
+    background-position: 60% bottom !important;
+
+  }
+
+  .section {
+
+    padding-bottom: 120px !important;
+
+  }
+
+}
