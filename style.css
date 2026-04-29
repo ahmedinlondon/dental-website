@@ -589,41 +589,23 @@ footer {
 
 }
 
-/* ===== FAQ BACKGROUND FINAL CLEAN VERSION ===== */
+/* ===== FAQ BACKGROUND COVER VERSION ===== */
 
 body {
 
-  background-image:
+  background-image: url("family.PNG") !important;
 
-    linear-gradient(
+  background-repeat: no-repeat !important;
 
-      to right,
+  background-size: cover !important;
 
-      rgba(247,249,252,0.65) 0%,
+  background-position: right center !important;
 
-      rgba(247,249,252,0.45) 40%,
+  background-attachment: fixed !important;
 
-      rgba(247,249,252,0.18) 70%,
-
-      rgba(20,40,50,0.18) 100%
-
-    ),
-
-    url("family.PNG");
-
-  background-repeat: no-repeat;
-
-  background-position: center top;
-
-  background-size: 100% auto;
-
-  background-attachment: fixed;
-
-  background-color: #eef7f1;
+  background-color: #eef7f1 !important;
 
 }
-
-/* remove section white */
 
 .section {
 
@@ -631,27 +613,25 @@ body {
 
 }
 
-/* glass effect */
-
 .faq-container,
 
 .info-box {
 
-  background: rgba(255,255,255,0.55) !important;
+  background: rgba(255,255,255,0.52) !important;
 
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(5px);
 
 }
 
 .faq-box {
 
-  opacity: 0.82;
+  opacity: 0.78 !important;
 
 }
 
 .faq-panel {
 
-  background: rgba(255,255,255,0.78) !important;
+  background: rgba(255,255,255,0.76) !important;
 
   backdrop-filter: blur(8px);
 
