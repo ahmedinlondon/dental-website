@@ -1,466 +1,246 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-
-<link rel="stylesheet" href="style.css?v=26">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+  <link rel="stylesheet" href="style.css?v=30">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  
 </head>
 
 <body>
 
 <header class="navbar">
-
   <div class="logo">Smile Studio Clinic</div>
-
   <nav>
-
     <a href="index.html?v=3">Home</a>
-
     <a href="about.html?v=3">About</a>
-
     <a href="services.html?v=3">Services</a>
-
     <a href="pricing.html?v=1">Pricing</a>
-
     <a href="faq.html?v=1">FAQ</a>
-
     <a href="contact.html?v=3">Contact</a>
-
   </nav>
-
 </header>
 
 <section class="section">
-  
 
 <div class="faq-container">
 
-  <h2 class="faq-title">Frequently Asked Questions</h2>
+<h2 class="faq-title">Frequently Asked Questions</h2>
 
-  <div class="info-box faq-intro">
-
-    Orthodontic treatment is a carefully planned journey designed to create healthy, confident smiles at any age. Whether you are considering braces for yourself or your child, this guide answers the most common questions about the process.
-
-  </div>
+<div class="info-box faq-intro">
+Orthodontic treatment is a carefully planned journey designed to create healthy, confident smiles at any age. Whether you are considering braces for yourself or your child, this guide answers the most common questions about the process.
 </div>
 
-<!-- RIGHT SIDE PANEL (where questions will appear) -->
+<!-- CATEGORY BOXES -->
+<div class="faq-grid">
+  <div class="faq-box" onclick="openSection('pre')">Pre-Treatment</div>
+  <div class="faq-box" onclick="openSection('during')">During Treatment</div>
+  <div class="faq-box" onclick="openSection('options')">Braces & Aligners</div>
+  <div class="faq-box" onclick="openSection('post')">Post-Treatment</div>
+</div>
 
-<div class="faq-panel">
+</div>
 
-  <!-- PRE-TREATMENT -->
+<!-- RIGHT SIDE PANEL -->
+<div id="faq-panel" class="faq-panel">
 
-  <div id="pre" class="faq-section">
+<!-- PRE-TREATMENT -->
+<div id="pre" class="faq-section">
+<h3>Pre-Treatment</h3>
 
-    <!-- paste ALL pre-treatment questions here -->
-
-  </div>
-
-  <!-- DURING -->
-
-  <div id="during" class="faq-section">
-
-    <!-- paste ALL during-treatment questions here -->
-
-  </div>
-
-  <!-- OPTIONS -->
-
-  <div id="options" class="faq-section">
-
-    <!-- paste ALL braces/aligners questions here -->
-
-  </div>
-
-  <!-- POST -->
-
-  <div id="post" class="faq-section">
-
-    <!-- paste ALL post-treatment questions here -->
-
-  </div>
-
-<div class="faq-panel">
-
-  <div id="pre" class="faq-section">
 <div class="faq-item">
-
-<button class="faq-question">What is the difference between a dentist and an orthodontist? <span class="arrow">▼</span></button>
-
-<div class="faq-answer">An orthodontist is a qualified dentist who has completed an additional 3-year specialist training focused on correcting tooth position and jaw alignment.</div>
-
+<button class="faq-question">What is the difference between a dentist and an orthodontist? <span>▼</span></button>
+<div class="faq-answer">An orthodontist is a dentist who has completed an additional 3-year specialist training in correcting tooth position and jaw alignment.</div>
 </div>
 
 <div class="faq-item">
-
-<button class="faq-question">What is the best age for a first orthodontic check-up? <span class="arrow">▼</span></button>
-
-<div class="faq-answer">It is recommended that children have an orthodontic screening around the age of 7 to monitor jaw growth and tooth development.</div>
-
+<button class="faq-question">What is the best age for a first orthodontic check-up? <span>▼</span></button>
+<div class="faq-answer">Children should ideally be assessed around age 7 to monitor jaw growth and tooth eruption.</div>
 </div>
 
 <div class="faq-item">
-
-<button class="faq-question">Am I too old for braces? <span class="arrow">▼</span></button>
-
-<div class="faq-answer">No. Orthodontic treatment can be successful at any age. Many adults choose discreet options such as clear aligners or ceramic braces.</div>
-
+<button class="faq-question">Am I too old for braces? <span>▼</span></button>
+<div class="faq-answer">No. Orthodontic treatment is effective at any age, and many adults now choose discreet options.</div>
 </div>
 
 <div class="faq-item">
-
-<button class="faq-question">What happens during the initial orthodontic assessment? <span class="arrow">▼</span></button>
-
-<div class="faq-answer">We examine your bite, take digital scans or impressions, and clinical photographs to design a personalised treatment plan.</div>
-
+<button class="faq-question">What happens during the initial assessment? <span>▼</span></button>
+<div class="faq-answer">We examine your bite, take digital scans, photographs, and create a personalised treatment plan.</div>
 </div>
 
 <div class="faq-item">
-
-<button class="faq-question">Why do I need a Panoramic (OPG) X-ray? <span class="arrow">▼</span></button>
-
-<div class="faq-answer">It provides a full view of your teeth, roots, and jawbone, helping detect hidden or impacted teeth and ensuring safe treatment planning.</div>
-
+<button class="faq-question">Why do I need an X-ray? <span>▼</span></button>
+<div class="faq-answer">It provides a full view of your teeth roots, jawbone, and any hidden or impacted teeth.</div>
 </div>
 
 <div class="faq-item">
-
-<button class="faq-question">Do I need to fix cavities or gum issues before treatment? <span class="arrow">▼</span></button>
-
-<div class="faq-answer">Yes. Your teeth and gums must be healthy before orthodontic treatment begins.</div>
-
+<button class="faq-question">Do I need dental treatment before braces? <span>▼</span></button>
+<div class="faq-answer">Yes. Teeth and gums must be healthy before starting orthodontic treatment.</div>
 </div>
 
 <div class="faq-item">
-
-<button class="faq-question">What if I have missing teeth? <span class="arrow">▼</span></button>
-
-<div class="faq-answer">Orthodontics can help close gaps or create ideal spacing for implants or bridges in coordination with your dentist.</div>
-
-</div>
-
-<!-- pricing related -->
-
-<div class="faq-item">
-
-<button class="faq-question">How much does orthodontic treatment cost? <span class="arrow">▼</span></button>
-
-<div class="faq-answer">Costs vary depending on the complexity and treatment type. A full quote is provided after consultation.</div>
-
+<button class="faq-question">What if I have missing teeth? <span>▼</span></button>
+<div class="faq-answer">We can close gaps or prepare ideal spacing for implants or bridges.</div>
 </div>
 
 <div class="faq-item">
-
-<button class="faq-question">Do you offer payment plans? <span class="arrow">▼</span></button>
-
-<div class="faq-answer">Yes, we offer flexible interest-free payment options.</div>
-
+<button class="faq-question">How much does treatment cost? <span>▼</span></button>
+<div class="faq-answer">Costs depend on case complexity. A full quote is provided after consultation.</div>
 </div>
 
 <div class="faq-item">
+<button class="faq-question">Do you offer payment plans? <span>▼</span></button>
+<div class="faq-answer">Yes, flexible interest-free plans are available.</div>
+</div>
 
-<button class="faq-question">Are there hidden costs? <span class="arrow">▼</span></button>
-
-<div class="faq-answer">No. Our pricing is transparent, with only optional replacements or external treatments excluded.</div>
-
+<div class="faq-item">
+<button class="faq-question">Are there hidden costs? <span>▼</span></button>
+<div class="faq-answer">No. Pricing is transparent, with only optional replacements excluded.</div>
 </div>
 
 </div>
 
-<!-- ================= DURING TREATMENT ================= -->
-
+<!-- DURING -->
 <div id="during" class="faq-section">
+<h3>During Treatment</h3>
 
 <div class="faq-item">
-
-<button class="faq-question">Does orthodontic treatment hurt? <span class="arrow">▼</span></button>
-
-<div class="faq-answer">You may experience mild discomfort after adjustments, but it is temporary and manageable.</div>
-
+<button class="faq-question">Does orthodontic treatment hurt? <span>▼</span></button>
+<div class="faq-answer">You may feel mild discomfort after adjustments, but it is temporary.</div>
 </div>
 
 <div class="faq-item">
-
-<button class="faq-question">How long does treatment take? <span class="arrow">▼</span></button>
-
-<div class="faq-answer">Treatment typically lasts between 12 and 30 months depending on complexity.</div>
-
+<button class="faq-question">How long does treatment take? <span>▼</span></button>
+<div class="faq-answer">Most treatments last between 12 and 30 months.</div>
 </div>
 
 <div class="faq-item">
-
-<button class="faq-question">How often are follow-up appointments? <span class="arrow">▼</span></button>
-
-<div class="faq-answer">Appointments are usually scheduled every 6–8 weeks to monitor progress.</div>
-
+<button class="faq-question">How often are visits? <span>▼</span></button>
+<div class="faq-answer">Usually every 6–8 weeks.</div>
 </div>
 
 <div class="faq-item">
-
-<button class="faq-question">Do I still need to see my regular dentist? <span class="arrow">▼</span></button>
-
-<div class="faq-answer">Yes. Regular dental check-ups every 6 months are essential during orthodontic treatment.</div>
-
+<button class="faq-question">Do I still need my dentist? <span>▼</span></button>
+<div class="faq-answer">Yes, regular dental check-ups are essential.</div>
 </div>
 
 <div class="faq-item">
-
-<button class="faq-question">Are there food restrictions with braces? <span class="arrow">▼</span></button>
-
-<div class="faq-answer">Yes. Avoid hard, sticky, or chewy foods that could damage braces.</div>
-
+<button class="faq-question">Food restrictions? <span>▼</span></button>
+<div class="faq-answer">Avoid hard, sticky, or chewy foods with braces.</div>
 </div>
 
 <div class="faq-item">
-
-<button class="faq-question">Can I play sports or musical instruments? <span class="arrow">▼</span></button>
-
-<div class="faq-answer">Yes. A mouthguard is recommended for sports, and some adjustment may be needed for instruments.</div>
-
+<button class="faq-question">Sports or instruments? <span>▼</span></button>
+<div class="faq-answer">Yes, but a mouthguard is recommended for sports.</div>
 </div>
 
 </div>
 
-<!-- ================= OPTIONS ================= -->
-
+<!-- OPTIONS -->
 <div id="options" class="faq-section">
+<h3>Braces & Aligners</h3>
 
 <div class="faq-item">
-
-<button class="faq-question">Are clear aligners as effective as traditional braces? <span class="arrow">▼</span></button>
-
-<div class="faq-answer">Aligners are highly effective for mild to moderate cases, while braces are best for complex problems.</div>
-
+<button class="faq-question">Are aligners as effective as braces? <span>▼</span></button>
+<div class="faq-answer">Aligners are excellent for mild to moderate cases, while braces are best for complex issues.</div>
 </div>
 
 <div class="faq-item">
-
-<button class="faq-question">Which option works faster? <span class="arrow">▼</span></button>
-
-<div class="faq-answer">It depends on the case. Aligners can be faster for simple cases, while braces are more efficient for complex ones.</div>
-
+<button class="faq-question">Which works faster? <span>▼</span></button>
+<div class="faq-answer">Depends on complexity—aligners for simple, braces for complex cases.</div>
 </div>
 
 <div class="faq-item">
-
-<button class="faq-question">How do lifestyle requirements differ? <span class="arrow">▼</span></button>
-
-<div class="faq-answer">Aligners must be worn 20–22 hours daily, while braces work continuously without removal.</div>
-
+<button class="faq-question">Lifestyle differences? <span>▼</span></button>
+<div class="faq-answer">Aligners are removable; braces work continuously.</div>
 </div>
 
 <div class="faq-item">
-
-<button class="faq-question">Which is more comfortable? <span class="arrow">▼</span></button>
-
-<div class="faq-answer">Aligners are generally more comfortable, while braces may cause temporary irritation.</div>
-
+<button class="faq-question">Which is more comfortable? <span>▼</span></button>
+<div class="faq-answer">Aligners are generally more comfortable.</div>
 </div>
 
 <div class="faq-item">
-
-<button class="faq-question">Can I eat normally? <span class="arrow">▼</span></button>
-
-<div class="faq-answer">Aligners allow normal eating since they are removed, while braces require food restrictions.</div>
-
+<button class="faq-question">Eating differences? <span>▼</span></button>
+<div class="faq-answer">Aligners allow normal eating; braces require restrictions.</div>
 </div>
 
 <div class="faq-item">
-
-<button class="faq-question">Which is easier to clean? <span class="arrow">▼</span></button>
-
-<div class="faq-answer">Aligners are easier to maintain, while braces require more detailed cleaning.</div>
-
+<button class="faq-question">Cleaning differences? <span>▼</span></button>
+<div class="faq-answer">Aligners are easier to clean.</div>
 </div>
 
 <div class="faq-item">
-
-<button class="faq-question">Is there a price difference? <span class="arrow">▼</span></button>
-
-<div class="faq-answer">Braces are typically more affordable, while aligners may cost more due to advanced technology.</div>
-
+<button class="faq-question">Price difference? <span>▼</span></button>
+<div class="faq-answer">Braces are typically more affordable.</div>
 </div>
 
 <div class="faq-item">
-
-<button class="faq-question">What is the difference between ceramic and metal braces? <span class="arrow">▼</span></button>
-
-<div class="faq-answer">Ceramic braces are less visible, while metal braces are more durable.</div>
-
+<button class="faq-question">Ceramic vs metal braces? <span>▼</span></button>
+<div class="faq-answer">Ceramic are less visible; metal are more durable.</div>
 </div>
 
 <div class="faq-item">
-
-<button class="faq-question">Are ceramic braces less durable? <span class="arrow">▼</span></button>
-
-<div class="faq-answer">They are slightly more fragile than metal braces but still effective.</div>
-
+<button class="faq-question">Do ceramic braces stain? <span>▼</span></button>
+<div class="faq-answer">Brackets do not stain, but elastics may discolor.</div>
 </div>
 
 <div class="faq-item">
-
-<button class="faq-question">Do ceramic braces stain? <span class="arrow">▼</span></button>
-
-<div class="faq-answer">The brackets do not stain, but elastic ties may discolor and are replaced regularly.</div>
-
-</div>
-
-<div class="faq-item">
-
-<button class="faq-question">Is there a price or time difference? <span class="arrow">▼</span></button>
-
-<div class="faq-answer">Ceramic braces are slightly more expensive, but both types work equally well.</div>
-
+<button class="faq-question">Is treatment time different? <span>▼</span></button>
+<div class="faq-answer">Both types are equally effective in most cases.</div>
 </div>
 
 </div>
 
-<!-- ================= POST TREATMENT ================= -->
-
+<!-- POST -->
 <div id="post" class="faq-section">
+<h3>Post Treatment</h3>
 
 <div class="faq-item">
-
-<button class="faq-question">Why do I need to wear a retainer? <span class="arrow">▼</span></button>
-
-<div class="faq-answer">Teeth naturally shift over time. Retainers keep them in their new position.</div>
-
+<button class="faq-question">Why wear retainers? <span>▼</span></button>
+<div class="faq-answer">To keep teeth in their new position permanently.</div>
 </div>
 
 <div class="faq-item">
-
-<button class="faq-question">What happens when my treatment is finalised? <span class="arrow">▼</span></button>
-
-<div class="faq-answer">We provide two follow-up check-up visits within 12 months after your treatment is completed, included in your care plan.</div>
-
+<button class="faq-question">What happens after treatment? <span>▼</span></button>
+<div class="faq-answer">We provide two follow-up visits within 12 months.</div>
 </div>
 
 </div>
 
 </div>
-
-  </div> <!-- END faq-container -->
 
 </section>
 
 <footer>
-
   <p>© 2026 Smile Studio Clinic</p>
 
+  <div>
+    <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+    <a href="#" class="icon youtube"><i class="fab fa-youtube"></i></a>
+  </div>
 </footer>
-  
-<script>
-
-  const questions = document.querySelectorAll(".faq-question");
-
-  questions.forEach(q => {
-
-    q.addEventListener("click", () => {
-
-      // CLOSE ALL
-
-      questions.forEach(item => {
-
-        if (item !== q) {
-
-          item.classList.remove("active");
-
-          item.nextElementSibling.style.display = "none";
-
-        }
-
-      });
-
-      // TOGGLE CURRENT
-
-      q.classList.toggle("active");
-
-      const answer = q.nextElementSibling;
-
-      if (answer.style.display === "block") {
-
-        answer.style.display = "none";
-
-      } else {
-
-        answer.style.display = "block";
-
-      }
-
-    });
-
-  });
-
-</script>  
-</body>
-
-</html>
-<script>
-
-  const questions = document.querySelectorAll(".faq-question");
-
-  questions.forEach(q => {
-
-    q.addEventListener("click", () => {
-
-      questions.forEach(item => {
-
-        if (item !== q) {
-
-          item.classList.remove("active");
-
-          item.nextElementSibling.style.display = "none";
-
-        }
-
-      });
-
-      q.classList.toggle("active");
-
-      const answer = q.nextElementSibling;
-
-      if (answer.style.display === "block") {
-
-        answer.style.display = "none";
-
-      } else {
-
-        answer.style.display = "block";
-
-      }
-
-    });
-
-  });
-
-</script>
-
-<!-- 👇 ADD THIS NEW SCRIPT BELOW -->
 
 <script>
 
+// SHOW RIGHT PANEL
 function openSection(id) {
-
-  // hide all sections
-
-  document.querySelectorAll('.faq-section').forEach(sec => {
-
-    sec.style.display = "none";
-
-  });
-
-  // show selected section
-
-  document.getElementById(id).style.display = "block";
-
+  document.querySelectorAll('.faq-section').forEach(sec => sec.style.display = 'none');
+  document.getElementById(id).style.display = 'block';
+  document.getElementById('faq-panel').style.display = 'block';
 }
 
-// optional: show first section on load
-
-
+// ACCORDION
+document.addEventListener("click", function(e){
+  if(e.target.classList.contains("faq-question")){
+    const answer = e.target.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  }
+});
 
 </script>
+
+</body>
+</html>>
