@@ -962,3 +962,23 @@ body {
   width: 100%;
 
 }
+
+/* FORCE FAQ CONTENT TO SHOW PROPERLY */
+
+.faq-section {
+
+  display: none;
+
+}
+
+.faq-section.active {
+
+  display: block;
+
+}
+
+.faq-item {
+
+  display: block;
+
+}
