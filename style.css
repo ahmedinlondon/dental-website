@@ -588,3 +588,41 @@ footer {
   line-height: 1.6;
 
 }
+
+/* ===== FAQ BACKGROUND IMAGE ===== */
+
+body {
+
+  background: url("family.jpg") no-repeat center center fixed;
+
+  background-size: cover;
+
+}
+
+/* SOFT WHITE OVERLAY (so text is readable) */
+
+.section {
+
+  background: rgba(255, 255, 255, 0.75);
+
+}
+
+/* LEFT SIDE BOX (intro + title) */
+
+.faq-container {
+
+  background: rgba(255, 255, 255, 0.6);
+
+  padding: 20px;
+
+}
+
+/* RIGHT Q&A PANEL (already good but slightly refined) */
+
+.faq-panel {
+
+  background: rgba(255, 255, 255, 0.85) !important;
+
+  backdrop-filter: blur(6px);
+
+}
