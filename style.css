@@ -599,8 +599,8 @@ body {
 
   background-size: cover !important;
 
-  background-position: right center !important;
-
+ background-position: 65% center !important;
+  
   background-attachment: fixed !important;
 
   background-color: #eef7f1 !important;
