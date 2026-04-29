@@ -983,4 +983,20 @@ body {
 
 }
 
+.faq-panel {
 
+  position: relative;
+
+  width: 40%;
+
+  height: 70vh;
+
+  overflow-y: scroll;
+
+  background: white;
+
+  padding: 20px;
+
+  border: none;
+
+}
