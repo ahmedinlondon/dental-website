@@ -222,57 +222,83 @@ Orthodontic treatment is a carefully planned journey designed to create healthy,
     <a href="#" class="icon youtube"><i class="fab fa-youtube"></i></a>
   </div>
 </footer>
-
 <script>
 
-// TOGGLE PANEL (OPEN / CLOSE)
 let activeSection = null;
+
 function openSection(id) {
+
   const panel = document.getElementById('faq-panel');
+
   const section = document.getElementById(id);
 
-  // If same section clicked → CLOSE
+  // Toggle same section (close)
+
   if (activeSection === id) {
+
     panel.style.display = 'none';
+
     activeSection = null;
+
     return;
 
   }
 
   // Show panel
+
   panel.style.display = 'block';
 
   // Hide all sections
-  document.querySelectorAll('.faq-section').forEach(sec => sec.style.display = 'none');
 
-  // Show selected
+  document.querySelectorAll('.faq-section').forEach(sec => {
+
+    sec.style.display = 'none';
+
+  });
+
+  // Show selected section
+
   section.style.display = 'block';
 
   activeSection = id;
 
 }
 
-// CLICK OUTSIDE TO CLOSE
+// CLICK OUTSIDE TO CLOSE (FIXED)
 
 document.addEventListener("click", function(e) {
+
   const panel = document.getElementById("faq-panel");
+
   const boxes = document.querySelector(".faq-grid");
-  if (!panel.contains(e.target) && !boxes.contains(e.target)) {
-    panel.style.display = "none";
-    activeSection = null;
+
+  // IMPORTANT: allow clicks inside panel WITHOUT closing
+
+  if (panel.contains(e.target) || boxes.contains(e.target)) {
+
+    return;
 
   }
+
+  panel.style.display = "none";
+
+  activeSection = null;
 
 });
 
-// ACCORDION
+// ACCORDION (FIXED - works when clicking text OR arrow)
 
 document.addEventListener("click", function(e){
-  if(e.target.classList.contains("faq-question")){
-    const answer = e.target.nextElementSibling;
-    answer.style.display = answer.style.display === "block" ? "none" : "block";
 
-  }
+  const btn = e.target.closest(".faq-question");
+
+  if (!btn) return;
+
+  const answer = btn.nextElementSibling;
+
+  answer.style.display =
+
+    answer.style.display === "block" ? "none" : "block";
 
 });
 
