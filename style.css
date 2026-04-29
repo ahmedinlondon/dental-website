@@ -526,3 +526,65 @@ footer {
   text-align: left !important;
 
 }
+
+/* ===== FINAL FAQ PANEL (LOCKED VERSION) ===== */
+
+.faq-panel {
+
+  position: absolute !important;
+
+  top: 160px !important;       /* moved UP (was too low) */
+
+  right: 40px !important;
+
+  width: 40% !important;
+
+  height: 420px !important;    /* slightly shorter to avoid footer */
+
+  background: rgba(255,255,255,0.97) !important;
+
+  padding: 20px !important;
+
+  overflow-y: scroll !important;   /* FORCE scroll always */
+
+  display: none;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+  z-index: 9999;
+
+}
+
+/* SCROLL ALWAYS VISIBLE */
+
+.faq-panel::-webkit-scrollbar {
+
+  width: 8px;
+
+}
+
+.faq-panel::-webkit-scrollbar-thumb {
+
+  background: #bbb;
+
+}
+
+/* QUESTION TEXT FIX */
+
+.faq-question {
+
+  font-size: 16px !important;
+
+  font-weight: 500;
+
+}
+
+/* ANSWER TEXT FIX */
+
+.faq-answer {
+
+  font-size: 15px !important;
+
+  line-height: 1.6;
+
+}
