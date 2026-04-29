@@ -829,4 +829,78 @@ body {
 
 }
 
+/* FAQ SPLIT LAYOUT */
 
+.faq-layout {
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 40px;
+
+  padding: 40px;
+
+}
+
+/* LEFT SIDE */
+
+.faq-left {
+
+  width: 40%;
+
+}
+
+/* RIGHT SIDE (overlay area) */
+
+.faq-right {
+
+  width: 60%;
+
+  position: relative;
+
+  min-height: 400px;
+
+}
+
+/* SECTIONS (hidden by default) */
+
+.faq-section {
+
+  display: none;
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+}
+
+/* QUESTIONS BOXES (make square-ish) */
+
+.faq-box {
+
+  height: 120px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+/* KEEP GRID LOOK NICE */
+
+.faq-grid {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 10px;
+
+}
