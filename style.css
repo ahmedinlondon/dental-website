@@ -983,4 +983,8 @@ body {
 
 }
 
-sec.classList.remove('active');
+.faq-panel {
+
+  border: 3px solid red;
+
+}
