@@ -222,88 +222,231 @@ Orthodontic treatment is a carefully planned journey designed to create healthy,
     <a href="#" class="icon youtube"><i class="fab fa-youtube"></i></a>
   </div>
 </footer>
+ 
 <script>
 
-let activeSection = null;
+// STORE ALL FAQ CONTENT
 
-function openSection(id) {
+const faqData = {
 
-  const panel = document.getElementById('faq-panel');
+  pre: `
 
-  const section = document.getElementById(id);
+    <div class="faq-item">
 
-  // Toggle same section (close)
+      <button class="faq-question">What is the difference between a dentist and an orthodontist? <span class="arrow">▼</span></button>
 
-  if (activeSection === id) {
+      <div class="faq-answer">An orthodontist is a qualified dentist who has completed an additional 3-year specialist training focused on correcting tooth position and jaw alignment.</div>
 
-    panel.style.display = 'none';
+    </div>
 
-    activeSection = null;
+    <div class="faq-item">
+
+      <button class="faq-question">What is the best age for a first orthodontic check-up? <span class="arrow">▼</span></button>
+
+      <div class="faq-answer">It is recommended that children have an orthodontic screening around the age of 7.</div>
+
+    </div>
+
+    <div class="faq-item">
+
+      <button class="faq-question">Am I too old for braces? <span class="arrow">▼</span></button>
+
+      <div class="faq-answer">No. Orthodontic treatment is successful at any age.</div>
+
+    </div>
+
+    <div class="faq-item">
+
+      <button class="faq-question">What happens during the initial orthodontic assessment? <span class="arrow">▼</span></button>
+
+      <div class="faq-answer">We assess your bite, take scans, photos, and create a tailored treatment plan.</div>
+
+    </div>
+
+    <div class="faq-item">
+
+      <button class="faq-question">Why do I need a panoramic X-ray? <span class="arrow">▼</span></button>
+
+      <div class="faq-answer">It shows roots, jawbone, and hidden teeth to ensure safe treatment.</div>
+
+    </div>
+
+    <div class="faq-item">
+
+      <button class="faq-question">Do I need to fix cavities before treatment? <span class="arrow">▼</span></button>
+
+      <div class="faq-answer">Yes. Teeth must be healthy before orthodontic treatment begins.</div>
+
+    </div>
+
+    <div class="faq-item">
+
+      <button class="faq-question">What if I have missing teeth? <span class="arrow">▼</span></button>
+
+      <div class="faq-answer">We can close gaps or prepare space for implants or bridges.</div>
+
+    </div>
+
+  `,
+
+  during: `
+
+    <div class="faq-item">
+
+      <button class="faq-question">Does orthodontic treatment hurt? <span class="arrow">▼</span></button>
+
+      <div class="faq-answer">Mild discomfort may occur after adjustments but settles quickly.</div>
+
+    </div>
+
+    <div class="faq-item">
+
+      <button class="faq-question">How long does treatment take? <span class="arrow">▼</span></button>
+
+      <div class="faq-answer">Typically 12–30 months depending on complexity.</div>
+
+    </div>
+
+    <div class="faq-item">
+
+      <button class="faq-question">How often are visits? <span class="arrow">▼</span></button>
+
+      <div class="faq-answer">Every 6–8 weeks.</div>
+
+    </div>
+
+  `,
+
+  options: `
+
+    <div class="faq-item">
+
+      <button class="faq-question">Are aligners as effective as braces? <span class="arrow">▼</span></button>
+
+      <div class="faq-answer">Yes for mild cases. Braces are better for complex cases.</div>
+
+    </div>
+
+    <div class="faq-item">
+
+      <button class="faq-question">Which is faster? <span class="arrow">▼</span></button>
+
+      <div class="faq-answer">Depends on complexity.</div>
+
+    </div>
+
+    <div class="faq-item">
+
+      <button class="faq-question">Which is more comfortable? <span class="arrow">▼</span></button>
+
+      <div class="faq-answer">Aligners are generally more comfortable.</div>
+
+    </div>
+
+  `,
+
+  post: `
+
+    <div class="faq-item">
+
+      <button class="faq-question">Why do I need a retainer? <span class="arrow">▼</span></button>
+
+      <div class="faq-answer">To prevent teeth from shifting back.</div>
+
+    </div>
+
+    <div class="faq-item">
+
+      <button class="faq-question">What happens after treatment? <span class="arrow">▼</span></button>
+
+      <div class="faq-answer">We provide follow-up visits and retention monitoring.</div>
+
+    </div>
+
+  `
+
+};
+
+// OPEN PANEL FUNCTION
+
+function openSection(section) {
+
+  const panel = document.getElementById("faqPanel");
+
+  // toggle same section OFF
+
+  if (panel.dataset.open === section) {
+
+    panel.style.display = "none";
+
+    panel.dataset.open = "";
 
     return;
 
   }
 
-  // Show panel
+  // show new content
 
-  panel.style.display = 'block';
+  panel.innerHTML = faqData[section];
 
-  // Hide all sections
+  panel.style.display = "block";
 
-  document.querySelectorAll('.faq-section').forEach(sec => {
+  panel.dataset.open = section;
 
- sec.classList.remove('active');
+  // RE-ATTACH accordion clicks
+
+  const questions = panel.querySelectorAll(".faq-question");
+
+  questions.forEach(q => {
+
+    q.addEventListener("click", () => {
+
+      questions.forEach(item => {
+
+        if (item !== q) {
+
+          item.classList.remove("active");
+
+          item.nextElementSibling.style.display = "none";
+
+        }
+
+      });
+
+      q.classList.toggle("active");
+
+      const answer = q.nextElementSibling;
+
+      answer.style.display =
+
+        answer.style.display === "block" ? "none" : "block";
+
+    });
+
   });
-
-  // Show selected section
-
- section.classList.add('active');
-
-  activeSection = id;
 
 }
 
-// CLICK OUTSIDE TO CLOSE (FIXED)
+// CLICK OUTSIDE TO CLOSE
 
 document.addEventListener("click", function(e) {
 
-  const panel = document.getElementById("faq-panel");
+  const panel = document.getElementById("faqPanel");
 
   const boxes = document.querySelector(".faq-grid");
 
-  // IMPORTANT: allow clicks inside panel WITHOUT closing
+  if (!panel.contains(e.target) && !boxes.contains(e.target)) {
 
-  if (panel.contains(e.target) || boxes.contains(e.target)) {
+    panel.style.display = "none";
 
-    return;
+    panel.dataset.open = "";
 
   }
 
-  panel.style.display = "none";
-
-  activeSection = null;
-
 });
-
-// ACCORDION (FIXED - works when clicking text OR arrow)
-
-document.addEventListener("click", function(e){
-
-  const btn = e.target.closest(".faq-question");
-
-  if (!btn) return;
-
-  const answer = btn.nextElementSibling;
-
-  answer.style.display =
-
-    answer.style.display === "block" ? "none" : "block";
-
-});
-
-</script>
 
 </script>
 
 </body>
+ 
 </html>>
