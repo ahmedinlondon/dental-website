@@ -904,3 +904,61 @@ body {
   gap: 10px;
 
 }
+
+/* ===== FAQ RIGHT PANEL FIX ===== */
+
+.faq-panel {
+
+  position: absolute;
+
+  top: 220px; /* aligns roughly below intro */
+
+  right: 40px;
+
+  width: 40%;
+
+  max-height: 500px;
+
+  background: rgba(255,255,255,0.95);
+
+  padding: 20px;
+
+  overflow-y: auto; /* scroll inside */
+
+  display: none; /* hidden by default */
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+}
+
+/* Ensure page is positioning reference */
+
+.section {
+
+  position: relative;
+
+}
+
+/* Hide all sections initially */
+
+.faq-section {
+
+  display: none;
+
+}
+
+/* Improve spacing */
+
+.faq-section h3 {
+
+  margin-bottom: 15px;
+
+}
+
+/* QUESTIONS FULL WIDTH INSIDE PANEL */
+
+.faq-question {
+
+  width: 100%;
+
+}
