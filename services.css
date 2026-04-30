@@ -1,4 +1,4 @@
-/* ================= SERVICES PAGE ================= */
+/* ================= SERVICES PAGE BASE ================= */
 
 body {
 
@@ -6,411 +6,39 @@ body {
 
 }
 
-/* HERO */
+/* ================= 1. HERO SECTION ================= */
 
 .services-hero {
 
-  min-height: 520px;
-
-  background-image: url("smile.png");
-
-  background-size: cover;
-
-  background-position: center 35%;
+  min-height: 260px;
 
   display: flex;
 
   align-items: center;
 
-  padding: 70px 8%;
-
-}
-
-.services-hero .hero-text {
-
-  background: rgba(255,255,255,0.72);
-
-  backdrop-filter: blur(10px);
-
-  padding: 45px;
-
-  max-width: 520px;
-
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-
-}
-
-.services-hero h1 {
-
-  font-size: 48px;
-
-  line-height: 1.15;
-
-  margin: 0 0 20px;
-
-}
-
-.services-hero p {
-
-  font-size: 18px;
-
-  line-height: 1.6;
-
-  margin-bottom: 25px;
-
-}
-
-.services-hero::after {
-
-  content: "BOOK A CONSULTATION";
-
-  display: inline-block;
-
-  background: #1f6fb2;
-
-  color: white;
-
-  padding: 15px 24px;
-
-  font-weight: 600;
-
-  margin-top: 180px;
-
-  margin-left: -520px;
-
-}
-
-/* INTRO */
-
-.services-intro {
-
-  padding: 45px 5%;
-
-}
-
-.intro-box {
-
-  max-width: 1200px;
-
-  min-height: 300px;
-
-  margin: auto;
-
-  background-image:
-
-    linear-gradient(to right, rgba(255,255,255,0.82), rgba(255,255,255,0.45)),
-
-    url("chair.png");
-
-  background-size: cover;
-
-  background-position: center;
-
-  padding: 55px;
-
-  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
-
-}
-
-.intro-box h3 {
-
-  font-size: 28px;
-
-  margin: 0 0 20px;
-
-  max-width: 480px;
-
-}
-
-.intro-box p {
-
-  font-size: 17px;
-
-  line-height: 1.8;
-
-  max-width: 560px;
-
-}
-
-/* SERVICES GRID */
-
-.services-grid-section {
-
-  padding: 60px 5% 40px;
+  justify-content: center;
 
   text-align: center;
 
-}
+  background:
 
-.services-grid-section h2 {
+    radial-gradient(circle at 12% 80%, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.45) 18%, transparent 36%),
 
-  font-size: 34px;
+    radial-gradient(circle at 88% 78%, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.45) 18%, transparent 36%),
 
-  margin-bottom: 35px;
+    linear-gradient(180deg, #eaf6ff 0%, #f8fbff 55%, #ffffff 100%);
 
-}
-
-.services-grid {
-
-  max-width: 1120px;
-
-  margin: auto;
-
-  display: grid;
-
-  grid-template-columns: repeat(3, 1fr);
-
-  gap: 26px;
+  padding: 35px 20px;
 
 }
 
-.service-card {
+.services-hero-content h1 {
 
-  min-height: 230px;
+  margin: 0;
 
-  padding: 38px 28px;
+  font-size: 56px;
 
-  background: rgba(255,255,255,0.78);
-
-  backdrop-filter: blur(8px);
-
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-
-  cursor: pointer;
-
-  transition: 0.25s;
-
-}
-
-.service-card:hover {
-
-  transform: translateY(-6px);
-
-}
-
-.service-card:nth-child(1) { background: rgba(219,234,254,0.75); }
-
-.service-card:nth-child(2) { background: rgba(237,233,254,0.75); }
-
-.service-card:nth-child(3) { background: rgba(255,237,213,0.75); }
-
-.service-card:nth-child(4) { background: rgba(209,250,229,0.75); }
-
-.service-card:nth-child(5) { background: rgba(224,242,254,0.75); }
-
-.service-card:nth-child(6) { background: rgba(252,231,243,0.75); }
-
-.service-card i {
-
-  width: 72px;
-
-  height: 72px;
-
-  border-radius: 50%;
-
-  background: white;
-
-  display: inline-flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  color: #2b6cb0;
-
-  font-size: 30px;
-
-  margin-bottom: 22px;
-
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-
-}
-
-.service-card h3 {
-
-  font-size: 20px;
-
-  margin-bottom: 14px;
-
-}
-
-.service-card p {
-
-  font-size: 16px;
-
-  color: #444;
-
-}
-
-/* POPUP */
-
-.popup {
-
-  position: fixed;
-
-  inset: 0;
-
-  display: none;
-
-  justify-content: center;
-
-  align-items: center;
-
-  background: rgba(0,0,0,0.45);
-
-  z-index: 9999;
-
-}
-
-.popup-content {
-
-  width: 420px;
-
-  max-height: 88vh;
-
-  overflow-y: auto;
-
-  background: white;
-
-  padding: 25px;
-
-  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
-
-  position: relative;
-
-}
-
-.popup-content img {
-
-  width: 100%;
-
-  height: 230px;
-
-  object-fit: cover;
-
-  margin-bottom: 18px;
-
-}
-
-.popup-content h3 {
-
-  font-size: 26px;
-
-  margin-bottom: 12px;
-
-}
-
-.popup-content p {
-
-  font-size: 16px;
-
-  line-height: 1.7;
-
-  text-align: left;
-
-}
-
-.close {
-
-  position: absolute;
-
-  top: 10px;
-
-  right: 14px;
-
-  font-size: 24px;
-
-  cursor: pointer;
-
-}
-
-/* COMPARISON */
-
-.comparison {
-
-  padding: 45px 5% 55px;
-
-  text-align: center;
-
-}
-
-.comparison h2 {
-
-  font-size: 32px;
-
-  margin-bottom: 18px;
-
-}
-
-.comparison img {
-
-  width: 100%;
-
-  max-width: 640px;
-
-  max-height: 260px;
-
-  object-fit: cover;
-
-  display: block;
-
-  margin: 0 auto 25px;
-
-  box-shadow: 0 8px 22px rgba(0,0,0,0.08);
-
-}
-
-.compare-text {
-
-  max-width: 900px;
-
-  margin: auto;
-
-  display: grid;
-
-  grid-template-columns: 1fr 1fr;
-
-  gap: 35px;
-
-  text-align: left;
-
-  background: rgba(255,255,255,0.75);
-
-  padding: 28px;
-
-}
-
-.compare-text h3 {
-
-  font-size: 22px;
-
-  margin-bottom: 12px;
-
-}
-
-.compare-text li {
-
-  margin-bottom: 10px;
-
-  line-height: 1.5;
-
-}
-
-/* CTA */
-
-.comparison::after {
-
-  content: "Ready to start your orthodontic journey?   BOOK A CONSULTATION";
-
-  display: block;
-
-  max-width: 1000px;
-
-  margin: 45px auto 0;
-
-  background: rgba(219,234,254,0.95);
-
-  padding: 26px;
+  letter-spacing: 8px;
 
   font-weight: 600;
 
@@ -418,155 +46,51 @@ body {
 
 }
 
-/* MOBILE */
+.hero-line {
+
+  width: 95px;
+
+  height: 4px;
+
+  background: #2b6cb0;
+
+  margin: 18px auto 18px;
+
+}
+
+.services-hero-content p {
+
+  margin: 0;
+
+  font-size: 21px;
+
+  color: #0f2f57;
+
+}
+
+/* ================= MOBILE HERO ================= */
 
 @media (max-width: 768px) {
 
   .services-hero {
 
-    min-height: 440px;
+    min-height: 220px;
 
-    padding: 35px 6%;
-
-    background-position: center top;
+    padding: 30px 18px;
 
   }
 
-  .services-hero .hero-text {
+  .services-hero-content h1 {
 
-    padding: 28px;
+    font-size: 38px;
 
-    max-width: 82%;
-
-  }
-
-  .services-hero h1 {
-
-    font-size: 34px;
+    letter-spacing: 5px;
 
   }
 
-  .services-hero p {
+  .services-hero-content p {
 
     font-size: 16px;
-
-  }
-
-  .services-hero::after {
-
-    display: none;
-
-  }
-
-  .services-intro {
-
-    padding: 25px 4%;
-
-  }
-
-  .intro-box {
-
-    min-height: 300px;
-
-    padding: 28px;
-
-    background-image:
-
-      linear-gradient(to right, rgba(255,255,255,0.86), rgba(255,255,255,0.55)),
-
-      url("chair.png");
-
-  }
-
-  .intro-box h3 {
-
-    font-size: 22px;
-
-  }
-
-  .intro-box p {
-
-    font-size: 15px;
-
-    line-height: 1.7;
-
-  }
-
-  .services-grid-section {
-
-    padding: 40px 4%;
-
-  }
-
-  .services-grid-section h2 {
-
-    font-size: 28px;
-
-  }
-
-  .services-grid {
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 14px;
-
-  }
-
-  .service-card {
-
-    min-height: 190px;
-
-    padding: 24px 14px;
-
-  }
-
-  .service-card i {
-
-    width: 55px;
-
-    height: 55px;
-
-    font-size: 22px;
-
-  }
-
-  .service-card h3 {
-
-    font-size: 16px;
-
-  }
-
-  .service-card p {
-
-    font-size: 14px;
-
-  }
-
-  .comparison {
-
-    padding: 35px 4%;
-
-  }
-
-  .comparison img {
-
-    max-height: 180px;
-
-  }
-
-  .compare-text {
-
-    grid-template-columns: 1fr;
-
-    gap: 10px;
-
-    padding: 22px;
-
-  }
-
-  .popup-content {
-
-    width: 82%;
 
   }
 
