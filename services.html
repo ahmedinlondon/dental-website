@@ -4,17 +4,17 @@
 
 <head>
 
-  <link rel="stylesheet" href="style.css?v=60">
+<link rel="stylesheet" href="style.css?v=60">
 
-  <link rel="stylesheet" href="services.css?v=1">
+<link rel="stylesheet" href="services.css?v=2">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 </head>
 
-<body class="services-page">
+<body>
 
 <header class="navbar">
 
@@ -26,11 +26,11 @@
 
     <a href="about.html?v=3">About</a>
 
-    <a href="services.html?v=1">Services</a>
+    <a href="services.html?v=3">Services</a>
 
     <a href="pricing.html?v=1">Pricing</a>
 
-    <a href="faq.html?v=60">FAQ</a>
+    <a href="faq.html?v=1">FAQ</a>
 
     <a href="contact.html?v=3">Contact</a>
 
@@ -38,41 +38,33 @@
 
 </header>
 
+<!-- HERO -->
+
 <section class="services-hero">
 
-  <div class="services-hero-text">
+  <div class="hero-text">
 
     <h1>Specialist Orthodontic Services</h1>
 
-    <p>Advanced, personalised treatments for children, teenagers, and adults — helping create healthy, confident smiles with long-term stability.</p>
-
-    <a href="contact.html?v=3" class="service-btn"><i class="fa-regular fa-calendar-check"></i> Book a Consultation</a>
+    <p>Advanced, personalised treatments for confident smiles.</p>
 
   </div>
 
 </section>
+
+<!-- INTRO -->
 
 <section class="services-intro">
 
-  <div class="services-intro-glass">
+  <div class="intro-box">
 
-    <h2>Comprehensive Orthodontic Care</h2>
-
-    <p>
-
-      Orthodontic treatment is a carefully planned journey designed to create healthy, confident smiles at any age. At our clinic, we provide comprehensive consultations using digital scans, X-rays, and clinical photography to develop fully personalised treatment plans.
-
-    </p>
+    <h3>Comprehensive Orthodontic Care</h3>
 
     <p>
 
-      We offer a full range of modern orthodontic solutions, including traditional metal braces, ceramic braces, lingual braces, and clear aligner therapy for discreet treatment. For growing patients, functional appliances may be used to guide jaw development, while adults benefit from aesthetic and minimally visible options.
+      Orthodontic treatment is a carefully planned journey designed to create healthy, confident smiles at any age. 
 
-    </p>
-
-    <p>
-
-      Throughout treatment, we provide regular monitoring, adjustments, and emergency care when needed. After treatment is complete, we ensure long-term stability with custom retainers and follow-up care.
+      We provide full consultations using digital scans, X-rays, and personalised treatment planning to ensure the best results.
 
     </p>
 
@@ -80,373 +72,243 @@
 
 </section>
 
-<section class="services-section">
+<!-- SERVICES GRID -->
 
-  <h2 class="services-title">Our Orthodontic Services</h2>
+<section class="services-grid-section">
 
-  <div class="service-grid">
+<h2>Our Orthodontic Services</h2>
 
-    <div class="service-card" onclick="openService('consultation')">
+<div class="services-grid">
 
-      <i class="fa-solid fa-magnifying-glass-plus"></i>
+<div class="service-card" onclick="openPopup('consultation')">
 
-      <h3>1. Initial Consultation & Assessment</h3>
+<i class="fas fa-calendar-check"></i>
 
-      <p>Digital records, diagnosis, and personalised planning.</p>
+<h3>1. Initial Consultation</h3>
 
-      <span>Learn more →</span>
+<p>Full assessment and planning</p>
 
-    </div>
+</div>
 
-    <div class="service-card" onclick="openService('metal')">
+<div class="service-card" onclick="openPopup('smile')">
 
-      <i class="fa-solid fa-teeth-open"></i>
+<i class="fas fa-smile"></i>
 
-      <h3>2. Metal Braces</h3>
+<h3>2. Smile Design</h3>
 
-      <p>Reliable fixed braces for precise correction.</p>
+<p>Digital smile planning</p>
 
-      <span>Learn more →</span>
+</div>
 
-    </div>
+<div class="service-card" onclick="openPopup('braces')">
 
-    <div class="service-card" onclick="openService('ceramic')">
+<i class="fas fa-teeth"></i>
 
-      <i class="fa-regular fa-gem"></i>
+<h3>3. Metal Braces</h3>
 
-      <h3>3. Ceramic Braces</h3>
+<p>Reliable fixed braces</p>
 
-      <p>Tooth-coloured braces for a more discreet look.</p>
+</div>
 
-      <span>Learn more →</span>
+<div class="service-card" onclick="openPopup('ceramic')">
 
-    </div>
+<i class="fas fa-tooth"></i>
 
-    <div class="service-card" onclick="openService('aligners')">
+<h3>4. Ceramic Braces</h3>
 
-      <i class="fa-regular fa-face-smile"></i>
+<p>Discreet aesthetic braces</p>
 
-      <h3>4. Clear Aligners</h3>
+</div>
 
-      <p>Removable, transparent aligners for discreet treatment.</p>
+<div class="service-card" onclick="openPopup('aligners')">
 
-      <span>Learn more →</span>
+<i class="fas fa-grip-lines"></i>
 
-    </div>
+<h3>5. Clear Aligners</h3>
 
-    <div class="service-card" onclick="openService('functional')">
+<p>Invisible orthodontics</p>
 
-      <i class="fa-solid fa-child-reaching"></i>
+</div>
 
-      <h3>5. Functional Appliances</h3>
+<div class="service-card" onclick="openPopup('retainers')">
 
-      <p>Jaw-growth guidance for growing children.</p>
+<i class="fas fa-circle-notch"></i>
 
-      <span>Learn more →</span>
+<h3>6. Aftercare & Retainers</h3>
 
-    </div>
+<p>Maintain your results</p>
 
-    <div class="service-card" onclick="openService('retainers')">
+</div>
 
-      <i class="fa-solid fa-shield-heart"></i>
-
-      <h3>6. Retainers & Aftercare</h3>
-
-      <p>Long-term protection for your final result.</p>
-
-      <span>Learn more →</span>
-
-    </div>
-
-  </div>
-
-  <div id="servicePanel" class="service-panel"></div>
+</div>
 
 </section>
 
-<section class="comparison-section">
+<!-- POPUP -->
 
-  <h2>Braces or Aligners?</h2>
+<div id="popup" class="popup">
 
-  <p class="comparison-subtitle">Which option is right for you?</p>
+<div class="popup-content">
 
-  <div class="comparison-grid">
+<span onclick="closePopup()" class="close">×</span>
 
-    <div class="comparison-card braces-card">
+<img id="popup-img">
 
-      <h3>Braces</h3>
+<h3 id="popup-title"></h3>
 
-      <p>Best for complex cases that require detailed control, significant tooth movement, or bite correction. Available in metal or ceramic options.</p>
+<p id="popup-text"></p>
 
-      <ul>
+</div>
 
-        <li>Highly effective for all case types</li>
+</div>
 
-        <li>Fixed appliances work continuously</li>
+<!-- COMPARISON -->
 
-        <li>Excellent control for complex movements</li>
+<section class="comparison">
 
-      </ul>
+<h2>Braces or Aligners?</h2>
 
-    </div>
+<img src="comparison.png">
 
-    <div class="comparison-card aligners-card">
+<div class="compare-text">
 
-      <h3>Aligners</h3>
+<div>
 
-      <p>Best for mild to moderate alignment issues. Discreet, removable, and designed for comfort and lifestyle flexibility.</p>
+<h3>Braces</h3>
 
-      <ul>
+<ul>
 
-        <li>Nearly invisible</li>
+<li>Best for complex cases</li>
 
-        <li>Removable for eating and cleaning</li>
+<li>Highly effective</li>
 
-        <li>Smooth and comfortable</li>
+<li>Fixed 24/7</li>
 
-      </ul>
+</ul>
 
-    </div>
+</div>
 
-  </div>
+<div>
 
-</section>
+<h3>Aligners</h3>
 
-<section class="services-cta">
+<ul>
 
-  <div>
+<li>Discreet and removable</li>
 
-    <h2>Ready to start your orthodontic journey?</h2>
+<li>Comfortable</li>
 
-    <p>Book your consultation and take the first step towards a healthier, more confident smile.</p>
+<li>Easy cleaning</li>
 
-  </div>
+</ul>
 
-  <a href="contact.html?v=3" class="service-btn">Book a Consultation</a>
+</div>
+
+</div>
 
 </section>
 
 <footer>
 
-  <p>© 2026 Dr. Yasmine Soliman</p>
+<p>© 2026 Dr. Yasmine Soliman</p>
 
-  <div class="socials">
+<div>
 
-    <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
+<a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
 
-    <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+<a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
 
-    <a href="#" class="icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+<a href="#" class="icon whatsapp"><i class="fab fa-whatsapp"></i></a>
 
-    <a href="#" class="icon youtube"><i class="fab fa-youtube"></i></a>
+<a href="#" class="icon youtube"><i class="fab fa-youtube"></i></a>
 
-  </div>
+</div>
 
 </footer>
 
 <script>
 
-const serviceData = {
+function openPopup(type) {
 
-  consultation: `
+const data = {
 
-    <img src="clinic-chair.PNG" alt="Orthodontic consultation">
+consultation: {
 
-    <h2>Initial Consultation & Assessment</h2>
+img: "consultation.png",
 
-    <p>Every orthodontic journey begins with a careful assessment. During your consultation, we examine your teeth, bite, jaw relationship, facial balance, and smile concerns. Digital scans, X-rays, and clinical photographs may be used to create a complete picture of your orthodontic needs.</p>
+title: "Initial Consultation",
 
-    <p>This allows us to prepare a personalised treatment plan, explain suitable options, estimate treatment time, and answer your questions clearly before you begin.</p>
+text: "Comprehensive orthodontic assessment including scans, X-rays, and treatment planning."
 
-    <ul>
+},
 
-      <li>Comprehensive orthodontic examination</li>
+smile: {
 
-      <li>Digital scans, photographs, and X-rays where required</li>
+img: "smiledesign.png",
 
-      <li>Personalised treatment planning</li>
+title: "Smile Design",
 
-      <li>Clear explanation of suitable treatment options</li>
+text: "Advanced digital planning to design your ideal smile before treatment begins."
 
-    </ul>
+},
 
-  `,
+braces: {
 
-  metal: `
+img: "braces.png",
 
-    <img src="braces.PNG" alt="Metal braces">
+title: "Metal Braces",
 
-    <h2>Metal Braces</h2>
+text: "Highly effective fixed braces for precise alignment and bite correction."
 
-    <p>Traditional metal braces remain one of the most reliable and effective orthodontic treatments. They are fixed to the teeth and work continuously to guide teeth into improved alignment. Metal braces are especially useful for complex crowding, bite correction, rotations, and cases requiring precise control.</p>
+},
 
-    <p>Modern metal braces are smaller and more comfortable than older designs, making them a dependable option for children, teenagers, and adults.</p>
+ceramic: {
 
-    <ul>
+img: "ceramic.png",
 
-      <li>Excellent for complex orthodontic cases</li>
+title: "Ceramic Braces",
 
-      <li>Reliable and precise tooth movement</li>
+text: "Tooth-coloured braces for a more aesthetic and discreet option."
 
-      <li>Suitable for children, teenagers, and adults</li>
+},
 
-      <li>Often the most cost-effective fixed option</li>
+aligners: {
 
-    </ul>
+img: "aligners.png",
 
-  `,
+title: "Clear Aligners",
 
-  ceramic: `
+text: "Removable, transparent aligners for comfortable and discreet treatment."
 
-    <img src="braces.PNG" alt="Ceramic braces">
+},
 
-    <h2>Ceramic Braces</h2>
+retainers: {
 
-    <p>Ceramic braces work in a similar way to metal braces but use clear or tooth-coloured brackets, making them less noticeable. They are a popular choice for patients who want the control of fixed braces with a more discreet appearance.</p>
+img: "retainers.png",
 
-    <p>They are suitable for many cases, including moderate crowding and bite correction, although they may require slightly more care because ceramic brackets are more delicate than metal brackets.</p>
+title: "Aftercare & Retainers",
 
-    <ul>
+text: "Custom retainers to maintain your results long-term."
 
-      <li>More discreet than metal braces</li>
-
-      <li>Effective for many orthodontic cases</li>
-
-      <li>Good option for image-conscious teenagers and adults</li>
-
-      <li>Fixed appliance control with improved aesthetics</li>
-
-    </ul>
-
-  `,
-
-  aligners: `
-
-    <img src="aligners.PNG" alt="Clear aligners">
-
-    <h2>Clear Aligners</h2>
-
-    <p>Clear aligners are custom-made transparent trays designed to gradually move the teeth into better alignment. They are removable, comfortable, and nearly invisible, making them a popular option for adults and teenagers who prefer a discreet treatment.</p>
-
-    <p>Aligners are particularly suitable for mild to moderate crowding, spacing, and alignment concerns. They require good patient discipline because they must be worn for 20 to 22 hours per day to achieve predictable results.</p>
-
-    <ul>
-
-      <li>Discreet and nearly invisible</li>
-
-      <li>Removable for eating, brushing, and flossing</li>
-
-      <li>Smooth and comfortable</li>
-
-      <li>Best suited to mild to moderate cases</li>
-
-    </ul>
-
-  `,
-
-  functional: `
-
-    <img src="clinic-chair.PNG" alt="Functional appliances">
-
-    <h2>Functional Appliances</h2>
-
-    <p>Functional appliances are used mainly in growing children to help guide jaw development and improve the relationship between the upper and lower jaws. They can be especially useful when jaw growth correction is needed before or alongside fixed braces.</p>
-
-    <p>Early assessment helps determine whether a child may benefit from this type of treatment and whether timing is important for the best result.</p>
-
-    <ul>
-
-      <li>Designed for growing patients</li>
-
-      <li>Can help guide jaw development</li>
-
-      <li>May reduce the complexity of later treatment</li>
-
-      <li>Often used before fixed braces where appropriate</li>
-
-    </ul>
-
-  `,
-
-  retainers: `
-
-    <img src="aligners.PNG" alt="Retainers and aftercare">
-
-    <h2>Retainers & Aftercare</h2>
-
-    <p>After active orthodontic treatment is complete, retainers are essential to keep the teeth in their new position. Teeth naturally have a tendency to move over time, so retention is a vital part of protecting your final result.</p>
-
-    <p>Retainers may be fixed, removable, or a combination of both. Follow-up checks help ensure stability and allow any issues to be identified early.</p>
-
-    <ul>
-
-      <li>Fixed or removable retainers</li>
-
-      <li>Long-term stability after treatment</li>
-
-      <li>Follow-up checks after treatment completion</li>
-
-      <li>Protection of your new smile</li>
-
-    </ul>
-
-  `
+}
 
 };
 
-function openService(service) {
+document.getElementById("popup").style.display = "flex";
 
-  const panel = document.getElementById("servicePanel");
+document.getElementById("popup-img").src = data[type].img;
 
-  if (panel.dataset.open === service) {
+document.getElementById("popup-title").innerText = data[type].title;
 
-    panel.style.display = "none";
-
-    panel.dataset.open = "";
-
-    return;
-
-  }
-
-  panel.innerHTML = '<button class="service-close" onclick="closeService(event)">×</button>' + serviceData[service];
-
-  panel.style.display = "block";
-
-  panel.dataset.open = service;
+document.getElementById("popup-text").innerText = data[type].text;
 
 }
 
-function closeService(event) {
+function closePopup(){
 
-  event.stopPropagation();
-
-  const panel = document.getElementById("servicePanel");
-
-  panel.style.display = "none";
-
-  panel.dataset.open = "";
+document.getElementById("popup").style.display = "none";
 
 }
-
-document.addEventListener("click", function(e) {
-
-  const panel = document.getElementById("servicePanel");
-
-  const grid = document.querySelector(".service-grid");
-
-  if (panel && panel.style.display === "block") {
-
-    if (!panel.contains(e.target) && !grid.contains(e.target)) {
-
-      panel.style.display = "none";
-
-      panel.dataset.open = "";
-
-    }
-
-  }
-
-});
 
 </script>
 
