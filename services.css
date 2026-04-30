@@ -95,3 +95,131 @@ body {
   }
 
 }
+
+  /* ================= 2. INTRODUCTION SECTION ================= */
+
+.services-intro {
+
+  width: 100%;
+
+  min-height: 420px;
+
+  background-image:
+
+    linear-gradient(rgba(255,255,255,0.10), rgba(255,255,255,0.10)),
+
+    url("chair.png");
+
+  background-size: cover;
+
+  background-position: center center;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 0 5%;
+
+  box-sizing: border-box;
+
+}
+
+.intro-glass {
+
+  width: 46%;
+
+  max-width: 620px;
+
+  background: rgba(255,255,255,0.78);
+
+  backdrop-filter: blur(8px);
+
+  padding: 34px 42px;
+
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+
+}
+
+.intro-glass h2 {
+
+  margin: 0 0 18px;
+
+  color: #0f2f57;
+
+  font-size: 28px;
+
+  line-height: 1.25;
+
+}
+
+.intro-glass p {
+
+  margin: 0 0 24px;
+
+  color: #0f2f57;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+
+  text-align: left;
+
+}
+
+.intro-button {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  background: #1f6fb2;
+
+  color: white;
+
+  text-decoration: none;
+
+  padding: 14px 22px;
+
+  font-weight: 600;
+
+  font-size: 14px;
+
+}
+
+/* ================= MOBILE INTRODUCTION SECTION ================= */
+
+@media (max-width: 768px) {
+
+  .services-intro {
+
+    min-height: 360px;
+
+    padding: 30px 6%;
+
+    background-position: center center;
+
+  }
+
+  .intro-glass {
+
+    width: 100%;
+
+    padding: 26px;
+
+  }
+
+  .intro-glass h2 {
+
+    font-size: 22px;
+
+  }
+
+  .intro-glass p {
+
+    font-size: 15px;
+
+  }
+
+}
