@@ -938,6 +938,24 @@ body {
 
 @media (max-width: 1024px) {
 
+  .comparison-photo {
+
+    background-position: center top;
+
+  }
+
+  .comparison-title {
+
+    padding-top: 30px;
+
+  }
+
+  .comparison-labels {
+
+    bottom: 10px;
+
+  }
+
   .comparison-text {
 
     max-width: 92%;
@@ -980,41 +998,105 @@ body {
 
 @media (max-width: 768px) {
 
+  .comparison-photo {
+
+    height: 180px;
+
+    background:
+
+      linear-gradient(rgba(255,255,255,0.68), rgba(255,255,255,0.68)),
+
+      url("comparison.png");
+
+    background-size: cover;
+
+    background-position: center top;
+
+  }
+
+  .comparison-title {
+
+    padding-top: 30px;
+
+  }
+
+  .comparison-title h2 {
+
+    font-size: 26px;
+
+  }
+
+  .comparison-labels {
+
+    bottom: 10px;
+
+    grid-template-columns: 1fr 56px 1fr;
+
+  }
+
+  .comparison-label i {
+
+    width: 42px;
+
+    height: 42px;
+
+    font-size: 18px;
+
+  }
+
+  .comparison-label h3 {
+
+    font-size: 17px;
+
+  }
+
+  .comparison-vs {
+
+    width: 46px;
+
+    height: 46px;
+
+    font-size: 17px;
+
+  }
+
   .comparison-text {
 
     max-width: 96%;
 
-    padding: 6px 0;
+    padding: 8px 0;
+
+    box-sizing: border-box;
 
   }
 
   .comparison-row {
 
-    grid-template-columns: 1fr 24px 1fr;
+    grid-template-columns: 1fr 26px 1fr;
 
-    min-height: 22px;
+    min-height: 26px;
 
-    font-size: 10px;
+    font-size: 11.5px;
 
-    line-height: 1.0;
+    line-height: 1.1;
 
   }
 
   .comparison-left {
 
-    padding-right: 4px;
+    padding-right: 6px;
 
   }
 
   .comparison-right {
 
-    padding-left: 4px;
+    padding-left: 6px;
 
   }
 
   .comparison-icon {
 
-    font-size: 10px;
+    font-size: 11px;
 
   }
 
