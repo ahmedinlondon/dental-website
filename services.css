@@ -934,107 +934,87 @@ body {
 
 }
 
-/* ================= MOBILE COMPARISON ================= */
+/* ================= MOBILE / iPAD COMPARISON FIX ================= */
 
-@media (max-width: 768px) {
-
-  .comparison-photo {
-
-    height: 180px;
-
-    background:
-
-      linear-gradient(rgba(255,255,255,0.68), rgba(255,255,255,0.68)),
-
-      url("comparison.png");
-
-    background-size: cover;
-
-    background-position: center center;
-
-  }
-
-  .comparison-title {
-
-    padding-top: 16px;
-
-  }
-
-  .comparison-title h2 {
-
-    font-size: 26px;
-
-  }
-
-  .comparison-labels {
-
-    bottom: 14px;
-
-    grid-template-columns: 1fr 56px 1fr;
-
-  }
-
-  .comparison-label i {
-
-    width: 42px;
-
-    height: 42px;
-
-    font-size: 18px;
-
-  }
-
-  .comparison-label h3 {
-
-    font-size: 17px;
-
-  }
-
-  .comparison-vs {
-
-    width: 46px;
-
-    height: 46px;
-
-    font-size: 17px;
-
-  }
+@media (max-width: 1024px) {
 
   .comparison-text {
 
-    padding: 10px 14px;
+    max-width: 92%;
 
-    box-sizing: border-box;
+    padding: 8px 0;
 
   }
 
   .comparison-row {
 
-    grid-template-columns: 1fr 34px 1fr;
+    grid-template-columns: 1fr 28px 1fr;
 
-    min-height: 34px;
+    min-height: 24px;
 
-    font-size: 11px;
+    font-size: 12px;
 
-    line-height: 1.2;
+    line-height: 1.05;
 
   }
 
   .comparison-left {
 
-    padding-right: 7px;
+    padding-right: 6px;
 
   }
 
   .comparison-right {
 
-    padding-left: 7px;
+    padding-left: 6px;
 
   }
 
   .comparison-icon {
 
-    font-size: 13px;
+    font-size: 12px;
+
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .comparison-text {
+
+    max-width: 96%;
+
+    padding: 6px 0;
+
+  }
+
+  .comparison-row {
+
+    grid-template-columns: 1fr 24px 1fr;
+
+    min-height: 22px;
+
+    font-size: 10px;
+
+    line-height: 1.0;
+
+  }
+
+  .comparison-left {
+
+    padding-right: 4px;
+
+  }
+
+  .comparison-right {
+
+    padding-left: 4px;
+
+  }
+
+  .comparison-icon {
+
+    font-size: 10px;
 
   }
 
