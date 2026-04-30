@@ -240,11 +240,15 @@ body {
 
   background:
 
-    radial-gradient(circle at 15% 20%, rgba(255,255,255,0.75), transparent 26%),
+ background:
 
-    radial-gradient(circle at 85% 80%, rgba(255,255,255,0.75), transparent 26%),
+  radial-gradient(circle at 20% 25%, rgba(255,255,255,0.9), transparent 35%),
 
-    linear-gradient(180deg, #f7fbff 0%, #eef7ff 100%);
+  radial-gradient(circle at 80% 75%, rgba(255,255,255,0.85), transparent 35%),
+
+  radial-gradient(circle at 50% 10%, rgba(255,255,255,0.6), transparent 40%),
+
+  linear-gradient(180deg, #eaf4ff 0%, #d8ebff 100%);100%);
 
 }
 
