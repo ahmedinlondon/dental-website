@@ -96,7 +96,7 @@ body {
 
 }
 
-  /* ================= 2. INTRODUCTION SECTION ================= */
+ /* ================= 2. INTRODUCTION SECTION ================= */
 
 .services-intro {
 
@@ -124,17 +124,19 @@ body {
 
 }
 
+/* Glass panel */
+
 .intro-glass {
 
-  width: 46%;
+  width: 52%;
 
-  max-width: 620px;
+  max-width: 640px;
 
   background: rgba(255,255,255,0.78);
 
   backdrop-filter: blur(8px);
 
-  padding: 34px 42px;
+  padding: 26px 38px;
 
   box-shadow: 0 12px 30px rgba(0,0,0,0.12);
 
@@ -142,7 +144,7 @@ body {
 
 .intro-glass h2 {
 
-  margin: 0 0 18px;
+  margin: 0 0 16px;
 
   color: #0f2f57;
 
@@ -154,17 +156,19 @@ body {
 
 .intro-glass p {
 
-  margin: 0 0 24px;
+  margin: 0 0 18px;
 
   color: #0f2f57;
 
-  font-size: 17px;
+  font-size: 16px;
 
-  line-height: 1.7;
+  line-height: 1.6;
 
   text-align: left;
 
 }
+
+/* Button */
 
 .intro-button {
 
@@ -172,7 +176,7 @@ body {
 
   align-items: center;
 
-  gap: 12px;
+  gap: 10px;
 
   background: #1f6fb2;
 
@@ -180,7 +184,7 @@ body {
 
   text-decoration: none;
 
-  padding: 14px 22px;
+  padding: 12px 20px;
 
   font-weight: 600;
 
@@ -188,7 +192,7 @@ body {
 
 }
 
-/* ================= MOBILE INTRODUCTION SECTION ================= */
+/* ================= MOBILE ================= */
 
 @media (max-width: 768px) {
 
@@ -206,7 +210,7 @@ body {
 
     width: 100%;
 
-    padding: 26px;
+    padding: 20px;
 
   }
 
