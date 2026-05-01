@@ -1418,3 +1418,23 @@ body {
 
 }
 
+/* subtle glass effect - SHARP */
+
+.services-cta-bar {
+
+  border-top: 1px solid rgba(255,255,255,0.6);
+
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+
+}
+
+/* icon - softer glass feel */
+
+.services-cta-icon {
+
+  background: rgba(255,255,255,0.55);
+
+  backdrop-filter: blur(4px);
+
+}
+
