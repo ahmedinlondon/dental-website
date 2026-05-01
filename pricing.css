@@ -261,22 +261,19 @@ body {
 }
 
 /* ================= MOBILE ================= */
-
 @media (max-width: 768px) {
+
+  /* NAVBAR */
 
   .navbar {
 
     padding: 14px 18px;
-
-    align-items: center;
 
   }
 
   .logo {
 
     font-size: 13px;
-
-    line-height: 1.2;
 
     width: 120px;
 
@@ -288,7 +285,7 @@ body {
 
     justify-content: flex-end;
 
-    gap: 2px;
+    gap: 3px;
 
     width: calc(100% - 130px);
 
@@ -298,9 +295,11 @@ body {
 
     font-size: 14px;
 
-    padding: 9px 11px;
+    padding: 8px 12px;
 
   }
+
+  /* HERO */
 
   .pricing-hero {
 
@@ -324,21 +323,27 @@ body {
 
   }
 
+  /* INTRO FIX (IMPORTANT) */
+
   .pricing-intro {
 
     min-height: 360px;
 
     padding: 30px 6%;
 
-    background-position: 38% center;
+    background-position: 35% center;
 
-    justify-content: center;
+    justify-content: center; /* center instead of right */
 
   }
+
+  /* PANEL FULL WIDTH (like Services) */
 
   .pricing-glass-panel {
 
     width: 100%;
+
+    max-width: none;
 
     padding: 20px;
 
@@ -356,15 +361,19 @@ body {
 
   }
 
+  /* BUTTON CENTERED */
+
   .pricing-btn {
 
     float: none;
 
+    display: block;
+
     width: 100%;
 
-    justify-content: center;
+    text-align: center;
 
-    margin-top: 8px;
+    margin-top: 10px;
 
   }
 
