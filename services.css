@@ -942,19 +942,25 @@ body {
 
   .comparison-photo {
 
-    background-position: center top;
+    height: auto !important;
+
+    background: #f8fbff !important;
+
+    padding: 30px 0 10px;
 
   }
 
   .comparison-title {
 
-    padding-top: 30px;
+    padding-top: 0 !important;
+
+    transform: none !important;
 
   }
 
   .comparison-labels {
 
-    bottom: 10px;
+    display: none !important;
 
   }
 
@@ -1002,63 +1008,17 @@ body {
 
   .comparison-photo {
 
-    height: 180px;
+    height: auto !important;
 
-    background:
+    background: #f8fbff !important;
 
-      linear-gradient(rgba(255,255,255,0.68), rgba(255,255,255,0.68)),
-
-      url("comparison.png");
-
-    background-size: cover;
-
-    background-position: center top;
-
-  }
-
-  .comparison-title {
-
-    padding-top: 30px;
+    padding: 26px 0 10px;
 
   }
 
   .comparison-title h2 {
 
     font-size: 26px;
-
-  }
-
-  .comparison-labels {
-
-    bottom: 10px;
-
-    grid-template-columns: 1fr 56px 1fr;
-
-  }
-
-  .comparison-label i {
-
-    width: 42px;
-
-    height: 42px;
-
-    font-size: 18px;
-
-  }
-
-  .comparison-label h3 {
-
-    font-size: 17px;
-
-  }
-
-  .comparison-vs {
-
-    width: 46px;
-
-    height: 46px;
-
-    font-size: 17px;
 
   }
 
@@ -1099,82 +1059,6 @@ body {
   .comparison-icon {
 
     font-size: 11px;
-
-  }
-
-}
-
-/* ================= FINAL MOBILE SPACING FIX ================= */
-
-@media (max-width: 768px) {
-
-  .services-grid-section {
-
-    padding-bottom: 18px !important;
-
-  }
-
-  .comparison-section {
-
-    margin-top: 0 !important;
-
-  }
-
-  .comparison-photo {
-
-    height: 185px !important;
-
-    background-position: center top !important;
-
-  }
-
-  .comparison-text {
-
-    max-width: 96% !important;
-
-    padding: 8px 0 !important;
-
-  }
-
-  .comparison-row {
-
-    grid-template-columns: 1fr 26px 1fr !important;
-
-    min-height: 25px !important;
-
-    font-size: 11.5px !important;
-
-    line-height: 1.08 !important;
-
-  }
-
-  .comparison-left {
-
-    padding-right: 5px !important;
-
-  }
-
-  .comparison-right {
-
-    padding-left: 5px !important;
-
-  }
-
-  .comparison-icon {
-
-    font-size: 11px !important;
-
-  }
-
-}
-
-/* Reduce services section height on mobile + iPad */
-
-@media (max-width: 1024px) {
-
-  .services-grid-section {
-
-    min-height: 38vh;
 
   }
 
