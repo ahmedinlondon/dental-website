@@ -592,13 +592,13 @@ body {
 
 @media (max-width: 768px) {
 
-  .services-grid-section {
+.services-grid-section {
 
-    padding: 40px 5%;
+  padding: 40px 5% 14px;
 
-    min-height: auto;
+  min-height: auto;
 
-  }
+}
 
   .services-grid-section h2 {
 
