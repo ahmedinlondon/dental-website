@@ -144,9 +144,11 @@ body {
 
     url("pricing-handshake.png");
 
-  background-size: 105%;
+  background-size: 95%;
 
-  background-position: 42% center;
+  background-position: 58% center;
+
+  background-repeat: no-repeat;
 
   display: flex;
 
