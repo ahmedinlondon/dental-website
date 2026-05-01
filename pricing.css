@@ -385,3 +385,59 @@ body {
   }
 
 }
+
+/* ================= MOBILE FINAL SIZE FIX ================= */
+
+@media (max-width: 768px) {
+
+  .pricing-hero-content h1 {
+
+    font-size: 34px !important;
+
+    letter-spacing: 2px !important;
+
+  }
+
+  .pricing-intro {
+
+    padding: 22px 6% !important;
+
+    min-height: auto !important;
+
+  }
+
+  .pricing-glass-panel {
+
+    padding: 18px 20px !important;
+
+  }
+
+  .pricing-glass-panel h2 {
+
+    font-size: 20px !important;
+
+    line-height: 1.25 !important;
+
+    margin-bottom: 12px !important;
+
+  }
+
+  .pricing-glass-panel p {
+
+    font-size: 13px !important;
+
+    line-height: 1.45 !important;
+
+    margin-bottom: 12px !important;
+
+  }
+
+  .pricing-btn {
+
+    font-size: 12px !important;
+
+    padding: 11px 16px !important;
+
+  }
+
+}
