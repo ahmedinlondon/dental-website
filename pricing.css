@@ -143,10 +143,11 @@ body {
 
     url("pricing-handshake.png");
 
-  background-size: cover;
+background-size: calc(100% + 250px) auto;
 
-  background-position: -250px center;
+background-position: -250px center;
 
+background-repeat: no-repeat;
   background-repeat: no-repeat;
 
   display: flex;
