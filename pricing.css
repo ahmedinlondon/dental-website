@@ -1,4 +1,5 @@
 /* ================= GLOBAL ================= */
+
 * {
 
   box-sizing: border-box;
@@ -145,7 +146,7 @@ body {
 
   background-size: cover;
 
-  background-position: 18% center;
+  background-position: 32% center;
 
   display: flex;
 
@@ -159,9 +160,9 @@ body {
 
 .pricing-glass-panel {
 
-  width: 58%;
+  width: 62%;
 
-  max-width: 780px;
+  max-width: 820px;
 
   background: rgba(255,255,255,0.58);
 
@@ -171,7 +172,7 @@ body {
 
   border: 1px solid rgba(255,255,255,0.4);
 
-  padding: 18px 46px;
+  padding: 18px 42px;
 
   box-shadow: 0 12px 30px rgba(0,0,0,0.12);
 
@@ -179,11 +180,11 @@ body {
 
 .pricing-glass-panel h2 {
 
-  margin: 0 0 16px;
+  margin: 0 0 12px;
 
   color: #0f2f57;
 
-  font-size: 28px;
+  font-size: 27px;
 
   line-height: 1.25;
 
@@ -193,13 +194,13 @@ body {
 
 .pricing-glass-panel p {
 
-  margin: 0 0 18px;
+  margin: 0 0 11px;
 
   color: #0f2f57;
 
-  font-size: 16px;
+  font-size: 15px;
 
-  line-height: 1.6;
+  line-height: 1.45;
 
   text-align: left;
 
@@ -221,315 +222,13 @@ body {
 
   text-decoration: none;
 
-  padding: 12px 20px;
+  padding: 11px 20px;
 
   font-weight: 600;
 
-  font-size: 14px;
+  font-size: 13px;
 
   border-radius: 0;
-
-}
-
-/* ================= iPAD / TABLET ================= */
-
-@media (min-width: 769px) and (max-width: 1024px) {
-
-  .navbar {
-
-    padding: 14px 34px;
-
-  }
-
-  .navbar a {
-
-    padding: 9px 14px;
-
-    font-size: 16px;
-
-  }
-
-  .pricing-intro {
-
-    min-height: 380px;
-
-    background-position: 14% center;
-
-  }
-
-  .pricing-glass-panel {
-
-    width: 58%;
-
-    max-width: 760px;
-
-    padding: 18px 42px;
-
-  }
-
-}
-
-/* ================= MOBILE ================= */
-
-@media (max-width: 768px) {
-
-  .navbar {
-
-    padding: 14px 18px;
-
-    align-items: center;
-
-  }
-
-  .logo {
-
-    font-size: 13px;
-
-    line-height: 1.2;
-
-    width: 120px;
-
-  }
-
-  .navbar nav {
-
-    flex-wrap: wrap;
-
-    justify-content: flex-end;
-
-    gap: 3px;
-
-    width: calc(100% - 130px);
-
-  }
-
-  .navbar a {
-
-    font-size: 14px;
-
-    padding: 8px 11px;
-
-  }
-
-  .pricing-hero {
-
-    min-height: 220px;
-
-    padding: 30px 18px;
-
-  }
-
-  .pricing-hero-content h1 {
-
-    font-size: 38px;
-
-    letter-spacing: 3px;
-
-    line-height: 1.15;
-
-  }
-
-  .pricing-hero-content p {
-
-    font-size: 16px;
-
-  }
-
-  .pricing-intro {
-
-    min-height: 360px;
-
-    padding: 30px 6%;
-
-    background-position: 35% center;
-
-    justify-content: center;
-
-  }
-
-  .pricing-glass-panel {
-
-    width: 100%;
-
-    max-width: none;
-
-    padding: 20px;
-
-  }
-
-  .pricing-glass-panel h2 {
-
-    font-size: 22px;
-
-  }
-
-  .pricing-glass-panel p {
-
-    font-size: 15px;
-
-    line-height: 1.6;
-
-  }
-
-  .pricing-btn {
-
-    float: none;
-
-    display: inline-flex;
-
-    width: auto;
-
-    margin-top: 6px;
-
-  }
-
-}
-
-/* ================= MOBILE FINAL SIZE FIX ================= */
-
-@media (max-width: 768px) {
-
-  .pricing-hero-content h1 {
-
-    font-size: 34px !important;
-
-    letter-spacing: 2px !important;
-
-  }
-
-  .pricing-intro {
-
-    padding: 22px 6% !important;
-
-    min-height: auto !important;
-
-  }
-
-  .pricing-glass-panel {
-
-    padding: 18px 20px !important;
-
-  }
-
-  .pricing-glass-panel h2 {
-
-    font-size: 20px !important;
-
-    line-height: 1.25 !important;
-
-    margin-bottom: 12px !important;
-
-  }
-
-  .pricing-glass-panel p {
-
-    font-size: 13px !important;
-
-    line-height: 1.45 !important;
-
-    margin-bottom: 12px !important;
-
-  }
-
-  .pricing-btn {
-
-    font-size: 12px !important;
-
-    padding: 11px 16px !important;
-
-  }
-
-}
-
-/* ================= iPAD INTRO FINAL POSITION ================= */
-
-@media (min-width: 769px) and (max-width: 1024px) {
-
-  .pricing-intro {
-
-    min-height: 380px;
-
-    background-size: 118%;
-
-    background-position: 4% center;
-
-    padding: 0 5%;
-
-  }
-
-  .pricing-glass-panel {
-
-    width: 62%;
-
-    max-width: 820px;
-
-    padding: 18px 42px;
-
-  }
-
-  .pricing-glass-panel h2 {
-
-    font-size: 27px;
-
-    margin-bottom: 12px;
-
-  }
-
-  .pricing-glass-panel p {
-
-    font-size: 15px;
-
-    line-height: 1.45;
-
-    margin-bottom: 11px;
-
-  }
-
-  .pricing-btn {
-
-    padding: 11px 20px;
-
-    font-size: 13px;
-
-  }
-
-}
-
-/* ================= iPAD / DESKTOP INTRO POSITION FINAL ================= */
-
-.pricing-intro {
-
-  background-size: 118% !important;
-
-  background-position: 4% center !important;
-
-}
-
-.pricing-glass-panel {
-
-  width: 62% !important;
-
-  max-width: 820px !important;
-
-  padding: 18px 42px !important;
-
-}
-
-.pricing-glass-panel p {
-
-  font-size: 15px !important;
-
-  line-height: 1.45 !important;
-
-  margin-bottom: 11px !important;
-
-}
-
-.pricing-btn {
-
-  padding: 11px 20px !important;
-
-  font-size: 13px !important;
 
 }
 
