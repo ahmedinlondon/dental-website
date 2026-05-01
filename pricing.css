@@ -1,9 +1,4 @@
 /* ================= GLOBAL ================= */
-.pricing-hero {
-
-  background: red !important;
-
-}
 * {
 
   box-sizing: border-box;
@@ -445,3 +440,10 @@ body {
   }
 
 }
+
+.pricing-hero {
+
+  background: red !important;
+
+}
+
