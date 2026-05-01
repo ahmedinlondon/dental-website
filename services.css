@@ -708,7 +708,7 @@ body {
 
 }
 
-.comparison-photo {
+..comparison-photo {
 
   width: 100%;
 
@@ -720,9 +720,9 @@ body {
 
     url("comparison.png");
 
-  background-size: 110%;        /* zoom out slightly */
+  background-size: cover;       /* best clarity */
 
-  background-position: center top; /* show more of the top area */
+  background-position: center center;
 
   position: relative;
 
