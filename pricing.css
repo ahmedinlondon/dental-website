@@ -580,4 +580,40 @@ body {
 }
 
 
+/* ================= FONT MATCH FIX ================= */
 
+body,
+
+button,
+
+a {
+
+  font-family: "Montserrat", Arial, sans-serif !important;
+
+}
+
+.pricing-hero h1,
+
+.pricing-glass-panel h2 {
+
+  font-family: "Montserrat", Arial, sans-serif !important;
+
+  font-weight: 700 !important;
+
+  letter-spacing: 0 !important;
+
+}
+
+.pricing-hero p,
+
+.pricing-glass-panel p,
+
+.pricing-btn,
+
+.navbar,
+
+.navbar a {
+
+  font-family: "Montserrat", Arial, sans-serif !important;
+
+}
