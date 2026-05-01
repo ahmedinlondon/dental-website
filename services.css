@@ -973,7 +973,17 @@ body {
 
   align-items: center;
 
+  }
 
+  .comparison-label {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+}
 
   .comparison-text {
 
@@ -1033,6 +1043,11 @@ body {
 
   }
 
+  .comparison-labels {
+
+  display: none !important;
+
+  }
   .comparison-text {
 
     max-width: 96%;
