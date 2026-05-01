@@ -720,9 +720,9 @@ body {
 
     url("comparison.png");
 
-  background-size: cover;
+  background-size: 110%;        /* zoom out slightly */
 
-  background-position: center center;
+  background-position: center top; /* show more of the top area */
 
   position: relative;
 
