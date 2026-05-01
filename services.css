@@ -950,6 +950,7 @@ body {
 
   }
 
+
   .comparison-title {
 
     padding-top: 0 !important;
@@ -963,6 +964,16 @@ body {
     display: none !important;
 
   }
+
+  .comparison-labels {
+
+  display: grid !important;
+
+  grid-template-columns: 1fr 80px 1fr;
+
+  align-items: center;
+
+
 
   .comparison-text {
 
