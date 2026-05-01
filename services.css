@@ -592,17 +592,15 @@ body {
 
 /* ================= iPAD / SMALL SCREEN SERVICES GRID ================= */
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
 
   .services-grid-section {
 
-    padding: 50px 5% 14px !important;
+    padding: 40px 5%;
 
-    min-height: auto !important;
+    min-height: auto;
 
   }
-
-}
 
   .services-grid-section h2 {
 
