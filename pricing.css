@@ -507,3 +507,77 @@ body {
 
 }
 
+/* ================= iPAD / TABLET FIX ================= */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .navbar {
+
+    height: 58px;
+
+    padding: 0 34px;
+
+  }
+
+  .navbar nav a {
+
+    padding: 13px 20px;
+
+    font-size: 16px;
+
+  }
+
+  .pricing-intro {
+
+    min-height: 330px;
+
+    padding: 45px 5%;
+
+    background-size: 100%;
+
+    background-position: 26% center;
+
+  }
+
+  .pricing-glass-panel {
+
+    width: 52%;
+
+    max-width: 680px;
+
+    padding: 24px 38px;
+
+  }
+
+  .pricing-glass-panel h2 {
+
+    font-size: 26px;
+
+    margin-bottom: 12px;
+
+  }
+
+  .pricing-glass-panel p {
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    margin-bottom: 10px;
+
+  }
+
+  .pricing-btn {
+
+    padding: 12px 24px;
+
+    font-size: 14px;
+
+    margin-top: 8px;
+
+  }
+
+}
+
+
+
