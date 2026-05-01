@@ -441,5 +441,59 @@ body {
 
 }
 
+/* ================= iPAD INTRO FINAL POSITION ================= */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .pricing-intro {
+
+    min-height: 380px;
+
+    background-size: 118%;
+
+    background-position: 4% center;
+
+    padding: 0 5%;
+
+  }
+
+  .pricing-glass-panel {
+
+    width: 62%;
+
+    max-width: 820px;
+
+    padding: 18px 42px;
+
+  }
+
+  .pricing-glass-panel h2 {
+
+    font-size: 27px;
+
+    margin-bottom: 12px;
+
+  }
+
+  .pricing-glass-panel p {
+
+    font-size: 15px;
+
+    line-height: 1.45;
+
+    margin-bottom: 11px;
+
+  }
+
+  .pricing-btn {
+
+    padding: 11px 20px;
+
+    font-size: 13px;
+
+  }
+
+}
+
 
 
