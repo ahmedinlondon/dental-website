@@ -750,6 +750,14 @@ body {
 
 }
 
+.comparison-title {
+
+  text-align: center;
+
+  transform: translateX(12px);
+
+}
+
 .comparison-title h2 {
 
   margin: 8px 0 8px;
@@ -778,19 +786,11 @@ body {
 
 .comparison-labels {
 
-  position: absolute;
+  position: relative;   /* IMPORTANT: was absolute */
 
-  left: 0;
+  margin-top: 10px;
 
-  right: 0;
-
-  bottom: 18px;
-
-  display: grid;
-
-  grid-template-columns: 1fr 70px 1fr;
-
-  align-items: center;
+  margin-bottom: 10px;
 
 }
 
@@ -860,7 +860,7 @@ body {
 
   justify-content: center;
 
-  margin: auto;
+  margin: 0 auto;
 
   color: #0f5fa8;
 
