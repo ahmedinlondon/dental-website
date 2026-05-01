@@ -495,5 +495,41 @@ body {
 
 }
 
+/* ================= iPAD / DESKTOP INTRO POSITION FINAL ================= */
 
+.pricing-intro {
+
+  background-size: 118% !important;
+
+  background-position: 4% center !important;
+
+}
+
+.pricing-glass-panel {
+
+  width: 62% !important;
+
+  max-width: 820px !important;
+
+  padding: 18px 42px !important;
+
+}
+
+.pricing-glass-panel p {
+
+  font-size: 15px !important;
+
+  line-height: 1.45 !important;
+
+  margin-bottom: 11px !important;
+
+}
+
+.pricing-btn {
+
+  padding: 11px 20px !important;
+
+  font-size: 13px !important;
+
+}
 
