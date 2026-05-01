@@ -617,3 +617,35 @@ a {
   font-family: "Montserrat", Arial, sans-serif !important;
 
 }
+
+/* ================= FINAL FONT MATCH ================= */
+
+body,
+
+button,
+
+a {
+
+  font-family: "Poppins", Arial, sans-serif !important;
+
+}
+
+.pricing-hero h1,
+
+.pricing-hero p,
+
+.pricing-glass-panel h2,
+
+.pricing-glass-panel p,
+
+.pricing-btn,
+
+.navbar,
+
+.navbar a {
+
+  font-family: "Poppins", Arial, sans-serif !important;
+
+}
+
+
