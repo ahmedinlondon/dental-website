@@ -371,3 +371,99 @@ body {
 }
 
 
+/* ================= FINAL PRICING PAGE TUNING ================= */
+
+/* 1. Navbar closer to other pages */
+
+.navbar {
+
+  padding: 18px 40px;
+
+}
+
+.navbar nav {
+
+  gap: 3px;
+
+}
+
+.navbar a {
+
+  padding: 9px 14px;
+
+}
+
+/* 2. Move handshake image left */
+
+.pricing-intro {
+
+  background-position: 18% center;
+
+}
+
+/* 3. Wider + flatter glass panel */
+
+.pricing-glass-panel {
+
+  width: 58%;
+
+  max-width: 780px;
+
+  padding: 18px 46px;
+
+}
+
+/* 4. Make mobile behave more like iPad */
+
+@media (max-width: 768px) {
+
+  .pricing-intro {
+
+    min-height: 380px;
+
+    padding: 30px 5%;
+
+    background-position: 18% center;
+
+    justify-content: flex-end;
+
+  }
+
+  .pricing-glass-panel {
+
+    width: 58%;
+
+    max-width: 780px;
+
+    padding: 18px 28px;
+
+  }
+
+  .pricing-glass-panel h2 {
+
+    font-size: 22px;
+
+  }
+
+  .pricing-glass-panel p {
+
+    font-size: 14px;
+
+    line-height: 1.45;
+
+  }
+
+  .pricing-btn {
+
+    width: auto;
+
+    float: right;
+
+    padding: 11px 16px;
+
+    font-size: 12px;
+
+  }
+
+}
+
