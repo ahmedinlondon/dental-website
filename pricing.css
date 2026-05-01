@@ -422,4 +422,60 @@ body {
 
 }
 
+/* ================= EMERGENCY MOBILE OVERRIDE ================= */
 
+@media (max-width: 768px) {
+
+  .pricing-intro {
+
+    min-height: 360px !important;
+
+    padding: 30px 6% !important;
+
+    background-position: 35% center !important;
+
+    justify-content: center !important;
+
+  }
+
+  .pricing-glass-panel {
+
+    width: 100% !important;
+
+    max-width: none !important;
+
+    padding: 20px !important;
+
+  }
+
+  .pricing-glass-panel h2 {
+
+    font-size: 22px !important;
+
+    line-height: 1.25 !important;
+
+  }
+
+  .pricing-glass-panel p {
+
+    font-size: 15px !important;
+
+    line-height: 1.55 !important;
+
+  }
+
+  .pricing-btn {
+
+    float: none !important;
+
+    display: block !important;
+
+    width: 100% !important;
+
+    text-align: center !important;
+
+    margin-top: 10px !important;
+
+  }
+
+}
