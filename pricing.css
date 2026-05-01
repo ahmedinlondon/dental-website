@@ -353,3 +353,157 @@ body {
   }
 
 }
+
+
+/* ================= FINAL MOBILE FIX ================= */
+
+@media (max-width: 768px) {
+
+  .navbar {
+
+    height: auto;
+
+    padding: 14px 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+  }
+
+  .logo {
+
+    font-size: 13px;
+
+    line-height: 1.2;
+
+    width: 120px;
+
+  }
+
+  .navbar nav {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: flex-end;
+
+    gap: 2px;
+
+    width: calc(100% - 130px);
+
+  }
+
+  .navbar nav a {
+
+    font-size: 14px;
+
+    padding: 9px 11px;
+
+  }
+
+  .pricing-hero {
+
+    min-height: 240px;
+
+    padding: 58px 6% 45px;
+
+  }
+
+  .pricing-hero h1 {
+
+    font-size: 34px;
+
+    line-height: 1.15;
+
+  }
+
+  .hero-line {
+
+    width: 64px;
+
+    height: 3px;
+
+    margin: 24px auto 20px;
+
+  }
+
+  .pricing-hero p {
+
+    font-size: 17px;
+
+    line-height: 1.4;
+
+  }
+
+  .pricing-intro {
+
+    min-height: 390px;
+
+    padding: 34px 5%;
+
+    background-position: 42% center;
+
+    justify-content: center;
+
+  }
+
+  .pricing-glass-panel {
+
+    width: 88%;
+
+    padding: 24px 24px;
+
+    background: rgba(255,255,255,0.58);
+
+    backdrop-filter: blur(12px);
+
+    -webkit-backdrop-filter: blur(12px);
+
+  }
+
+  .pricing-glass-panel h2 {
+
+    font-size: 24px;
+
+    line-height: 1.25;
+
+    margin-bottom: 14px;
+
+  }
+
+  .pricing-glass-panel p {
+
+    font-size: 14px;
+
+    line-height: 1.55;
+
+    margin-bottom: 13px;
+
+  }
+
+  .pricing-btn {
+
+    float: none;
+
+    display: block;
+
+    width: auto;
+
+    max-width: 260px;
+
+    margin: 16px auto 0;
+
+    text-align: center;
+
+    font-size: 13px;
+
+    padding: 13px 18px;
+
+  }
+
+}
+
