@@ -258,9 +258,9 @@ background-image:
 
     url("pricing-stairs.png");
 
-  background-size: 65% auto;
+  background-size: cover;
 
-  background-position: right top;
+  background-position: right center;
 
   background-repeat: no-repeat;
 
