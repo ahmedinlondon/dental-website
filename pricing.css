@@ -296,6 +296,8 @@ background-image:
 
   margin-bottom: 16px;
 
+  color: white;
+
 }
 
 .pricing-section-title h2,
@@ -304,7 +306,7 @@ background-image:
 
   margin: 0;
 
-  color: #0f2f57;
+  color: white;
 
   font-size: 34px;
 
@@ -332,7 +334,7 @@ background-image:
 
   max-width: 820px;
 
-  color: #0f2f57;
+  color: white;
 
   font-size: 15px;
 
