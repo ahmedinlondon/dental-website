@@ -474,11 +474,13 @@ background-image:
 
 .payment-strip {
 
-  margin-top: 24px;
+  margin: 18px auto 0;
 
   width: 100%;
 
-  min-height: 118px;
+  max-width: 896px; /* EXACT width of 4 boxes */
+
+  min-height: 90px; /* reduced height */
 
   background: rgba(255,255,255,0.55);
 
@@ -492,7 +494,7 @@ background-image:
 
   align-items: center;
 
-  padding: 18px 34px;
+  padding: 12px 22px; /* tighter */
 
   box-shadow: none;
 
