@@ -9,7 +9,7 @@
 body {
 
   margin: 0;
-
+  
   font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
 
   background: #f7f9fc;
@@ -137,21 +137,23 @@ body {
 
   min-height: 420px;
 
-  background-image:
+background-image:
 
-    linear-gradient(
+  linear-gradient(
 
-      90deg,
+    90deg,
 
-      rgba(255,255,255,0.18) 0%,
+    rgba(255,255,255,0.18) 0%,
 
-      rgba(255,255,255,0.18) 72%,
+    rgba(255,255,255,0.18) 70%,
 
-      #f7f9fc 100%
+    rgba(234,246,255,0.85) 85%,
 
-    ),
+    #f7f9fc 100%
 
-    url("pricing-handshake.png");
+  ),
+
+  url("pricing-handshake.png");
 
   background-size: cover;
 
