@@ -797,7 +797,15 @@ background-image:
 
 .pricing-popup-content {
 
-  background: rgba(30, 58, 138, 0.10); /* keep light blue */
+  background: linear-gradient(
+
+  rgba(255,255,255,0.72),
+
+  rgba(255,255,255,0.72)
+
+),
+
+rgba(30, 58, 138, 0.10);
 
   backdrop-filter: blur(14px);
 
