@@ -986,5 +986,49 @@ margin: 14px auto 0 calc((100% - 918px) / 2 - 0px) !important;
 
 }
 
+/* ================= PRICING BLUE GLASS PANEL ================= */
+
+.pricing-boxes-area {
+
+  position: relative;
+
+  margin-top: 30px;
+
+}
+
+.pricing-blue-glass {
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%; /* covers boxes + strip */
+
+  background: rgba(30, 58, 138, 0.10);
+
+  backdrop-filter: blur(10px);
+
+  -webkit-backdrop-filter: blur(10px);
+
+  z-index: 0;
+
+}
+
+/* Make sure content is above glass */
+
+.pricing-cards-row,
+
+.payment-strip {
+
+  position: relative;
+
+  z-index: 1;
+
+}
+
 
 
