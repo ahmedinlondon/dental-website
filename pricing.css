@@ -709,7 +709,7 @@ background-image:
 
   justify-content: center;
 
-  font-size: 23px;
+  font-size: 20px;
 
   border-radius: 50%;
 
@@ -737,11 +737,11 @@ background-image:
 
 .support-card h3 {
 
-  margin: 0 0 12px;
+  margin: 10px 0 6px;
 
   color: #0f2f57;
 
-  font-size: 21px;
+  font-size: 18px;   /* reduced from ~20-22 */
 
   font-weight: 600;
 
@@ -749,13 +749,11 @@ background-image:
 
 .support-card p {
 
-  margin: 0;
+  font-size: 13px;   /* smaller text */
+
+  line-height: 1.45; /* tighter spacing */
 
   color: #0f2f57;
-
-  font-size: 15px;
-
-  line-height: 1.55;
 
 }
 
