@@ -139,13 +139,23 @@ body {
 
   background-image:
 
-    linear-gradient(rgba(255,255,255,0.18), rgba(255,255,255,0.18)),
+    linear-gradient(
+
+      90deg,
+
+      rgba(255,255,255,0.18) 0%,
+
+      rgba(255,255,255,0.18) 72%,
+
+      #f7f9fc 100%
+
+    ),
 
     url("pricing-handshake.png");
 
-background-size: cover;
+  background-size: cover;
 
-background-position: -250px center;
+  background-position: -250px center;
 
   background-repeat: no-repeat;
 
