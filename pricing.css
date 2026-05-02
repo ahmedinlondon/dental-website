@@ -258,7 +258,7 @@ background-image:
 
     url("pricing-stairs.png");
 
-  background-size: cover;
+  background-size: 100% auto;
 
   background-position: right top;
 
