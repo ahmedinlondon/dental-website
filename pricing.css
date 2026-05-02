@@ -282,19 +282,11 @@ background-image:
 
 .pricing-main-glass {
 
-  width: 86%;
+  background: transparent;
 
-  max-width: 1180px;
+  backdrop-filter: none;
 
-  margin: 0 auto 44px;
-
-  padding: 26px 30px 30px;
-
-  background: rgba(255,255,255,0.38);
-
-  backdrop-filter: blur(10px);
-
-  -webkit-backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: none;
 
 }
 
