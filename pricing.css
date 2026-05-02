@@ -931,7 +931,7 @@ background-image:
 
 .payment-strip {
 
-margin: 14px auto 0 calc((100% - 918px) / 2 - 14px) !important;
+margin: 14px auto 0 calc((100% - 918px) / 2 - 12px) !important;
 
   width: 918px !important;
 
