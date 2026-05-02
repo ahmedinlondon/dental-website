@@ -205,17 +205,25 @@ background-image:
 
 }
 
-.pricing-glass-panel p {
+.pricing-glass {
 
-  margin: 0 0 11px;
+  position: absolute;
 
-  color: white;
+  top: 120px;   /* we will fine-tune */
 
-  font-size: 15px;
+  left: 0;
 
-  line-height: 1.45;
+  width: 100%;
 
-  text-align: left;
+  height: 360px; /* will adjust after */
+
+  background: rgba(30, 58, 138, 0.10);
+
+  backdrop-filter: blur(10px);
+
+  -webkit-backdrop-filter: blur(10px);
+
+  z-index: 0;
 
 }
 
