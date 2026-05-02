@@ -801,7 +801,7 @@ background-image:
 
   max-width: 620px;
 
-  background: rgba(30, 58, 138, 0.14); /* 20% blue tint */
+  background: rgba(30, 58, 138, 0.10); /* 20% blue tint */
 
   backdrop-filter: blur(12px);
 
