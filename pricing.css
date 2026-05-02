@@ -427,13 +427,33 @@ background-image:
 
   margin-top: auto;
 
-  height: 82px;
+  height: 88px;
 
   display: flex;
 
   flex-direction: column;
 
-  justify-content: center;
+  justify-content: flex-start;
+
+  align-items: center;
+
+}
+
+.price-box strong {
+
+  margin: 2px 0;
+
+}
+
+.price-box .small-text:first-child {
+
+  min-height: 14px; /* reserves space for "from" */
+
+}
+
+.price-box .small-text:last-of-type {
+
+  min-height: 14px; /* reserves space for "per month / refundable" */
 
 }
 
@@ -461,7 +481,7 @@ background-image:
 
 .read-more {
 
-  margin-top: 6px;
+  margin-top: auto;
 
   font-size: 12px;
 
