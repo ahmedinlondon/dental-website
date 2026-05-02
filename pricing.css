@@ -940,7 +940,7 @@ background-image:
 
   padding: 8px 18px !important;
 
-margin: 14px auto 0 calc((100% - 918px) / 2 - 10px) !important;
+margin: 14px auto 0 calc((100% - 918px) / 2 - 8px) !important;
 }
 
 .payment-left h3 {
