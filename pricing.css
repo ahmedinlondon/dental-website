@@ -474,13 +474,13 @@ background-image:
 
 .payment-strip {
 
-  margin: 18px auto 0;
+  margin: 14px auto 0;
 
   width: 100%;
 
-  max-width: 896px; /* EXACT width of 4 boxes */
+  max-width: 896px;
 
-  min-height: 90px; /* reduced height */
+  min-height: 60px;
 
   background: rgba(255,255,255,0.55);
 
@@ -494,13 +494,15 @@ background-image:
 
   align-items: center;
 
-  padding: 12px 22px; /* tighter */
+  padding: 12px 22px;
 
   box-shadow: none;
 
   border: none;
 
   border-radius: 0;
+
+  justify-self: center;
 
 }
 
@@ -927,52 +929,4 @@ background-image:
 }
 
 
-/* ================= TEMP FINAL PAYMENT STRIP OVERRIDE ================= */
 
-.payment-strip {
-
-margin: 14px auto 0 calc((100% - 918px) / 2 - 10px) !important;
-
-  width: 918px !important;
-
-  max-width: 918px !important;
-
-  min-height: 60px !important;
-
-  padding: 8px 18px !important;
-
-}
-
-.payment-left h3 {
-
-  margin: 0 0 4px !important;
-
-  font-size: 19px !important;
-
-}
-
-.payment-left p {
-
-  font-size: 12px !important;
-
-  line-height: 1.35 !important;
-
-}
-
-.payment-left > i {
-
-  width: 40px !important;
-
-  height: 40px !important;
-
-  font-size: 16px !important;
-
-}
-
-.payment-right p {
-
-  margin: 4px 0 !important;
-
-  font-size: 13px !important;
-
-}
