@@ -94,6 +94,18 @@ body {
 
 }
 
+.pricing-intro,
+
+.pricing-intro h2,
+
+.pricing-intro p,
+
+.pricing-intro strong {
+
+  color: white;
+
+}
+
 .pricing-hero-content h1 {
 
   margin: 0;
