@@ -655,35 +655,43 @@ background-image:
 
 .support-cards-row {
 
-  display: grid;
+  display: flex;
 
-  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
 
-  gap: 24px;
-
-  margin-top: 22px;
+  gap: 30px;
 
 }
 
 .support-card {
 
-  background: rgba(255,255,255,0.55);
+  width: 190px;
+
+  height: 190px;
+
+  background: rgba(255,255,255,0.58);
 
   backdrop-filter: blur(10px);
 
   -webkit-backdrop-filter: blur(10px);
 
-  padding: 26px 24px;
+  padding: 16px 12px;
 
-  min-height: 210px;
+  text-align: center;
 
-  text-align: left;
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: flex-start;
+
+  align-items: center;
+
+  border-radius: 0;
 
   box-shadow: none;
 
   border: none;
-
-  border-radius: 0;
 
 }
 
