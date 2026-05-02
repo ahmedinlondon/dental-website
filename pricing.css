@@ -797,23 +797,35 @@ background-image:
 
 .pricing-popup-content {
 
-  background: linear-gradient(
-
-  rgba(255,255,255,0.72),
-
-  rgba(255,255,255,0.72)
-
-),
-
-rgba(30, 58, 138, 0.10);
+  background: rgba(30, 58, 138, 0.10);
 
   backdrop-filter: blur(14px);
 
   -webkit-backdrop-filter: blur(14px);
 
-  box-shadow: 0 20px 60px rgba(0,0,0,0.18); /* depth */
+}
 
-  border: 1px solid rgba(255,255,255,0.35); /* subtle edge */
+.pricing-popup-content {
+
+  box-shadow: 0 25px 70px rgba(0,0,0,0.22); /* stronger depth */
+
+  border: 1px solid rgba(255,255,255,0.35);
+
+  max-width: 720px;     /* keeps original nice size */
+
+  width: 90%;
+
+}
+
+.pricing-popup-content p {
+
+  line-height: 1.6;
+
+}
+
+.pricing-popup-content h2 {
+
+  margin-bottom: 12px;
 
 }
 
