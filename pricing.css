@@ -925,3 +925,19 @@ background-image:
   }
 
 }
+
+/* ================= TEMP FINAL PAYMENT STRIP OVERRIDE ================= */
+
+.payment-strip {
+
+  margin: 18px auto 0 !important;
+
+  width: 896px !important;
+
+  max-width: 896px !important;
+
+  min-height: 90px !important;
+
+  padding: 12px 22px !important;
+
+}
