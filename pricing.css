@@ -346,15 +346,19 @@ background-image:
 
   display: grid;
 
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 210px);
 
-  gap: 22px;
+  justify-content: center;
+
+  gap: 26px;
 
 }
 
 .price-card {
 
-  aspect-ratio: 1 / 1;
+  width: 210px;
+
+  height: 210px;
 
   background: rgba(255,255,255,0.58);
 
@@ -362,15 +366,15 @@ background-image:
 
   -webkit-backdrop-filter: blur(10px);
 
-  padding: 24px 18px;
+  padding: 18px 14px;
 
   text-align: center;
 
   cursor: pointer;
 
-  box-shadow: none;
-
   border-radius: 0;
+
+  box-shadow: none;
 
   border: none;
 
