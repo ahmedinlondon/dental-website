@@ -2581,3 +2581,77 @@ body {
 
 }
 
+/* fix floating title properly */
+
+@media (max-width: 600px) {
+
+  .intro-floating-title {
+
+    position: absolute;
+
+    top: 36px;
+
+    left: 22px;
+
+    max-width: 240px;
+
+    font-size: 22px;
+
+    font-weight: 500;
+
+    line-height: 1.2;
+
+    color: #0f2f57;
+
+    margin: 0;
+
+    z-index: 5;
+
+    text-shadow: 0 2px 10px rgba(255,255,255,0.8);
+
+  }
+
+  /* REMOVE the old rule that was targeting .intro-glass h2 */
+
+  .intro-glass h2 {
+
+    position: static !important;
+
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .intro-button {
+
+    width: 210px !important;
+
+    max-width: 210px !important;
+
+    min-width: 0 !important;
+
+    height: 42px !important;
+
+    padding: 0 14px !important;
+
+    margin-left: auto !important;
+
+    margin-right: 0 !important;
+
+    display: flex !important;
+
+    justify-content: center !important;
+
+    align-items: center !important;
+
+    font-size: 12px !important;
+
+    white-space: nowrap !important;
+
+    box-sizing: border-box !important;
+
+  }
+
+}
+
