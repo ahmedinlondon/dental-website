@@ -2655,3 +2655,83 @@ body {
 
 }
 
+/* =========================================================
+
+   EMERGENCY CLEAN FIX - MOBILE INTRO TITLE + PANEL
+
+   Put this at the VERY BOTTOM of services.css
+
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .services-intro {
+
+    position: relative !important;
+
+  }
+
+  .intro-glass {
+
+    position: static !important;
+
+  }
+
+  .intro-glass h2 {
+
+    position: static !important;
+
+    display: none !important;
+
+  }
+
+  .intro-glass .intro-floating-title {
+
+    display: block !important;
+
+    position: absolute !important;
+
+    top: 34px !important;
+
+    left: 24px !important;
+
+    max-width: 260px !important;
+
+    font-size: 22px !important;
+
+    font-weight: 500 !important;
+
+    line-height: 1.18 !important;
+
+    margin: 0 !important;
+
+    color: #0f2f57 !important;
+
+    text-shadow: 0 2px 10px rgba(255,255,255,0.85) !important;
+
+    z-index: 5 !important;
+
+  }
+
+  .intro-glass p {
+
+    margin-top: 0 !important;
+
+  }
+
+  .intro-button {
+
+    width: 205px !important;
+
+    max-width: 205px !important;
+
+    min-width: 0 !important;
+
+    margin-left: auto !important;
+
+    margin-right: 0 !important;
+
+  }
+
+}
+
