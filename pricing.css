@@ -1987,7 +1987,7 @@ background-image:
 
     .support-section {
 
-    margin-top:  200px; /* adjust 60–90px as you like */
+    margin-top:  20px; /* adjust 60–90px as you like */
 
   } 
 
@@ -2029,7 +2029,13 @@ background-image:
 
 }
 
-/* FORCE show on mobile */
+/* ================= FINAL CONTROL: YOUR OPTIONS MOBILE ONLY ================= */
+
+h2.pricing-intro-mobile-title {
+
+  display: none !important;
+
+}
 
 @media (max-width: 700px) {
 
