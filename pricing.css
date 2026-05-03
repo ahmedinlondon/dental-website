@@ -958,15 +958,13 @@ body {
 
 }
 
-/* ================= POPUPS ================= */
+/* ================= PRICING POPUPS ================= */
 
 .pricing-popup {
 
   position: fixed;
 
   inset: 0;
-
-  background: transparent;
 
   display: none;
 
@@ -976,7 +974,7 @@ body {
 
   z-index: 9999;
 
-  padding: 24px;
+  padding: 20px;
 
 }
 
@@ -986,69 +984,77 @@ body {
 
 }
 
+/* POPUP BOX */
+
 .pricing-popup-content {
 
   position: relative;
 
-  width: 90%;
+  width: 92%;
 
-  max-width: 720px;
+  max-width: 680px;
 
-  max-height: 88vh;
+  padding: 34px 34px;
 
-  overflow-y: auto;
+  /* ⭐ FINAL COLOR (balanced blue glass) */
 
-  padding: 40px 45px;
+  background: rgba(220, 235, 250, 0.92);
 
-  background: rgba(235,245,255,0.92);
+  backdrop-filter: blur(12px);
 
-  backdrop-filter: blur(14px);
-
-  -webkit-backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(12px);
 
   border: 1px solid rgba(255,255,255,0.35);
 
-  box-shadow: 0 25px 70px rgba(0,0,0,0.22);
+  /* ⭐ SHARP CORNERS (as you prefer) */
 
-  border-radius: 12px;
+  border-radius: 0;
 
-  color: #0f2f57;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.18);
 
 }
+
+/* TITLE */
 
 .pricing-popup-content h3 {
 
-  margin: 0 0 22px;
+  margin: 0 0 18px;
 
-  font-size: 26px;
+  font-size: 24px;
 
   color: #0f2f57;
 
 }
 
+/* TEXT */
+
 .pricing-popup-content p {
 
-  font-size: 16px;
+  font-size: 15px;
 
-  line-height: 1.65;
+  line-height: 1.6;
 
-  margin: 0 0 18px;
+  margin-bottom: 14px;
+
+  color: #0f2f57;
 
 }
+
+/* CLOSE BUTTON */
 
 .pricing-popup-content button {
 
   position: absolute;
 
-  top: 14px;
+  top: 12px;
 
-  right: 18px;
+  right: 14px;
 
   background: none;
 
   border: none;
 
-  font-size: 28px;
+  font-size: 26px;
 
   color: #0f2f57;
 
