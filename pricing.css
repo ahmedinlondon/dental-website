@@ -1766,7 +1766,7 @@ backdrop-filter: blur(4px);
 
     max-width: 620px;
 
-    margin: 18px auto 260px;
+    margin: 12px auto 220px;
 
     text-align: center;
 
@@ -1810,7 +1810,7 @@ backdrop-filter: blur(4px);
 
     margin: 0 auto;
 
-    padding: 16px 18px 18px;
+    padding: 14px 16px 16px;
 
     background: rgba(30, 58, 138, 0.10);
 
@@ -1844,37 +1844,27 @@ backdrop-filter: blur(4px);
 
   .pricing-btn {
 
-    float: none;
+    display: block;
 
-    display: inline-flex;
+    width: fit-content;
 
-    align-items: center;
+    margin-left: auto;
 
-    justify-content: center;
+    margin-top: 10px;
 
-    gap: 12px;
-
-    margin-top: 6px;
-
-    display: flex;
-
-    justify-content: flex-end;
-
-    width: auto;
-
-    padding: 13px 22px;
+    padding: 12px 20px;
 
     background: #1f6fb2;
 
     color: white;
 
+    text-decoration: none;
+
     font-size: 13px;
 
     font-weight: 600;
 
-    text-decoration: none;
-
-  }
+}
 
 }
 
