@@ -1398,47 +1398,55 @@ body {
 
 @media (max-width: 700px) {
 
-  .navbar {
+.navbar {
 
-    flex-direction: column;
+  flex-direction: column;
 
-    align-items: center;
+  align-items: center;
 
-    padding: 12px 10px;
+  justify-content: center;
 
-    gap: 10px;
+  padding: 14px 8px 16px;
 
-  }
+  gap: 12px;
 
-  .logo {
+}
 
-    font-size: 18px;
+.logo {
 
-    line-height: 1.2;
+  width: 100%;
 
-    text-align: center;
+  text-align: center;
 
-    white-space: nowrap;
+  font-size: 18px;
 
-  }
+  line-height: 1.2;
 
-  .navbar nav {
+  white-space: nowrap;
 
-    flex-wrap: wrap;
+}
 
-    justify-content: center;
+.navbar nav {
 
-    gap: 4px;
+  width: 100%;
 
-  }
+  display: flex;
 
-  .navbar a {
+  flex-wrap: wrap;
 
-    padding: 7px 10px;
+  justify-content: center;
 
-    font-size: 14px;
+  gap: 4px;
 
-  }
+}
+
+.navbar a {
+
+  padding: 7px 10px;
+
+  font-size: 14px;
+
+  line-height: 1.2;
 
 }
 
@@ -1470,27 +1478,37 @@ body {
 
 @media (max-width: 700px) {
 
-  .pricing-intro {
+.pricing-intro {
 
-    padding: 32px 6%;
+  display: flex;
 
-    background-position: center;
+  justify-content: center;
 
-  }
+  align-items: center;
+
+  padding: 40px 6%;
+
+  background-position: center;
+
+}
 
 @media (max-width: 700px) {
 
-  .pricing-glass-panel {
+.pricing-glass-panel {
 
-    background: rgba(30, 58, 138, 0.10);
+  width: 100%;
 
-    color: #0f2f57;
+  max-width: 420px;
 
-    border: 1px solid rgba(30, 58, 138, 0.12);
+  padding: 24px 22px;
 
-    box-shadow: none;
+  margin: 0 auto;
 
-  }
+  background: rgba(30, 58, 138, 0.10);
+
+  border: 1px solid rgba(30, 58, 138, 0.12);
+
+}
 
   .pricing-glass-panel h2,
 
@@ -1499,6 +1517,14 @@ body {
     color: #0f2f57;
 
   }
+
+  .pricing-glass-panel p {
+
+  font-size: 15px;
+
+  line-height: 1.6;
+
+}
 
   .pricing-btn {
 
