@@ -1945,11 +1945,11 @@ background-image:
 
     max-width: 560px;
 
-    margin: 0 auto 18px;
+    margin: 20px auto 18px;
 
     padding: 14px 16px 16px;
 
-    background: rgba(30, 58, 138, 0.10);
+    background: rgba(30, 58, 138, 0.55);
 
     border: 1px solid rgba(30, 58, 138, 0.18);
 
@@ -1959,7 +1959,7 @@ background-image:
 
     box-shadow: none;
 
-    color: #0f2f57;
+    color:  #ffffff;
 
   }
 
@@ -1967,7 +1967,7 @@ background-image:
 
     margin: 0 0 14px;
 
-    color: #0f2f57;
+    color:  #ffffff;
 
     font-size: 14px;
 
