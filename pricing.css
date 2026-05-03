@@ -1780,17 +1780,7 @@ backdrop-filter: blur(4px);
 
   .pricing-intro-mobile-title::after {
 
-    content: "";
-
-    display: block;
-
-    width: 86px;
-
-    height: 4px;
-
-    background: #1f6fb2;
-
-    margin: 22px auto 0;
+    display: none;
 
   }
 
