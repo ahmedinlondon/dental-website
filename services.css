@@ -2100,3 +2100,286 @@ body {
 
 }
 
+
+/* =========================================================
+
+   MOBILE TOP SECTION FINAL PATCH
+
+   Navbar + Hero + Intro only
+
+   Add at the VERY BOTTOM of services.css
+
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  /* ================= MOBILE NAVBAR - MATCH PRICING ================= */
+
+  .navbar {
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    padding: 18px 6% 16px !important;
+
+    gap: 10px !important;
+
+    background: #ffffff !important;
+
+  }
+
+  .navbar .logo {
+
+    width: 100% !important;
+
+    text-align: center !important;
+
+    font-size: 20px !important;
+
+    line-height: 1.2 !important;
+
+    margin: 0 !important;
+
+    color: #222 !important;
+
+  }
+
+  .navbar nav {
+
+    width: 100% !important;
+
+    display: flex !important;
+
+    justify-content: center !important;
+
+    align-items: center !important;
+
+    gap: 4px !important;
+
+    flex-wrap: nowrap !important;
+
+    overflow: visible !important;
+
+  }
+
+  .navbar nav a {
+
+    flex: 1 1 auto !important;
+
+    min-width: 0 !important;
+
+    height: 36px !important;
+
+    padding: 0 7px !important;
+
+    font-size: 14px !important;
+
+    line-height: 36px !important;
+
+    text-align: center !important;
+
+    background: #edf3fa !important;
+
+    color: #1f5f9f !important;
+
+    text-decoration: none !important;
+
+    border-radius: 0 !important;
+
+    box-sizing: border-box !important;
+
+    white-space: nowrap !important;
+
+  }
+
+  /* ================= MOBILE HERO ================= */
+
+  .services-hero {
+
+    min-height: 210px !important;
+
+    padding: 38px 18px 34px !important;
+
+    background:
+
+      radial-gradient(circle at 18% 65%, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.55) 22%, transparent 44%),
+
+      radial-gradient(circle at 82% 70%, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.55) 22%, transparent 44%),
+
+      linear-gradient(180deg, #eaf6ff 0%, #f8fbff 58%, #ffffff 100%) !important;
+
+  }
+
+  .services-hero-content h1 {
+
+    font-size: 34px !important;
+
+    letter-spacing: 7px !important;
+
+    line-height: 1.2 !important;
+
+    margin: 0 !important;
+
+    color: #0f2f57 !important;
+
+  }
+
+  .hero-line {
+
+    width: 78px !important;
+
+    height: 4px !important;
+
+    margin: 18px auto !important;
+
+    background: #2b6cb0 !important;
+
+  }
+
+  .services-hero-content p {
+
+    max-width: 350px !important;
+
+    margin: 0 auto !important;
+
+    font-size: 17px !important;
+
+    line-height: 1.45 !important;
+
+    color: #0f2f57 !important;
+
+  }
+
+  /* ================= MOBILE INTRO IMAGE + GLASS PANEL ================= */
+
+  .services-intro {
+
+    min-height: 560px !important;
+
+    padding: 0 !important;
+
+    display: flex !important;
+
+    align-items: flex-end !important;
+
+    justify-content: center !important;
+
+    background-image:
+
+      linear-gradient(rgba(255,255,255,0.04), rgba(255,255,255,0.04)),
+
+      url("chair.png") !important;
+
+    background-size: cover !important;
+
+    background-position: 42% center !important;
+
+    background-repeat: no-repeat !important;
+
+  }
+
+  .intro-glass {
+
+    width: 86% !important;
+
+    max-width: 440px !important;
+
+    margin: 0 auto 38px !important;
+
+    padding: 24px 24px 24px !important;
+
+    box-sizing: border-box !important;
+
+    background: rgba(255,255,255,0.64) !important;
+
+    backdrop-filter: blur(9px) !important;
+
+    -webkit-backdrop-filter: blur(9px) !important;
+
+    border: 1px solid rgba(255,255,255,0.42) !important;
+
+    border-radius: 0 !important;
+
+    box-shadow: 0 10px 28px rgba(0,0,0,0.12) !important;
+
+  }
+
+  .intro-glass h2 {
+
+    margin: 0 0 14px !important;
+
+    font-size: 26px !important;
+
+    line-height: 1.25 !important;
+
+    color: #0f2f57 !important;
+
+  }
+
+  .intro-glass p {
+
+    margin: 0 0 18px !important;
+
+    font-size: 15px !important;
+
+    line-height: 1.55 !important;
+
+    color: #0f2f57 !important;
+
+    text-align: left !important;
+
+  }
+
+  .intro-button {
+
+    width: auto !important;
+
+    min-width: 210px !important;
+
+    height: 46px !important;
+
+    padding: 0 18px !important;
+
+    margin-left: auto !important;
+
+    display: inline-flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    gap: 8px !important;
+
+    background: #1f6fb2 !important;
+
+    color: #ffffff !important;
+
+    font-size: 13px !important;
+
+    font-weight: 700 !important;
+
+    text-decoration: none !important;
+
+    border-radius: 0 !important;
+
+    box-sizing: border-box !important;
+
+  }
+
+  .intro-button::after {
+
+    content: "→";
+
+    font-size: 15px;
+
+    margin-left: 2px;
+
+  }
+
+}
+
