@@ -1708,7 +1708,7 @@ backdrop-filter: blur(4px);
 
 }
 
-  /* ================= MOBILE INTRO HERO MOCK STYLE ================= */
+/* ================= MOBILE INTRO HERO MOCK STYLE - OLD DISABLED =================
 
 .pricing-intro-mobile-title {
 
@@ -1752,7 +1752,7 @@ backdrop-filter: blur(4px);
 
   }
 
-.pricing-intro-mobile-title {
+  .pricing-intro-mobile-title {
 
     display: block;
 
@@ -1773,8 +1773,6 @@ backdrop-filter: blur(4px);
     letter-spacing: 0.5px;
 
     line-height: 1.18;
-
-    font-weight: 600;
 
   }
 
@@ -1830,7 +1828,7 @@ backdrop-filter: blur(4px);
 
   }
 
-.pricing-btn {
+  .pricing-btn {
 
     display: block;
 
@@ -1852,8 +1850,139 @@ backdrop-filter: blur(4px);
 
     text-decoration: none;
 
-}
+  }
 
 }
+
+*/
+
+  /* ================= MOBILE INTRO FINAL FIX ================= */
+
+@media (max-width: 700px) {
+
+  .pricing-intro {
+
+    min-height: auto;
+
+    padding: 34px 5% 34px;
+
+    background-image:
+
+      linear-gradient(
+
+        rgba(255,255,255,0.08),
+
+        rgba(255,255,255,0.08)
+
+      ),
+
+      url("pricing-handshake.png");
+
+    background-size: cover;
+
+    background-position: 60% center;
+
+    background-repeat: no-repeat;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+  }
+
+  .pricing-intro-mobile-title {
+
+    display: block;
+
+    width: 100%;
+
+    max-width: 620px;
+
+    margin: 0 auto 135px;
+
+    text-align: center;
+
+    color: #0f2f57;
+
+    font-size: 26px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+
+    line-height: 1.18;
+
+  }
+
+  .pricing-intro-mobile-title::after {
+
+    display: none;
+
+  }
+
+  .pricing-glass-panel {
+
+    width: 100%;
+
+    max-width: 620px;
+
+    margin: 0 auto;
+
+    padding: 16px 18px 18px;
+
+    background: rgba(30, 58, 138, 0.10);
+
+    border: 1px solid rgba(30, 58, 138, 0.18);
+
+    backdrop-filter: blur(4px);
+
+    -webkit-backdrop-filter: blur(4px);
+
+    box-shadow: none;
+
+    color: #0f2f57;
+
+  }
+
+  .pricing-glass-panel p {
+
+    color: #0f2f57;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    text-align: justify;
+
+  }
+
+  .pricing-btn {
+
+    display: block;
+
+    width: fit-content;
+
+    margin-left: auto;
+
+    margin-top: 10px;
+
+    padding: 12px 20px;
+
+    background: #1f6fb2;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+  }
+
+}
+  
 
 
