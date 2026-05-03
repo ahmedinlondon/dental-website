@@ -306,13 +306,7 @@ body {
 
 .pricing-title-line {
 
-  width: 76px;
-
-  height: 3px;
-
-  background: #2b6cb0;
-
-  margin: 14px auto 18px;
+display: none;
 
 }
 
