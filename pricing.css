@@ -1869,15 +1869,23 @@ backdrop-filter: blur(4px);
 
     background-image:
 
-      linear-gradient(
+    linear-gradient(
 
-        rgba(255,255,255,0.08),
+      to bottom,
 
-        rgba(255,255,255,0.08)
+      rgba(255,255,255,1) 0%,
 
-      ),
+      rgba(255,255,255,0.18) 18%,
 
-      url("pricing-handshake.png");
+      rgba(255,255,255,0.08) 55%,
+
+      rgba(232,243,252,0.45) 82%,
+
+      rgba(232,243,252,1) 100%
+
+    ),
+
+    url("pricing-handshake.png");
 
     background-size: 120%;
 
@@ -1968,6 +1976,12 @@ backdrop-filter: blur(4px);
     text-justify: inter-word;
 
   }
+
+  .pricing-stairs-section {
+
+  background-color: #e8f3fc;
+
+}
 
   .pricing-btn {
 
