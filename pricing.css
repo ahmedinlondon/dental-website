@@ -2016,6 +2016,17 @@ background-image:
   }
 
 }
+
+  @media (min-width: 701px) {
+
+  .pricing-intro-mobile-title {
+
+    display: none;
+
+  }
+
+}
+  
   
 
 
