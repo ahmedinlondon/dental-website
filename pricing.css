@@ -1506,9 +1506,9 @@ background: transparent;
 
   border: 1px solid rgba(30, 58, 138, 0.15); /* subtle blue frame */
 
-  backdrop-filter: blur(6px);
+backdrop-filter: blur(4px);
 
-  -webkit-backdrop-filter: blur(6px);
+-webkit-backdrop-filter: blur(4px);
 
 }
 
