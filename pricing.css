@@ -807,65 +807,67 @@ background-image:
 
 .pricing-popup-content {
 
-  box-shadow: 0 25px 70px rgba(0,0,0,0.22); /* stronger depth */
-
-  border: 1px solid rgba(255,255,255,0.35);
-
-  max-width: 720px;     /* keeps original nice size */
+  position: relative;
 
   width: 90%;
 
-}
+  max-width: 720px;              /* original balanced width */
 
-.pricing-popup-content p {
+  padding: 40px 45px;            /* restores space from edges */
 
-  line-height: 1.6;
+  background: rgba(235, 245, 255, 0.92);
 
-}
+  border: 1px solid rgba(255,255,255,0.35);
 
-.pricing-popup-content h2 {
+  box-shadow: 0 25px 70px rgba(0,0,0,0.22);
 
-  margin-bottom: 12px;
-
-}
-
-.pricing-popup-content button {
-
-  position: absolute;
-
-  top: 12px;
-
-  right: 16px;
-
-  background: none;
-
-  border: none;
-
-  font-size: 30px;
-
-  color: #0f2f57;
-
-  cursor: pointer;
+  border-radius: 12px;           /* smoother shape */
 
 }
+
+/* Title */
 
 .pricing-popup-content h3 {
 
-  margin: 0 0 18px;
+  margin: 0 0 22px;
 
-  font-size: 28px;
+  font-size: 26px;
 
   color: #0f2f57;
 
 }
+
+/* Paragraphs */
 
 .pricing-popup-content p {
 
   font-size: 16px;
 
-  line-height: 1.6;
+  line-height: 1.65;
 
-  margin: 0 0 14px;
+  margin-bottom: 18px;           /* better vertical breathing */
+
+}
+
+/* Close button */
+
+.pricing-popup-content button {
+
+  position: absolute;
+
+  top: 14px;
+
+  right: 18px;
+
+  background: none;
+
+  border: none;
+
+  font-size: 28px;
+
+  color: #0f2f57;
+
+  cursor: pointer;
 
 }
 
