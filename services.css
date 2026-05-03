@@ -1326,794 +1326,17 @@ body {
 
 }
 
-/* ================= MOBILE ================= */
-
-@media (max-width: 600px) {
-
-  .services-hero {
-
-    min-height: 185px;
-
-    padding: 26px 18px;
-
-  }
-
-  .services-hero-content h1 {
-
-    font-size: 31px;
-
-    letter-spacing: 4px;
-
-  }
-
-  .hero-line {
-
-    width: 70px;
-
-    height: 3px;
-
-    margin: 14px auto;
-
-  }
-
-  .services-hero-content p {
-
-    font-size: 14px;
-
-    line-height: 1.5;
-
-  }
-
-  .services-intro {
-
-    min-height: auto;
-
-    padding: 28px 6%;
-
-    background-position: center center;
-
-  }
-
-  .intro-glass {
-
-    width: 100%;
-
-    padding: 22px;
-
-  }
-
-  .intro-glass h2 {
-
-    font-size: 22px;
-
-  }
-
-  .intro-glass p {
-
-    font-size: 14px;
-
-    line-height: 1.55;
-
-  }
-
-  .intro-button {
-
-    width: 100%;
-
-    justify-content: center;
-
-    box-sizing: border-box;
-
-    font-size: 13px;
-
-    padding: 13px 14px;
-
-  }
-
-  .services-grid-section {
-
-    padding: 38px 5% 44px;
-
-  }
-
-  .services-grid-section h2 {
-
-    font-size: 26px;
-
-  }
-
-  .services-grid-intro {
-
-    font-size: 14px;
-
-    line-height: 1.55;
-
-    margin-bottom: 24px;
-
-  }
-
-  .services-interactive {
-
-    display: block;
-
-  }
-
-  .services-grid,
-
-  .services-interactive.panel-open .services-grid {
-
-    max-width: none;
-
-    width: 100%;
-
-    grid-template-columns: 1fr;
-
-    gap: 14px;
-
-  }
-
-  .service-card,
-
-  .services-interactive.panel-open .service-card {
-
-    aspect-ratio: auto;
-
-    min-height: 150px;
-
-    padding: 24px 18px;
-
-  }
-
-  .service-card i,
-
-  .services-interactive.panel-open .service-card i {
-
-    font-size: 29px;
-
-    margin-bottom: 12px;
-
-  }
-
-  .service-card h3,
-
-  .services-interactive.panel-open .service-card h3 {
-
-    font-size: 17px;
-
-    margin-bottom: 8px;
-
-  }
-
-  .service-card p,
-
-  .services-interactive.panel-open .service-card p {
-
-    display: block;
-
-    font-size: 13px;
-
-    max-width: 260px;
-
-  }
-
-  .service-card span {
-
-    font-size: 13px;
-
-  }
-
-  .service-panel {
-
-    width: 100%;
-
-    max-width: none;
-
-    height: auto;
-
-    max-height: none;
-
-    margin-top: 18px;
-
-    padding: 22px;
-
-    overflow: visible;
-
-  }
-
-  .service-panel img {
-
-    height: 180px;
-
-  }
-
-  .service-panel h2 {
-
-    font-size: 23px;
-
-  }
-
-  .service-panel h3 {
-
-    font-size: 18px;
-
-  }
-
-  .service-panel p,
-
-  .service-panel li {
-
-    font-size: 14px;
-
-    line-height: 1.6;
-
-  }
-
-  .panel-button {
-
-    width: 100%;
-
-    justify-content: center;
-
-    box-sizing: border-box;
-
-  }
-
-  .comparison-section {
-
-    padding: 34px 5% 26px;
-
-  }
-
-  .comparison-title p {
-
-    font-size: 12px;
-
-    letter-spacing: 3px;
-
-  }
-
-  .comparison-title h2 {
-
-    font-size: 27px;
-
-    line-height: 1.18;
-
-  }
-
-  .comparison-labels {
-
-    grid-template-columns: 1fr 54px 1fr;
-
-    margin: 20px auto 18px;
-
-  }
-
-  .comparison-label i {
-
-    width: 46px;
-
-    height: 46px;
-
-    font-size: 19px;
-
-  }
-
-  .comparison-label h3 {
-
-    font-size: 18px;
-
-  }
-
-  .comparison-vs {
-
-    width: 48px;
-
-    height: 48px;
-
-    font-size: 17px;
-
-  }
-
-  .comparison-text {
-
-    max-width: 100%;
-
-  }
-
-  .comparison-row {
-
-    grid-template-columns: 1fr;
-
-    gap: 6px;
-
-    min-height: auto;
-
-    padding: 14px 0;
-
-    font-size: 13px;
-
-    line-height: 1.45;
-
-  }
-
-  .comparison-left,
-
-  .comparison-right {
-
-    text-align: center;
-
-    padding: 0;
-
-  }
-
-  .comparison-icon {
-
-    font-size: 15px;
-
-    order: 2;
-
-  }
-
-  .comparison-left {
-
-    order: 1;
-
-  }
-
-  .comparison-right {
-
-    order: 3;
-
-  }
-
-  .services-cta-bar {
-
-    flex-direction: column;
-
-    text-align: center;
-
-    gap: 14px;
-
-    padding: 28px 6%;
-
-  }
-
-  .services-cta-icon {
-
-    width: 56px;
-
-    height: 56px;
-
-  }
-
-  .services-cta-text h2 {
-
-    font-size: 21px;
-
-  }
-
-  .services-cta-text p {
-
-    font-size: 14px;
-
-  }
-
-  .services-cta-button {
-
-    width: 100%;
-
-    max-width: 290px;
-
-    text-align: center;
-
-    box-sizing: border-box;
-
-  }
-
-  .site-footer {
-
-    flex-direction: column;
-
-    gap: 16px;
-
-    text-align: center;
-
-    padding: 22px 5%;
-
-  }
-
-  .footer-socials {
-
-    gap: 14px;
-
-  }
-
-  .footer-socials a {
-
-    width: 40px;
-
-    height: 40px;
-
-    font-size: 19px;
-
-  }
-
-}
-
 /* =========================================================
 
-   FINAL MOBILE SERVICES PAGE PATCH
+   MOBILE VERSION - SERVICES PAGE
 
-   Add this at the VERY BOTTOM of services.css
+   Covers mobile only. iPad/desktop above this line untouched.
 
    ========================================================= */
 
 @media (max-width: 600px) {
 
-  /* NAVBAR MOBILE FIX */
-
-  .navbar {
-
-    padding: 22px 8% 18px !important;
-
-    display: flex !important;
-
-    flex-direction: column !important;
-
-    align-items: flex-start !important;
-
-    gap: 14px !important;
-
-  }
-
-  .navbar .logo {
-
-    font-size: 19px !important;
-
-    margin: 0 !important;
-
-  }
-
-  .navbar nav {
-
-    width: 100% !important;
-
-    display: grid !important;
-
-    grid-template-columns: repeat(3, 1fr) !important;
-
-    gap: 4px !important;
-
-  }
-
-  .navbar nav a {
-
-    display: flex !important;
-
-    align-items: center !important;
-
-    justify-content: center !important;
-
-    height: 42px !important;
-
-    padding: 0 !important;
-
-    font-size: 17px !important;
-
-    line-height: 1 !important;
-
-  }
-
-  /* HERO MOBILE FIX */
-
-  .services-hero {
-
-    min-height: 210px !important;
-
-    padding: 34px 22px 30px !important;
-
-  }
-
-  .services-hero-content h1 {
-
-    font-size: 34px !important;
-
-    letter-spacing: 7px !important;
-
-    line-height: 1.25 !important;
-
-  }
-
-  .hero-line {
-
-    width: 76px !important;
-
-    height: 4px !important;
-
-    margin: 18px auto !important;
-
-  }
-
-  .services-hero-content p {
-
-    font-size: 17px !important;
-
-    line-height: 1.45 !important;
-
-    max-width: 340px !important;
-
-    margin: 0 auto !important;
-
-  }
-
-  /* INTRO IMAGE + OVERLAY MOBILE FIX */
-
-  .services-intro {
-
-    min-height: auto !important;
-
-    padding: 38px 6% !important;
-
-    background-position: center center !important;
-
-  }
-
-  .intro-glass {
-
-    width: 100% !important;
-
-    padding: 26px 22px !important;
-
-    background: rgba(255,255,255,0.72) !important;
-
-  }
-
-  .intro-glass h2 {
-
-    font-size: 25px !important;
-
-    line-height: 1.28 !important;
-
-    margin-bottom: 18px !important;
-
-  }
-
-  .intro-glass p {
-
-    font-size: 16px !important;
-
-    line-height: 1.6 !important;
-
-    margin-bottom: 22px !important;
-
-  }
-
-  .intro-button {
-
-    height: 54px !important;
-
-    font-size: 14px !important;
-
-  }
-
-  /* SERVICES CARDS MOBILE FIX */
-
-  .services-grid-section {
-
-    padding: 46px 5% 50px !important;
-
-  }
-
-  .services-grid-section h2 {
-
-    font-size: 30px !important;
-
-    line-height: 1.2 !important;
-
-  }
-
-  .services-grid-intro {
-
-    font-size: 16px !important;
-
-    line-height: 1.5 !important;
-
-    margin-bottom: 28px !important;
-
-  }
-
-  .service-card,
-
-  .services-interactive.panel-open .service-card {
-
-    min-height: 210px !important;
-
-    padding: 28px 20px !important;
-
-  }
-
-  .service-card i,
-
-  .services-interactive.panel-open .service-card i {
-
-    font-size: 34px !important;
-
-    margin-bottom: 16px !important;
-
-  }
-
-  .service-card h3,
-
-  .services-interactive.panel-open .service-card h3 {
-
-    font-size: 20px !important;
-
-    line-height: 1.25 !important;
-
-  }
-
-  .service-card p,
-
-  .services-interactive.panel-open .service-card p {
-
-    font-size: 15px !important;
-
-    line-height: 1.45 !important;
-
-  }
-
-  .service-card span {
-
-    font-size: 15px !important;
-
-  }
-
-  /* COMPARISON MOBILE FIX */
-
-  .comparison-section {
-
-    padding: 42px 6% 30px !important;
-
-  }
-
-  .comparison-title p {
-
-    font-size: 12px !important;
-
-    letter-spacing: 5px !important;
-
-  }
-
-  .comparison-title h2 {
-
-    font-size: 34px !important;
-
-    line-height: 1.15 !important;
-
-    margin-top: 12px !important;
-
-  }
-
-  .comparison-title span {
-
-    margin-top: 14px !important;
-
-  }
-
-  .comparison-labels {
-
-    grid-template-columns: 1fr 58px 1fr !important;
-
-    margin: 28px auto 26px !important;
-
-  }
-
-  .comparison-label i {
-
-    width: 52px !important;
-
-    height: 52px !important;
-
-    font-size: 21px !important;
-
-  }
-
-  .comparison-label h3 {
-
-    font-size: 22px !important;
-
-    letter-spacing: 2px !important;
-
-  }
-
-  .comparison-vs {
-
-    width: 52px !important;
-
-    height: 52px !important;
-
-    font-size: 18px !important;
-
-  }
-
-  .comparison-row {
-
-    padding: 18px 0 !important;
-
-    gap: 8px !important;
-
-    font-size: 16px !important;
-
-    line-height: 1.35 !important;
-
-  }
-
-  .comparison-icon {
-
-    font-size: 17px !important;
-
-  }
-
-  .comparison-left,
-
-  .comparison-right {
-
-    max-width: 330px !important;
-
-    margin: 0 auto !important;
-
-  }
-
-  /* CTA + FOOTER TIGHTEN */
-
-  .services-cta-bar {
-
-    padding: 34px 6% 36px !important;
-
-  }
-
-  .services-cta-text h2 {
-
-    font-size: 26px !important;
-
-    line-height: 1.2 !important;
-
-  }
-
-  .services-cta-button {
-
-    height: 56px !important;
-
-    display: flex !important;
-
-    align-items: center !important;
-
-    justify-content: center !important;
-
-  }
-
-  .site-footer {
-
-    padding: 26px 5% 28px !important;
-
-  }
-
-}
-
-
-/* =========================================================
-
-   MOBILE TOP SECTION FINAL PATCH
-
-   Navbar + Hero + Intro only
-
-   Add at the VERY BOTTOM of services.css
-
-   ========================================================= */
-
-@media (max-width: 600px) {
-
-  /* ================= MOBILE NAVBAR - MATCH PRICING ================= */
+  /* ================= MOBILE NAVBAR - KEEP AS PRICING STYLE ================= */
 
   .navbar {
 
@@ -2259,7 +1482,7 @@ body {
 
   .services-intro {
 
-    min-height: 560px !important;
+    min-height: 530px !important;
 
     padding: 0 !important;
 
@@ -2277,9 +1500,17 @@ body {
 
     background-size: cover !important;
 
-    background-position: 42% center !important;
+    background-position: 57% center !important;
 
     background-repeat: no-repeat !important;
+
+  }
+
+  .intro-floating-title,
+
+  .intro-glass h2 {
+
+    display: none !important;
 
   }
 
@@ -2287,47 +1518,39 @@ body {
 
     width: 86% !important;
 
-    max-width: 440px !important;
+    max-width: 430px !important;
 
-    margin: 0 auto 38px !important;
+    margin: 0 auto 30px !important;
 
-    padding: 24px 24px 24px !important;
+    padding: 16px 20px 16px !important;
 
     box-sizing: border-box !important;
 
-    background: rgba(255,255,255,0.64) !important;
+    background: rgba(255,255,255,0.52) !important;
 
-    backdrop-filter: blur(9px) !important;
+    backdrop-filter: blur(8px) !important;
 
-    -webkit-backdrop-filter: blur(9px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
 
-    border: 1px solid rgba(255,255,255,0.42) !important;
+    border: 1px solid rgba(255,255,255,0.45) !important;
 
     border-radius: 0 !important;
 
     box-shadow: 0 10px 28px rgba(0,0,0,0.12) !important;
 
-  }
+    display: flex !important;
 
-  .intro-glass h2 {
-
-    margin: 0 0 14px !important;
-
-    font-size: 26px !important;
-
-    line-height: 1.25 !important;
-
-    color: #0f2f57 !important;
+    flex-direction: column !important;
 
   }
 
   .intro-glass p {
 
-    margin: 0 0 18px !important;
+    margin: 0 0 13px !important;
 
-    font-size: 15px !important;
+    font-size: 13.2px !important;
 
-    line-height: 1.55 !important;
+    line-height: 1.4 !important;
 
     color: #0f2f57 !important;
 
@@ -2337,29 +1560,33 @@ body {
 
   .intro-button {
 
-    width: auto !important;
+    width: 190px !important;
 
-    min-width: 210px !important;
+    max-width: 190px !important;
 
-    height: 46px !important;
+    min-width: 0 !important;
 
-    padding: 0 18px !important;
+    height: 39px !important;
+
+    padding: 0 13px !important;
 
     margin-left: auto !important;
 
-    display: inline-flex !important;
+    margin-right: 0 !important;
+
+    display: flex !important;
 
     align-items: center !important;
 
     justify-content: center !important;
 
-    gap: 8px !important;
+    gap: 7px !important;
 
     background: #1f6fb2 !important;
 
     color: #ffffff !important;
 
-    font-size: 13px !important;
+    font-size: 11.4px !important;
 
     font-weight: 700 !important;
 
@@ -2369,203 +1596,7 @@ body {
 
     box-sizing: border-box !important;
 
-  }
-
-  .intro-button::after {
-
-    content: "→";
-
-    font-size: 15px;
-
-    margin-left: 2px;
-
-  }
-
-}
-
-/* =========================================================
-
-   MOBILE INTRO REFINEMENT PATCH
-
-   Add at the VERY BOTTOM of services.css
-
-   ========================================================= */
-
-@media (max-width: 600px) {
-
-  .services-intro {
-
-    min-height: 540px !important;
-
-    align-items: flex-end !important;
-
-    background-position: 57% center !important;
-
-  }
-
-  .intro-glass {
-
-    width: 84% !important;
-
-    max-width: 430px !important;
-
-    margin: 0 auto 34px !important;
-
-    padding: 20px 24px 20px !important;
-
-    background: rgba(255,255,255,0.56) !important;
-
-    backdrop-filter: blur(8px) !important;
-
-    -webkit-backdrop-filter: blur(8px) !important;
-
-  }
-
-  .intro-glass h2 {
-
-    font-size: 23px !important;
-
-    font-weight: 600 !important;
-
-    line-height: 1.22 !important;
-
-    margin-bottom: 12px !important;
-
-  }
-
-  .intro-glass p {
-
-    font-size: 14px !important;
-
-    line-height: 1.48 !important;
-
-    margin-bottom: 16px !important;
-
-  }
-
-  .intro-button {
-
-    margin-left: auto !important;
-
-    margin-right: 0 !important;
-
-    min-width: 190px !important;
-
-    height: 42px !important;
-
-    padding: 0 15px !important;
-
-    font-size: 12px !important;
-
-  }
-
-}
-
-/* =========================================================
-
-   MOBILE INTRO OPTION A FINAL PATCH
-
-   Headline outside panel + CTA screen right
-
-   Add at the VERY BOTTOM of services.css
-
-   ========================================================= */
-
-@media (max-width: 600px) {
-
-  .services-intro {
-
-    min-height: 540px !important;
-
-    padding: 0 !important;
-
-    align-items: flex-end !important;
-
-    position: relative !important;
-
-    background-size: cover !important;
-
-    background-position: 62% center !important;
-
-  }
-
-  .intro-glass {
-
-    width: 88% !important;
-
-    max-width: 440px !important;
-
-    margin: 0 auto 34px !important;
-
-    padding: 18px 22px 18px !important;
-
-    background: rgba(255,255,255,0.54) !important;
-
-    backdrop-filter: blur(8px) !important;
-
-    -webkit-backdrop-filter: blur(8px) !important;
-
-    border-radius: 0 !important;
-
-  }
-
-  .intro-glass h2 {
-
-    position: absolute !important;
-
-    top: 34px !important;
-
-    left: 24px !important;
-
-    max-width: 245px !important;
-
-    margin: 0 !important;
-
-    font-size: 23px !important;
-
-    font-weight: 500 !important;
-
-    line-height: 1.18 !important;
-
-    color: #0f2f57 !important;
-
-    text-shadow: 0 1px 8px rgba(255,255,255,0.65) !important;
-
-  }
-
-  .intro-glass p {
-
-    margin: 0 0 14px !important;
-
-    font-size: 13.6px !important;
-
-    line-height: 1.43 !important;
-
-    color: #0f2f57 !important;
-
-    text-align: left !important;
-
-  }
-
-  .intro-button {
-
-    width: auto !important;
-
-    min-width: 178px !important;
-
-    height: 40px !important;
-
-    padding: 0 14px !important;
-
-    margin-left: auto !important;
-
-    margin-right: 0 !important;
-
-    display: flex !important;
-
-    font-size: 11.8px !important;
-
-    font-weight: 700 !important;
+    white-space: nowrap !important;
 
   }
 
@@ -2575,303 +1606,388 @@ body {
 
     font-size: 14px;
 
-    margin-left: 4px;
+    margin-left: 3px;
 
   }
 
-}
+  /* ================= MOBILE SERVICES CARDS ================= */
 
-/* fix floating title properly */
+  .services-grid-section {
 
-@media (max-width: 600px) {
-
-  .intro-floating-title {
-
-    position: absolute;
-
-    top: 36px;
-
-    left: 22px;
-
-    max-width: 240px;
-
-    font-size: 22px;
-
-    font-weight: 500;
-
-    line-height: 1.2;
-
-    color: #0f2f57;
-
-    margin: 0;
-
-    z-index: 5;
-
-    text-shadow: 0 2px 10px rgba(255,255,255,0.8);
+    padding: 50px 5% 50px !important;
 
   }
 
-  /* REMOVE the old rule that was targeting .intro-glass h2 */
+  .services-grid-section h2 {
 
-  .intro-glass h2 {
+    font-size: 30px !important;
 
-    position: static !important;
+    line-height: 1.2 !important;
 
   }
 
-}
+  .services-grid-intro {
 
-@media (max-width: 600px) {
+    font-size: 16px !important;
 
-  .intro-button {
+    line-height: 1.5 !important;
 
-    width: 210px !important;
+    margin-bottom: 28px !important;
 
-    max-width: 210px !important;
+  }
 
-    min-width: 0 !important;
+  .services-interactive {
 
-    height: 42px !important;
+    display: block !important;
 
-    padding: 0 14px !important;
+  }
 
-    margin-left: auto !important;
+  .services-grid,
 
-    margin-right: 0 !important;
+  .services-interactive.panel-open .services-grid {
 
-    display: flex !important;
+    max-width: none !important;
+
+    width: 100% !important;
+
+    grid-template-columns: 1fr !important;
+
+    gap: 14px !important;
+
+  }
+
+  .service-card,
+
+  .services-interactive.panel-open .service-card {
+
+    aspect-ratio: auto !important;
+
+    min-height: 205px !important;
+
+    padding: 28px 20px !important;
+
+  }
+
+  .service-card i,
+
+  .services-interactive.panel-open .service-card i {
+
+    font-size: 34px !important;
+
+    margin-bottom: 16px !important;
+
+  }
+
+  .service-card h3,
+
+  .services-interactive.panel-open .service-card h3 {
+
+    font-size: 20px !important;
+
+    line-height: 1.25 !important;
+
+    margin-bottom: 8px !important;
+
+  }
+
+  .service-card p,
+
+  .services-interactive.panel-open .service-card p {
+
+    display: block !important;
+
+    font-size: 15px !important;
+
+    line-height: 1.45 !important;
+
+    max-width: 270px !important;
+
+  }
+
+  .service-card span {
+
+    font-size: 15px !important;
+
+  }
+
+  .service-panel {
+
+    width: 100% !important;
+
+    max-width: none !important;
+
+    height: auto !important;
+
+    max-height: none !important;
+
+    margin-top: 18px !important;
+
+    padding: 22px !important;
+
+    overflow: visible !important;
+
+  }
+
+  .service-panel img {
+
+    height: 180px !important;
+
+  }
+
+  .service-panel h2 {
+
+    font-size: 23px !important;
+
+  }
+
+  .service-panel h3 {
+
+    font-size: 18px !important;
+
+  }
+
+  .service-panel p,
+
+  .service-panel li {
+
+    font-size: 14px !important;
+
+    line-height: 1.6 !important;
+
+  }
+
+  .panel-button {
+
+    width: 100% !important;
 
     justify-content: center !important;
-
-    align-items: center !important;
-
-    font-size: 12px !important;
-
-    white-space: nowrap !important;
 
     box-sizing: border-box !important;
 
   }
 
-}
+  /* ================= MOBILE COMPARISON SECTION ================= */
 
-/* =========================================================
+  .comparison-section {
 
-   EMERGENCY CLEAN FIX - MOBILE INTRO TITLE + PANEL
-
-   Put this at the VERY BOTTOM of services.css
-
-   ========================================================= */
-
-@media (max-width: 600px) {
-
-  .services-intro {
-
-    position: relative !important;
+    padding: 42px 6% 30px !important;
 
   }
 
-  .intro-glass {
+  .comparison-title p {
 
-    position: static !important;
+    font-size: 12px !important;
 
-  }
-
-  .intro-glass h2 {
-
-    position: static !important;
-
-    display: none !important;
+    letter-spacing: 5px !important;
 
   }
 
-  .intro-glass .intro-floating-title {
+  .comparison-title h2 {
 
-    display: block !important;
+    font-size: 34px !important;
 
-    position: absolute !important;
+    line-height: 1.15 !important;
 
-    top: 34px !important;
-
-    left: 24px !important;
-
-    max-width: 260px !important;
-
-    font-size: 22px !important;
-
-    font-weight: 500 !important;
-
-    line-height: 1.18 !important;
-
-    margin: 0 !important;
-
-    color: #0f2f57 !important;
-
-    text-shadow: 0 2px 10px rgba(255,255,255,0.85) !important;
-
-    z-index: 5 !important;
+    margin-top: 12px !important;
 
   }
 
-  .intro-glass p {
+  .comparison-title span {
 
-    margin-top: 0 !important;
-
-  }
-
-  .intro-button {
-
-    width: 205px !important;
-
-    max-width: 205px !important;
-
-    min-width: 0 !important;
-
-    margin-left: auto !important;
-
-    margin-right: 0 !important;
+    margin-top: 14px !important;
 
   }
 
-}
+  .comparison-labels {
 
-/* =========================================================
+    grid-template-columns: 1fr 58px 1fr !important;
 
-   FIX FLOATING TITLE POSITION (FINAL)
-
-   ========================================================= */
-
-@media (max-width: 600px) {
-
-  .services-intro {
-
-    position: relative !important;
+    margin: 28px auto 26px !important;
 
   }
 
-  .intro-floating-title {
+  .comparison-label i {
 
-    position: absolute !important;
+    width: 52px !important;
 
-    /* KEY FIX ↓ */
-
-    top: 120px !important;   /* pushes it DOWN into the image */
-
-    left: 22px !important;
-
-    max-width: 240px !important;
-
-    font-size: 22px !important;
-
-    font-weight: 500 !important;
-
-    line-height: 1.2 !important;
-
-    color: #0f2f57 !important;
-
-    text-shadow: 0 2px 10px rgba(255,255,255,0.85) !important;
-
-    z-index: 5 !important;
-
-  }
-
-}
-
-<!-- ================= 2. INTRODUCTION SECTION ================= -->
-
-<section class="services-intro">
-
-  <h2 class="intro-floating-title">Comprehensive Orthodontic Care</h2>
-
-  <div class="intro-glass">
-
-    <p>
-
-      Orthodontic treatment is a carefully planned journey designed to create healthy, confident smiles at any age. We offer a full range of modern orthodontic solutions, tailored to your needs using advanced technology and personalised care.
-
-    </p>
-
-    <a href="contact.html?v=3" class="intro-button">
-
-      <i class="fa-regular fa-calendar-check"></i>
-
-      BOOK A CONSULTATION
-
-    </a>
-
-  </div>
-
-</section>
-
-/* =========================================================
-
-   MOBILE INTRO FINAL POLISH
-
-   ========================================================= */
-
-@media (max-width: 600px) {
-
-  .intro-floating-title {
-
-    top: 72px !important;
-
-    left: 24px !important;
-
-    max-width: 250px !important;
+    height: 52px !important;
 
     font-size: 21px !important;
 
-    font-weight: 500 !important;
+  }
 
-    line-height: 1.18 !important;
+  .comparison-label h3 {
+
+    font-size: 22px !important;
+
+    letter-spacing: 2px !important;
 
   }
 
-  .intro-glass {
+  .comparison-vs {
 
-    width: 86% !important;
+    width: 52px !important;
 
-    margin-bottom: 44px !important;
+    height: 52px !important;
 
-    padding: 18px 20px 18px !important;
-
-    background: rgba(255,255,255,0.52) !important;
+    font-size: 18px !important;
 
   }
 
-  .intro-glass p {
+  .comparison-text {
 
-    font-size: 13.4px !important;
-
-    line-height: 1.42 !important;
-
-    margin-bottom: 14px !important;
+    max-width: 100% !important;
 
   }
 
-  .intro-button {
+  .comparison-row {
 
-    width: 195px !important;
+    grid-template-columns: 1fr !important;
 
-    max-width: 195px !important;
+    padding: 18px 0 !important;
 
-    height: 39px !important;
+    gap: 8px !important;
 
-    font-size: 11.5px !important;
+    font-size: 16px !important;
 
-    margin-left: auto !important;
-
-    margin-right: 0 !important;
+    line-height: 1.35 !important;
 
   }
 
-  .services-grid-section {
+  .comparison-left,
 
-    padding-top: 54px !important;
+  .comparison-right {
+
+    text-align: center !important;
+
+    padding: 0 !important;
+
+    max-width: 330px !important;
+
+    margin: 0 auto !important;
+
+  }
+
+  .comparison-icon {
+
+    font-size: 17px !important;
+
+    order: 2 !important;
+
+  }
+
+  .comparison-left {
+
+    order: 1 !important;
+
+  }
+
+  .comparison-right {
+
+    order: 3 !important;
+
+  }
+
+  /* ================= MOBILE CTA + FOOTER ================= */
+
+  .services-cta-bar {
+
+    flex-direction: column !important;
+
+    text-align: center !important;
+
+    gap: 14px !important;
+
+    padding: 34px 6% 36px !important;
+
+  }
+
+  .services-cta-icon {
+
+    width: 56px !important;
+
+    height: 56px !important;
+
+  }
+
+  .services-cta-text h2 {
+
+    font-size: 26px !important;
+
+    line-height: 1.2 !important;
+
+  }
+
+  .services-cta-text p {
+
+    font-size: 14px !important;
+
+  }
+
+  .services-cta-button {
+
+    width: 100% !important;
+
+    max-width: 290px !important;
+
+    height: 56px !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    text-align: center !important;
+
+    box-sizing: border-box !important;
+
+  }
+
+  .site-footer {
+
+    flex-direction: column !important;
+
+    gap: 16px !important;
+
+    text-align: center !important;
+
+    padding: 26px 5% 28px !important;
+
+  }
+
+  .footer-socials {
+
+    gap: 14px !important;
+
+  }
+
+  .footer-socials a {
+
+    width: 40px !important;
+
+    height: 40px !important;
+
+    font-size: 19px !important;
 
   }
 
 }
+
+/* =========================================================
+
+   END OF MOBILE VERSION
+
+   Do not add more mobile code below this unless we are editing
+
+   the next section intentionally.
+
+   ========================================================= */
+
+
+
+
+
 
 
 
