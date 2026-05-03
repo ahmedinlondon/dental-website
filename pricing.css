@@ -1502,9 +1502,13 @@ body {
 
   margin: 0 auto;
 
-  background: rgba(30, 58, 138, 0.01);
+  background: rgba(255, 255, 255, 0.03); /* almost invisible */
 
-  border: 1px solid rgba(30, 58, 138, 0.12);
+  border: 1px solid rgba(30, 58, 138, 0.15); /* subtle blue frame */
+
+  backdrop-filter: blur(6px);
+
+  -webkit-backdrop-filter: blur(6px);
 
 }
 
