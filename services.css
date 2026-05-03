@@ -1740,3 +1740,363 @@ body {
 
 }
 
+/* =========================================================
+
+   FINAL MOBILE SERVICES PAGE PATCH
+
+   Add this at the VERY BOTTOM of services.css
+
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  /* NAVBAR MOBILE FIX */
+
+  .navbar {
+
+    padding: 22px 8% 18px !important;
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    align-items: flex-start !important;
+
+    gap: 14px !important;
+
+  }
+
+  .navbar .logo {
+
+    font-size: 19px !important;
+
+    margin: 0 !important;
+
+  }
+
+  .navbar nav {
+
+    width: 100% !important;
+
+    display: grid !important;
+
+    grid-template-columns: repeat(3, 1fr) !important;
+
+    gap: 4px !important;
+
+  }
+
+  .navbar nav a {
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    height: 42px !important;
+
+    padding: 0 !important;
+
+    font-size: 17px !important;
+
+    line-height: 1 !important;
+
+  }
+
+  /* HERO MOBILE FIX */
+
+  .services-hero {
+
+    min-height: 210px !important;
+
+    padding: 34px 22px 30px !important;
+
+  }
+
+  .services-hero-content h1 {
+
+    font-size: 34px !important;
+
+    letter-spacing: 7px !important;
+
+    line-height: 1.25 !important;
+
+  }
+
+  .hero-line {
+
+    width: 76px !important;
+
+    height: 4px !important;
+
+    margin: 18px auto !important;
+
+  }
+
+  .services-hero-content p {
+
+    font-size: 17px !important;
+
+    line-height: 1.45 !important;
+
+    max-width: 340px !important;
+
+    margin: 0 auto !important;
+
+  }
+
+  /* INTRO IMAGE + OVERLAY MOBILE FIX */
+
+  .services-intro {
+
+    min-height: auto !important;
+
+    padding: 38px 6% !important;
+
+    background-position: center center !important;
+
+  }
+
+  .intro-glass {
+
+    width: 100% !important;
+
+    padding: 26px 22px !important;
+
+    background: rgba(255,255,255,0.72) !important;
+
+  }
+
+  .intro-glass h2 {
+
+    font-size: 25px !important;
+
+    line-height: 1.28 !important;
+
+    margin-bottom: 18px !important;
+
+  }
+
+  .intro-glass p {
+
+    font-size: 16px !important;
+
+    line-height: 1.6 !important;
+
+    margin-bottom: 22px !important;
+
+  }
+
+  .intro-button {
+
+    height: 54px !important;
+
+    font-size: 14px !important;
+
+  }
+
+  /* SERVICES CARDS MOBILE FIX */
+
+  .services-grid-section {
+
+    padding: 46px 5% 50px !important;
+
+  }
+
+  .services-grid-section h2 {
+
+    font-size: 30px !important;
+
+    line-height: 1.2 !important;
+
+  }
+
+  .services-grid-intro {
+
+    font-size: 16px !important;
+
+    line-height: 1.5 !important;
+
+    margin-bottom: 28px !important;
+
+  }
+
+  .service-card,
+
+  .services-interactive.panel-open .service-card {
+
+    min-height: 210px !important;
+
+    padding: 28px 20px !important;
+
+  }
+
+  .service-card i,
+
+  .services-interactive.panel-open .service-card i {
+
+    font-size: 34px !important;
+
+    margin-bottom: 16px !important;
+
+  }
+
+  .service-card h3,
+
+  .services-interactive.panel-open .service-card h3 {
+
+    font-size: 20px !important;
+
+    line-height: 1.25 !important;
+
+  }
+
+  .service-card p,
+
+  .services-interactive.panel-open .service-card p {
+
+    font-size: 15px !important;
+
+    line-height: 1.45 !important;
+
+  }
+
+  .service-card span {
+
+    font-size: 15px !important;
+
+  }
+
+  /* COMPARISON MOBILE FIX */
+
+  .comparison-section {
+
+    padding: 42px 6% 30px !important;
+
+  }
+
+  .comparison-title p {
+
+    font-size: 12px !important;
+
+    letter-spacing: 5px !important;
+
+  }
+
+  .comparison-title h2 {
+
+    font-size: 34px !important;
+
+    line-height: 1.15 !important;
+
+    margin-top: 12px !important;
+
+  }
+
+  .comparison-title span {
+
+    margin-top: 14px !important;
+
+  }
+
+  .comparison-labels {
+
+    grid-template-columns: 1fr 58px 1fr !important;
+
+    margin: 28px auto 26px !important;
+
+  }
+
+  .comparison-label i {
+
+    width: 52px !important;
+
+    height: 52px !important;
+
+    font-size: 21px !important;
+
+  }
+
+  .comparison-label h3 {
+
+    font-size: 22px !important;
+
+    letter-spacing: 2px !important;
+
+  }
+
+  .comparison-vs {
+
+    width: 52px !important;
+
+    height: 52px !important;
+
+    font-size: 18px !important;
+
+  }
+
+  .comparison-row {
+
+    padding: 18px 0 !important;
+
+    gap: 8px !important;
+
+    font-size: 16px !important;
+
+    line-height: 1.35 !important;
+
+  }
+
+  .comparison-icon {
+
+    font-size: 17px !important;
+
+  }
+
+  .comparison-left,
+
+  .comparison-right {
+
+    max-width: 330px !important;
+
+    margin: 0 auto !important;
+
+  }
+
+  /* CTA + FOOTER TIGHTEN */
+
+  .services-cta-bar {
+
+    padding: 34px 6% 36px !important;
+
+  }
+
+  .services-cta-text h2 {
+
+    font-size: 26px !important;
+
+    line-height: 1.2 !important;
+
+  }
+
+  .services-cta-button {
+
+    height: 56px !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+  }
+
+  .site-footer {
+
+    padding: 26px 5% 28px !important;
+
+  }
+
+}
+
