@@ -2017,11 +2017,25 @@ background-image:
 
 }
 
-  @media (min-width: 701px) {
+/* FORCE hide on iPad / desktop */
 
-  .pricing-intro-mobile-title {
+@media (min-width: 701px) {
 
-    display: none;
+  h2.pricing-intro-mobile-title {
+
+    display: none !important;
+
+  }
+
+}
+
+/* FORCE show on mobile */
+
+@media (max-width: 700px) {
+
+  h2.pricing-intro-mobile-title {
+
+    display: block !important;
 
   }
 
