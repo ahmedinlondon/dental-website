@@ -1400,51 +1400,59 @@ body {
 
   .navbar {
 
-    flex-direction: column;
+    padding: 12px 16px;
 
-    gap: 12px;
-
-    padding: 16px 20px;
+    gap: 10px;
 
   }
 
-  .navbar nav {
+  .logo {
 
-    flex-wrap: wrap;
-
-    justify-content: center;
+    font-size: 18px;
 
   }
+
+  .navbar a {
+
+    padding: 7px 10px;
+
+    font-size: 14px;
+
+  }
+
+}
+
+  @media (max-width: 700px) {
 
   .pricing-hero {
 
-    min-height: 190px;
+    min-height: 170px;
 
-    padding: 28px 18px;
+    padding: 24px 18px;
 
   }
 
   .pricing-hero-content h1 {
 
-    font-size: 34px;
+    font-size: 30px;
 
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 
   }
 
   .pricing-hero-content p {
 
-    font-size: 16px;
+    font-size: 15px;
 
   }
 
+}
+
+@media (max-width: 700px) {
+
   .pricing-intro {
 
-    min-height: auto;
-
-    padding: 42px 6%;
-
-    justify-content: center;
+    padding: 32px 6%;
 
     background-position: center;
 
@@ -1452,15 +1460,17 @@ body {
 
   .pricing-glass-panel {
 
-    width: 100%;
+    width: 88%;
 
-    padding: 24px 22px;
+    padding: 22px 20px;
+
+    margin: 0 auto;
 
   }
 
   .pricing-glass-panel h2 {
 
-    font-size: 23px;
+    font-size: 22px;
 
   }
 
@@ -1468,17 +1478,19 @@ body {
 
     font-size: 14px;
 
-    line-height: 1.55;
+    line-height: 1.5;
 
   }
 
   .pricing-btn {
 
-    float: none;
+    font-size: 12px;
 
-    margin-top: 10px;
+    padding: 10px 16px;
 
   }
+
+}
 
   .pricing-stairs-section {
 
@@ -1520,15 +1532,15 @@ body {
 
  .price-card {
 
-  width: 85%;
+  width: 72%;
 
-  max-width: 260px;
+  max-width: 220px;
 
   aspect-ratio: 1 / 1;
 
   margin: 0 auto;
 
-  padding: 14px;
+  padding: 12px;
 
 }
 
@@ -1578,17 +1590,39 @@ body {
 
   }
 
-  .support-card {
+.support-card {
 
-  width: 85%;
+  width: 72%;
 
-  max-width: 260px;
+  max-width: 220px;
 
   aspect-ratio: 1 / 1;
 
   margin: 0 auto;
 
 }
+
+  .pricing-cards-row {
+
+  grid-template-columns: 1fr;
+
+  gap: 24px;
+
+}
+
+.support-cards-row {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 24px;
+
+}
+
+  
 
   .pricing-cta-bar {
 
