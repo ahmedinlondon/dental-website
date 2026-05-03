@@ -1772,7 +1772,11 @@ backdrop-filter: blur(4px);
 
     color: #0f2f57;
 
-    font-size: 34px;
+    font-size: 26px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
 
     line-height: 1.18;
 
@@ -1842,7 +1846,7 @@ backdrop-filter: blur(4px);
 
   }
 
-  .pricing-btn {
+.pricing-btn {
 
     display: block;
 
@@ -1858,11 +1862,11 @@ backdrop-filter: blur(4px);
 
     color: white;
 
-    text-decoration: none;
-
     font-size: 13px;
 
     font-weight: 600;
+
+    text-decoration: none;
 
 }
 
