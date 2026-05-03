@@ -1400,7 +1400,11 @@ body {
 
   .navbar {
 
-    padding: 12px 16px;
+    flex-direction: column;
+
+    align-items: center;
+
+    padding: 12px 10px;
 
     gap: 10px;
 
@@ -1409,6 +1413,22 @@ body {
   .logo {
 
     font-size: 18px;
+
+    line-height: 1.2;
+
+    text-align: center;
+
+    white-space: nowrap;
+
+  }
+
+  .navbar nav {
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 4px;
 
   }
 
@@ -1458,35 +1478,33 @@ body {
 
   }
 
+@media (max-width: 700px) {
+
   .pricing-glass-panel {
 
-    width: 88%;
+    background: rgba(30, 58, 138, 0.10);
 
-    padding: 22px 20px;
+    color: #0f2f57;
 
-    margin: 0 auto;
+    border: 1px solid rgba(30, 58, 138, 0.12);
 
-  }
-
-  .pricing-glass-panel h2 {
-
-    font-size: 22px;
+    box-shadow: none;
 
   }
+
+  .pricing-glass-panel h2,
 
   .pricing-glass-panel p {
 
-    font-size: 14px;
-
-    line-height: 1.5;
+    color: #0f2f57;
 
   }
 
   .pricing-btn {
 
-    font-size: 12px;
+    background: #1f6fb2;
 
-    padding: 10px 16px;
+    color: white;
 
   }
 
