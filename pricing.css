@@ -1760,7 +1760,7 @@ backdrop-filter: blur(4px);
 
     max-width: 620px;
 
-    margin: 20px auto 12px; /* FIXED */
+    margin: 12px auto 220px;
 
     text-align: center;
 
@@ -1774,7 +1774,9 @@ backdrop-filter: blur(4px);
 
     line-height: 1.18;
 
-}
+    font-weight: 600;
+
+  }
 
   .pricing-intro-mobile-title::after {
 
