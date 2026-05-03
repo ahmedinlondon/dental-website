@@ -1867,25 +1867,25 @@ backdrop-filter: blur(4px);
 
     padding: 32px 5% 38px;
 
-    background-image:
+background-image:
 
-    linear-gradient(
+  linear-gradient(
 
-      to bottom,
+    to bottom,
 
-      rgba(255,255,255,1) 0%,
+    rgba(255,255,255,1) 0%,
 
-      rgba(255,255,255,0.18) 18%,
+    rgba(255,255,255,0.35) 20%,
 
-      rgba(255,255,255,0.08) 55%,
+    rgba(255,255,255,0.15) 50%,
 
-      rgba(232,243,252,0.45) 82%,
+    rgba(232,243,252,0.75) 80%,
 
-      rgba(232,243,252,1) 100%
+    rgba(232,243,252,1) 100%
 
-    ),
+  ),
 
-    url("pricing-handshake.png");
+  url("pricing-handshake.png");
 
     background-size: 120%;
 
@@ -1898,6 +1898,8 @@ backdrop-filter: blur(4px);
     flex-direction: column;
 
     align-items: center;
+
+    background-blend-mode: lighten;
 
   }
 
