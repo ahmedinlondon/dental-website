@@ -2735,3 +2735,47 @@ body {
 
 }
 
+/* =========================================================
+
+   FIX FLOATING TITLE POSITION (FINAL)
+
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .services-intro {
+
+    position: relative !important;
+
+  }
+
+  .intro-floating-title {
+
+    position: absolute !important;
+
+    /* KEY FIX ↓ */
+
+    top: 120px !important;   /* pushes it DOWN into the image */
+
+    left: 22px !important;
+
+    max-width: 240px !important;
+
+    font-size: 22px !important;
+
+    font-weight: 500 !important;
+
+    line-height: 1.2 !important;
+
+    color: #0f2f57 !important;
+
+    text-shadow: 0 2px 10px rgba(255,255,255,0.85) !important;
+
+    z-index: 5 !important;
+
+  }
+
+}
+
+
+
