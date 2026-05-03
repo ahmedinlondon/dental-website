@@ -1520,7 +1520,7 @@ body {
 
     max-width: 430px !important;
 
-    margin: 0 auto 30px !important;
+    margin: 0 auto 40px !important;
 
     padding: 16px 20px 16px !important;
 
@@ -1556,13 +1556,15 @@ body {
 
     text-align: left !important;
 
+    letter-spacing: 0.2px;
+
   }
 
   .intro-button {
 
-    width: 190px !important;
+    width: 185px !important;
 
-    max-width: 190px !important;
+    max-width: 185px !important;
 
     min-width: 0 !important;
 
