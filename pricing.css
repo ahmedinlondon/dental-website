@@ -1985,6 +1985,12 @@ background-image:
 
 }
 
+    .support-section {
+
+    margin-top: 70px; /* adjust 60–90px as you like */
+
+  } 
+
   .pricing-btn {
 
     display: block;
