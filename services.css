@@ -2623,6 +2623,68 @@ body {
 }
 
 
+/* =========================================================
+
+   SERVICE CARDS – MONO BLUE GRADIENT (LIGHT → DARK)
+
+   ========================================================= */
+
+.service-card:nth-child(1) {
+
+  background: rgba(147,197,253,0.30); /* very light */
+
+}
+
+.service-card:nth-child(2) {
+
+  background: rgba(147,197,253,0.45); /* light */
+
+}
+
+.service-card:nth-child(3) {
+
+  background: rgba(96,165,250,0.55); /* medium */
+
+}
+
+.service-card:nth-child(4) {
+
+  background: rgba(59,130,246,0.65); /* medium-dark */
+
+}
+
+.service-card:nth-child(5) {
+
+  background: rgba(37,99,235,0.72); /* dark */
+
+}
+
+.service-card:nth-child(6) {
+
+  background: rgba(29,78,216,0.80); /* darkest */
+
+}
+
+.service-card:nth-child(4) h3,
+
+.service-card:nth-child(5) h3,
+
+.service-card:nth-child(6) h3 {
+
+  color: #ffffff !important;
+
+}
+
+.service-card:nth-child(4) span,
+
+.service-card:nth-child(5) span,
+
+.service-card:nth-child(6) span {
+
+  color: #ffffff !important;
+
+}
+
 
 
 
