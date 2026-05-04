@@ -4,9 +4,9 @@
 
 <head>
 
- <link rel="stylesheet" href="style.css?v=60">
+  <link rel="stylesheet" href="style.css?v=60">
 
-<link rel="stylesheet" href="faq.css?v=1">
+  <link rel="stylesheet" href="faq.css?v=1">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -15,6 +15,8 @@
 </head>
 
 <body class="faq-page">
+
+<!-- ================= NAVBAR ================= -->
 
 <header class="navbar">
 
@@ -38,9 +40,13 @@
 
 </header>
 
-<section class="section">
+<!-- ================= FAQ MAIN SECTION ================= -->
 
-  <div class="faq-wrapper">
+<section class="section faq-section">
+
+  <div class="faq-wrapper faq-split">
+
+    <!-- LEFT GLASS PANEL -->
 
     <div class="faq-container">
 
@@ -94,11 +100,23 @@
 
     </div>
 
+    <!-- RIGHT Q&A PANEL / MOBILE POPUP PANEL -->
+
     <div id="faqPanel" class="faq-panel"></div>
 
   </div>
 
 </section>
+
+<!-- ================= ANSWER POPUP OVERLAY ================= -->
+
+<div id="faqAnswerOverlay" class="faq-answer-overlay" onclick="closeFaqAnswer(event)">
+
+  <div id="faqAnswerPopup" class="faq-answer-popup" onclick="event.stopPropagation()"></div>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
@@ -117,6 +135,8 @@
   </div>
 
 </footer>
+
+<!-- ================= FAQ SCRIPT ================= -->
 
 <script>
 
@@ -444,15 +464,55 @@ function openSection(section) {
 
   questions.forEach(q => {
 
-    q.addEventListener("click", () => {
+    q.addEventListener("click", function(event) {
+
+      event.stopPropagation();
 
       const answer = q.nextElementSibling;
 
-      answer.style.display = answer.style.display === "block" ? "none" : "block";
+      openFaqAnswer(q.textContent.replace("▼", "").trim(), answer.innerHTML);
 
     });
 
   });
+
+}
+
+function openFaqAnswer(question, answer) {
+
+  const overlay = document.getElementById("faqAnswerOverlay");
+
+  const popup = document.getElementById("faqAnswerPopup");
+
+  popup.innerHTML = `
+
+    <button class="faq-answer-close" onclick="closeFaqAnswer(event)">×</button>
+
+    <h3>${question}</h3>
+
+    <p>${answer}</p>
+
+  `;
+
+  overlay.style.display = "flex";
+
+  document.body.classList.add("faq-answer-open");
+
+}
+
+function closeFaqAnswer(event) {
+
+  if (event) {
+
+    event.stopPropagation();
+
+  }
+
+  const overlay = document.getElementById("faqAnswerOverlay");
+
+  overlay.style.display = "none";
+
+  document.body.classList.remove("faq-answer-open");
 
 }
 
@@ -462,11 +522,15 @@ document.addEventListener("click", function(e) {
 
   const boxes = document.querySelector(".faq-grid");
 
-  if (!panel.contains(e.target) && !boxes.contains(e.target)) {
+  if (panel && panel.style.display === "block") {
 
-    panel.style.display = "none";
+    if (!panel.contains(e.target) && !boxes.contains(e.target)) {
 
-    panel.dataset.open = "";
+      panel.style.display = "none";
+
+      panel.dataset.open = "";
+
+    }
 
   }
 
