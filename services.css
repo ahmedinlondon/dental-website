@@ -2771,7 +2771,9 @@ body {
 
 @media (max-width: 600px) {
 
-  .services-grid-section {
+  @media (max-width: 600px) {
+
+  body {
 
     background-image: url("beach-background.png") !important;
 
@@ -2782,6 +2784,16 @@ body {
     background-repeat: no-repeat !important;
 
   }
+
+  .services-grid-section,
+
+  .comparison-section {
+
+    background: transparent !important;
+
+  }
+
+}
 
   .services-grid-section,
 
