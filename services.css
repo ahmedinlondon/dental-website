@@ -1993,23 +1993,7 @@ body {
 
    ========================================================= */
 
-@media (max-width: 600px) {
 
-  /* background for services + comparison */
-
-  .services-grid-section,
-
-  .comparison-section {
-
-    background-image: url("beach-background.png") !important;
-
-    background-size: cover !important;
-
-    background-position: center top !important;
-
-    background-repeat: no-repeat !important;
-
-  }
 
   /* section heading */
 
@@ -2315,19 +2299,13 @@ body {
 
    ========================================================= */
 
+.services-grid-section {
 
-
-@media (max-width: 600px) {
-
-  .comparison-section {
-
-    background-image: none !important;
-
-    background: linear-gradient(180deg, #eef8ff 0%, #f8fbff 100%) !important;
-
-  }
+  background-image: url("beach-background.png");
 
 }
+
+
 
 /* =========================================================
 
@@ -2345,21 +2323,12 @@ body {
 
 }
 
-@media (max-width: 600px) {
+.comparison-section {
 
-  .comparison-section {
+  padding: 44px 5% 70px !important;
 
-    background-image: url("beach-background.png") !important;
+}
 
-    background-size: cover !important;
-
-    background-position: center bottom !important;
-
-    background-repeat: no-repeat !important;
-
-    padding: 44px 5% 70px !important;
-
-  }
 
   .comparison-labels,
 
@@ -2766,7 +2735,69 @@ body {
    ========================================================= */
 
 
+/* =========================================================
 
+   MOBILE SHARED BACKGROUND (SERVICES + COMPARISON)
+
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .services-grid-section {
+
+    background-image: url("beach-background.png") !important;
+
+    background-size: cover !important;
+
+    background-position: center top !important;
+
+    background-repeat: no-repeat !important;
+
+  }
+
+}
+
+ @media (max-width: 600px) {
+
+  .services-grid-section,
+
+  .comparison-section {
+
+    background-color: transparent !important;
+
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .services-grid-section {
+
+    background-image: url("beach-background.png") !important;
+
+    background-size: cover !important;
+
+    background-position: center top !important;
+
+    background-repeat: no-repeat !important;
+
+  }
+
+  .services-grid-section,
+
+  .comparison-section {
+
+    background-color: transparent !important;
+
+  }
+
+  .comparison-section {
+
+    padding: 44px 5% 70px !important;
+
+  }
+
+}
 
 
 
