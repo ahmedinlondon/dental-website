@@ -1985,10 +1985,9 @@ body {
    the next section intentionally.
 
    ========================================================= */
-
 /* =========================================================
 
-   MOBILE SERVICES CARDS + SERVICE POPUP FINAL PATCH
+   MOBILE SERVICES CARDS + POPUP - FINAL CLEAN SECTION
 
    Mobile only. iPad/Desktop untouched.
 
@@ -1996,7 +1995,7 @@ body {
 
 @media (max-width: 600px) {
 
-  /* SERVICES SECTION BACKGROUND */
+  /* background for services + comparison */
 
   .services-grid-section,
 
@@ -2012,7 +2011,7 @@ body {
 
   }
 
-  /* MATCH PRICING PAGE SECTION HEADINGS */
+  /* section heading */
 
   .services-grid-section h2,
 
@@ -2042,7 +2041,7 @@ body {
 
   }
 
-  /* SERVICE CARDS - STACKED RECTANGLES */
+  /* service cards layout */
 
   .services-grid,
 
@@ -2058,33 +2057,35 @@ body {
 
   .services-interactive.panel-open .service-card {
 
-    min-height: 135px !important;
+    position: relative !important;
+
+    min-height: 155px !important;
 
     aspect-ratio: auto !important;
 
-    padding: 26px 24px !important;
+    padding: 26px 22px 58px !important;
 
     display: flex !important;
 
+    flex-direction: column !important;
+
     align-items: center !important;
 
-    justify-content: space-between !important;
+    justify-content: center !important;
 
-    text-align: left !important;
+    text-align: center !important;
 
-    flex-direction: row !important;
+    overflow: hidden !important;
 
     border-radius: 0 !important;
 
   }
 
-  /* remove icons and descriptions on mobile */
-
   .service-card i,
 
-  .services-interactive.panel-open .service-card i,
-
   .service-card p,
+
+  .services-interactive.panel-open .service-card i,
 
   .services-interactive.panel-open .service-card p {
 
@@ -2096,21 +2097,83 @@ body {
 
   .services-interactive.panel-open .service-card h3 {
 
+    display: block !important;
+
     margin: 0 !important;
 
-    font-size: 20px !important;
+    font-size: 22px !important;
 
     font-weight: 600 !important;
 
-    line-height: 1.25 !important;
+    line-height: 1.2 !important;
 
     color: #0f2f57 !important;
 
+    opacity: 1 !important;
+
+    visibility: visible !important;
+
   }
 
-  .service-card span {
+  .service-card h3::after,
 
-    margin-left: 16px !important;
+  .services-interactive.panel-open .service-card h3::after {
+
+    content: none !important;
+
+    display: none !important;
+
+  }
+
+  /* final card colours */
+
+  .service-card:nth-child(1) { background: #BFD1F2 !important; }
+
+  .service-card:nth-child(2) { background: #A9C0ED !important; }
+
+  .service-card:nth-child(3) { background: #AEC9FF !important; }
+
+  .service-card:nth-child(4) { background: #98B9FF !important; }
+
+  .service-card:nth-child(5) { background: #7FA7F3 !important; }
+
+  .service-card:nth-child(6) { background: #688FE5 !important; }
+
+  /* read more glass strip */
+
+  .service-card span,
+
+  .services-interactive.panel-open .service-card span {
+
+    position: absolute !important;
+
+    left: 0 !important;
+
+    right: 0 !important;
+
+    bottom: 0 !important;
+
+    height: 46px !important;
+
+    padding: 0 22px !important;
+
+    margin: 0 !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: flex-end !important;
+
+    box-sizing: border-box !important;
+
+    background: rgba(255,255,255,0.13) !important;
+
+    backdrop-filter: blur(5px) !important;
+
+    -webkit-backdrop-filter: blur(5px) !important;
+
+    color: #0f2f57 !important;
 
     font-size: 15px !important;
 
@@ -2118,65 +2181,69 @@ body {
 
     white-space: nowrap !important;
 
-    color: #0f5fa8 !important;
-
   }
 
-  /* stronger iPad-style card colours */
-
-  .service-card:nth-child(1) { background: rgba(147,197,253,0.74) !important; }
-
-  .service-card:nth-child(2) { background: rgba(125,211,252,0.70) !important; }
-
-  .service-card:nth-child(3) { background: rgba(96,165,250,0.66) !important; }
-
-  .service-card:nth-child(4) { background: rgba(110,231,183,0.66) !important; }
-
-  .service-card:nth-child(5) { background: rgba(186,230,253,0.74) !important; }
-
-  .service-card:nth-child(6) { background: rgba(134,239,172,0.60) !important; }
-
-  /* MOBILE SERVICE POPUP */
+  /* popup modal */
 
   .service-panel {
 
-    width: 92% !important;
+    position: fixed !important;
 
-    max-width: none !important;
+    top: 50% !important;
 
-    height: 82vh !important;
+    left: 50% !important;
 
-    max-height: 82vh !important;
+    transform: translate(-50%, -50%) !important;
+
+    width: 84% !important;
+
+    max-width: 380px !important;
+
+    height: auto !important;
+
+    max-height: 80vh !important;
 
     overflow-y: auto !important;
 
-    margin: 22px auto 0 !important;
+    margin: 0 !important;
 
-    padding: 22px !important;
+    padding: 20px !important;
+
+    z-index: 9999 !important;
+
+    background: rgba(255,255,255,0.84) !important;
+
+    backdrop-filter: blur(12px) !important;
+
+    -webkit-backdrop-filter: blur(12px) !important;
+
+    border: 1px solid rgba(255,255,255,0.65) !important;
 
     border-radius: 0 !important;
 
-    box-shadow: 0 14px 35px rgba(0,0,0,0.18) !important;
-
-    backdrop-filter: blur(10px) !important;
-
-    -webkit-backdrop-filter: blur(10px) !important;
+    box-shadow: 0 18px 45px rgba(0,0,0,0.22) !important;
 
   }
 
   .service-panel img {
 
-    height: 190px !important;
+    width: 100% !important;
+
+    height: 180px !important;
 
     object-fit: cover !important;
 
     border-radius: 0 !important;
 
+    margin-bottom: 18px !important;
+
   }
 
   .service-panel h2 {
 
-    font-size: 25px !important;
+    margin: 0 0 14px !important;
+
+    font-size: 24px !important;
 
     font-weight: 600 !important;
 
@@ -2220,22 +2287,11 @@ body {
 
     color: #0f2f57 !important;
 
+    z-index: 10000 !important;
+
   }
 
-  /* translucent tint per opened service panel */
-
- .services-interactive.panel-open .service-panel {
-
-  background: rgba(31,111,178,0.15) !important; /* clean blue tint */
-
-  backdrop-filter: blur(12px) !important;
-
-  -webkit-backdrop-filter: blur(12px) !important;
-
-}
-  }
-
-  /* COMPARISON CARDS - KEEP SIDE BY SIDE */
+  /* comparison basic mobile protection */
 
   .comparison-labels {
 
@@ -2255,776 +2311,9 @@ body {
 
 /* =========================================================
 
-   MOBILE SERVICE CARD TEXT + READ MORE STRIP PATCH
-
-   Add at the VERY BOTTOM of services.css
+   END MOBILE SERVICES CARDS + POPUP FINAL CLEAN SECTION
 
    ========================================================= */
-
-@media (max-width: 600px) {
-
-  /* Make cards feel cleaner and structured */
-
-  .service-card,
-
-  .services-interactive.panel-open .service-card {
-
-    position: relative !important;
-
-    min-height: 150px !important;
-
-    padding: 26px 22px 58px !important;
-
-    display: flex !important;
-
-    align-items: center !important;
-
-    justify-content: center !important;
-
-    text-align: center !important;
-
-    flex-direction: column !important;
-
-    overflow: hidden !important;
-
-  }
-
-  /* Remove icons + descriptions */
-
-  .service-card i,
-
-  .service-card p,
-
-  .services-interactive.panel-open .service-card i,
-
-  .services-interactive.panel-open .service-card p {
-
-    display: none !important;
-
-  }
-
-  /* Remove visible numbers from card titles */
-
-  .service-card h3,
-
-  .services-interactive.panel-open .service-card h3 {
-
-    font-size: 0 !important;
-
-    margin: 0 !important;
-
-    line-height: 1.2 !important;
-
-    color: #0f2f57 !important;
-
-    font-weight: 600 !important;
-
-  }
-
-  .service-card:nth-child(1) h3::after { content: "Initial Consultation"; }
-
-  .service-card:nth-child(2) h3::after { content: "Smile Design"; }
-
-  .service-card:nth-child(3) h3::after { content: "Metal Braces"; }
-
-  .service-card:nth-child(4) h3::after { content: "Ceramic Braces"; }
-
-  .service-card:nth-child(5) h3::after { content: "Clear Aligners"; }
-
-  .service-card:nth-child(6) h3::after { content: "Aftercare"; }
-
-  .service-card h3::after,
-
-  .services-interactive.panel-open .service-card h3::after {
-
-    font-size: 21px !important;
-
-    line-height: 1.2 !important;
-
-    display: block !important;
-
-  }
-
-  /* Lower translucent strip */
-
-  .service-card span,
-
-  .services-interactive.panel-open .service-card span {
-
-    position: absolute !important;
-
-    left: 0 !important;
-
-    right: 0 !important;
-
-    bottom: 0 !important;
-
-    height: 44px !important;
-
-    display: flex !important;
-
-    align-items: center !important;
-
-    justify-content: flex-end !important;
-
-    padding: 0 22px !important;
-
-    margin: 0 !important;
-
-    box-sizing: border-box !important;
-
-    background: rgba(255,255,255,0.34) !important;
-
-    backdrop-filter: blur(6px) !important;
-
-    -webkit-backdrop-filter: blur(6px) !important;
-
-    color: #0f5fa8 !important;
-
-    font-size: 14px !important;
-
-    font-weight: 600 !important;
-
-    white-space: nowrap !important;
-
-  }
-
-}
-
-/* =========================================================
-
-   MOBILE SERVICE CARD TEXT + READ MORE STRIP PATCH
-
-   Add at the VERY BOTTOM of services.css
-
-   ========================================================= */
-
-@media (max-width: 600px) {
-
-  /* Make cards feel cleaner and structured */
-
-  .service-card,
-
-  .services-interactive.panel-open .service-card {
-
-    position: relative !important;
-
-    min-height: 150px !important;
-
-    padding: 26px 22px 58px !important;
-
-    display: flex !important;
-
-    align-items: center !important;
-
-    justify-content: center !important;
-
-    text-align: center !important;
-
-    flex-direction: column !important;
-
-    overflow: hidden !important;
-
-  }
-
-  /* Remove icons + descriptions */
-
-  .service-card i,
-
-  .service-card p,
-
-  .services-interactive.panel-open .service-card i,
-
-  .services-interactive.panel-open .service-card p {
-
-    display: none !important;
-
-  }
-
-  /* Remove visible numbers from card titles */
-
-  .service-card h3,
-
-  .services-interactive.panel-open .service-card h3 {
-
-    font-size: 0 !important;
-
-    margin: 0 !important;
-
-    line-height: 1.2 !important;
-
-    color: #0f2f57 !important;
-
-    font-weight: 600 !important;
-
-  }
-
-  .service-card:nth-child(1) h3::after { content: "Initial Consultation"; }
-
-  .service-card:nth-child(2) h3::after { content: "Smile Design"; }
-
-  .service-card:nth-child(3) h3::after { content: "Metal Braces"; }
-
-  .service-card:nth-child(4) h3::after { content: "Ceramic Braces"; }
-
-  .service-card:nth-child(5) h3::after { content: "Clear Aligners"; }
-
-  .service-card:nth-child(6) h3::after { content: "Aftercare"; }
-
-  .service-card h3::after,
-
-  .services-interactive.panel-open .service-card h3::after {
-
-    font-size: 21px !important;
-
-    line-height: 1.2 !important;
-
-    display: block !important;
-
-  }
-
-  /* Lower translucent strip */
-
-  .service-card span,
-
-  .services-interactive.panel-open .service-card span {
-
-    position: absolute !important;
-
-    left: 0 !important;
-
-    right: 0 !important;
-
-    bottom: 0 !important;
-
-    height: 44px !important;
-
-    display: flex !important;
-
-    align-items: center !important;
-
-    justify-content: flex-end !important;
-
-    padding: 0 22px !important;
-
-    margin: 0 !important;
-
-    box-sizing: border-box !important;
-
-    background: rgba(255,255,255,0.34) !important;
-
-    backdrop-filter: blur(6px) !important;
-
-    -webkit-backdrop-filter: blur(6px) !important;
-
-    color: #0f5fa8 !important;
-
-    font-size: 14px !important;
-
-    font-weight: 600 !important;
-
-    white-space: nowrap !important;
-
-  }
-
-}
-
-
-/* =========================================================
-
-   MOBILE SERVICE CARDS FINAL CLEAN FIX
-
-   ========================================================= */
-
-@media (max-width: 600px) {
-
-  /* Remove icons + description */
-
-  .service-card i,
-
-  .service-card p {
-
-    display: none !important;
-
-  }
-
-  /* Center content and make card taller */
-
-  .service-card {
-
-    display: flex !important;
-
-    flex-direction: column !important;
-
-    justify-content: center !important;
-
-    align-items: center !important;
-
-    text-align: center !important;
-
-    min-height: 160px !important;
-
-    padding: 24px 20px 60px !important;
-
-    position: relative !important;
-
-  }
-
-  /* Remove numbering ONLY (not whole text) */
-
-  .service-card h3 {
-
-    font-size: 20px !important;
-
-    font-weight: 600 !important;
-
-  }
-
-  .service-card h3::first-letter {
-
-    display: none;
-
-  }
-
-  /* Bottom translucent strip */
-
-  .service-card span {
-
-    position: absolute !important;
-
-    bottom: 0;
-
-    left: 0;
-
-    width: 100%;
-
-    height: 44px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: flex-end;
-
-    padding-right: 20px;
-
-    background: rgba(255,255,255,0.35);
-
-    backdrop-filter: blur(6px);
-
-    font-size: 14px;
-
-    font-weight: 600;
-
-    color: #0f5fa8;
-
-  }
-
-}
-
-
-/* =========================================================
-
-   SERVICE CARDS – MONO BLUE GRADIENT (LIGHT → DARK)
-
-   ========================================================= */
-
-.service-card:nth-child(1) {
-
-  background: rgba(147,197,253,0.30); /* very light */
-
-}
-
-.service-card:nth-child(2) {
-
-  background: rgba(147,197,253,0.45); /* light */
-
-}
-
-.service-card:nth-child(3) {
-
-  background: rgba(96,165,250,0.55); /* medium */
-
-}
-
-.service-card:nth-child(4) {
-
-  background: rgba(59,130,246,0.65); /* medium-dark */
-
-}
-
-.service-card:nth-child(5) {
-
-  background: rgba(37,99,235,0.72); /* dark */
-
-}
-
-.service-card:nth-child(6) {
-
-  background: rgba(29,78,216,0.80); /* darkest */
-
-}
-
-.service-card:nth-child(4) h3,
-
-.service-card:nth-child(5) h3,
-
-.service-card:nth-child(6) h3 {
-
-  color: #ffffff !important;
-
-}
-
-.service-card:nth-child(4) span,
-
-.service-card:nth-child(5) span,
-
-.service-card:nth-child(6) span {
-
-  color: #ffffff !important;
-
-}
-
-/* =========================================================
-
-   MOBILE SERVICE CARDS + POPUP FINAL PATCH
-
-   ========================================================= */
-
-@media (max-width: 600px) {
-
-  .service-card h3::after {
-
-    content: none !important;
-
-    display: none !important;
-
-  }
-
-  .service-card {
-
-    position: relative !important;
-
-    min-height: 155px !important;
-
-    padding: 26px 22px 58px !important;
-
-    display: flex !important;
-
-    align-items: center !important;
-
-    justify-content: center !important;
-
-    text-align: center !important;
-
-    flex-direction: column !important;
-
-    overflow: hidden !important;
-
-    border-radius: 0 !important;
-
-  }
-
-  .service-card i,
-
-  .service-card p {
-
-    display: none !important;
-
-  }
-
-  .service-card h3 {
-
-    margin: 0 !important;
-
-    font-size: 22px !important;
-
-    font-weight: 600 !important;
-
-    line-height: 1.2 !important;
-
-    color: #0f2f57 !important;
-
-  }
-
-  .service-card span {
-
-    position: absolute !important;
-
-    left: 0 !important;
-
-    right: 0 !important;
-
-    bottom: 0 !important;
-
-    height: 46px !important;
-
-    padding: 0 22px !important;
-
-    margin: 0 !important;
-
-    display: flex !important;
-
-    align-items: center !important;
-
-    justify-content: flex-end !important;
-
-    background: rgba(255,255,255,0.34) !important;
-
-    backdrop-filter: blur(6px) !important;
-
-    -webkit-backdrop-filter: blur(6px) !important;
-
-    color: #0f5fa8 !important;
-
-    font-size: 15px !important;
-
-    font-weight: 600 !important;
-
-    box-sizing: border-box !important;
-
-  }
-
-  .service-card:nth-child(1) { background: #BFD1F2 !important; }
-
-  .service-card:nth-child(2) { background: #A9C0ED !important; }
-
-  .service-card:nth-child(3) { background: #AEC9FF !important; }
-
-  .service-card:nth-child(4) { background: #98B9FF !important; }
-
-  .service-card:nth-child(5) { background: #7FA7F3 !important; }
-
-  .service-card:nth-child(6) { background: #688FE5 !important; }
-
-  .service-panel {
-
-    width: 100% !important;
-
-    max-width: none !important;
-
-    height: auto !important;
-
-    max-height: 82vh !important;
-
-    overflow-y: auto !important;
-
-    margin: 18px 0 !important;
-
-    padding: 22px !important;
-
-    border-radius: 0 !important;
-
-    background: rgba(169,192,237,0.42) !important;
-
-    backdrop-filter: blur(12px) !important;
-
-    -webkit-backdrop-filter: blur(12px) !important;
-
-    border: 1px solid rgba(255,255,255,0.45) !important;
-
-    box-shadow: 0 14px 35px rgba(0,0,0,0.18) !important;
-
-  }
-
-  .service-panel img {
-
-    height: 190px !important;
-
-    object-fit: cover !important;
-
-    border-radius: 0 !important;
-
-  }
-
-  .service-panel h2 {
-
-    font-size: 25px !important;
-
-    font-weight: 600 !important;
-
-    line-height: 1.2 !important;
-
-    color: #0f2f57 !important;
-
-  }
-
-  .service-panel h3 {
-
-    font-size: 19px !important;
-
-    font-weight: 600 !important;
-
-    color: #0f2f57 !important;
-
-  }
-
-  .service-panel p,
-
-  .service-panel li {
-
-    font-size: 13.2px !important;
-
-    line-height: 1.4 !important;
-
-    letter-spacing: 0.2px !important;
-
-    color: #0f2f57 !important;
-
-  }
-
-}
-
-/* =========================================================
-
-   MOBILE SERVICE CARDS + POPUP CORRECTION PATCH
-
-   ========================================================= */
-
-@media (max-width: 600px) {
-
-  /* keep card titles visible always */
-
-  .service-card h3,
-
-  .services-interactive.panel-open .service-card h3 {
-
-    display: block !important;
-
-    font-size: 22px !important;
-
-    font-weight: 600 !important;
-
-    line-height: 1.2 !important;
-
-    color: #0f2f57 !important;
-
-    margin: 0 !important;
-
-    opacity: 1 !important;
-
-    visibility: visible !important;
-
-  }
-
-  .service-card h3::after,
-
-  .services-interactive.panel-open .service-card h3::after {
-
-    content: none !important;
-
-    display: none !important;
-
-  }
-
-  /* lighter glass strip, not a new colour */
-
-  .service-card span,
-
-  .services-interactive.panel-open .service-card span {
-
-    background: rgba(255,255,255,0.12) !important;
-
-    backdrop-filter: blur(5px) !important;
-
-    -webkit-backdrop-filter: blur(5px) !important;
-
-    color: #0f2f57 !important;
-
-  }
-
-  /* mobile popup appears ON TOP, not underneath card */
-
-  .service-panel {
-
-    position: fixed !important;
-
-    top: 50% !important;
-
-    left: 50% !important;
-
-    transform: translate(-50%, -50%) !important;
-
-    width: 86% !important;
-
-    max-width: 390px !important;
-
-    height: auto !important;
-
-    max-height: 80vh !important;
-
-    overflow-y: auto !important;
-
-    z-index: 9999 !important;
-
-    margin: 0 !important;
-
-    padding: 20px !important;
-
-   background: rgba(255,255,255,0.82) !important;  /* soft translucent white */
-
-  backdrop-filter: blur(12px) !important;
-
-  -webkit-backdrop-filter: blur(12px) !important;
-
-  border: 1px solid rgba(255,255,255,0.6) !important;
-
-    box-shadow: 0 18px 45px rgba(0,0,0,0.22) !important;
-
-  }
-
-  .service-panel img {
-
-    height: 180px !important;
-
-    border-radius: 0 !important;
-
-  }
-
-  .service-panel h2 {
-
-    color: #0f2f57 !important;
-
-    font-size: 24px !important;
-
-    font-weight: 600 !important;
-
-  }
-
-  .service-panel p,
-
-  .service-panel li {
-
-    color: #0f2f57 !important;
-
-    font-size: 13.2px !important;
-
-    line-height: 1.4 !important;
-
-    letter-spacing: 0.2px !important;
-
-  }
-
-  .service-close {
-
-    z-index: 10000 !important;
-
-  }
-
-}
-
-/* force ALL service card text to dark (fix white text issue) */
-
-.service-card,
-
-.service-card h3,
-
-.service-card span {
-
-  color: #0f2f57 !important;
-
-}
-
 
 
 
