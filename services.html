@@ -219,7 +219,48 @@
     </div>
 
   </div>
+<!-- ================= MOBILE COMPARISON CARDS ================= -->
 
+<div class="mobile-comparison-cards">
+
+  <button class="mobile-comparison-card comparison-braces-card" onclick="openComparisonPopup('braces')">
+
+    <div class="comparison-card-icon">
+
+      <i class="fa-solid fa-teeth-open"></i>
+
+    </div>
+
+    <h3>BRACES</h3>
+
+    <span>Read more →</span>
+
+  </button>
+
+  <button class="mobile-comparison-card comparison-aligners-card" onclick="openComparisonPopup('aligners')">
+
+    <div class="comparison-card-icon">
+
+      <i class="fa-solid fa-align-center"></i>
+
+    </div>
+
+    <h3>ALIGNERS</h3>
+
+    <span>Read more →</span>
+
+  </button>
+
+</div>
+
+<div id="comparisonOverlay" class="comparison-overlay" onclick="closeComparisonPopup(event)">
+
+  <div id="comparisonPopup" class="comparison-popup" onclick="event.stopPropagation()"></div>
+
+</div>
+
+<!-- ================= END MOBILE COMPARISON CARDS ================= -->
+  
   <div class="comparison-text">
 
     <div class="comparison-row">
@@ -672,6 +713,118 @@ document.addEventListener("click", function(e) {
 
 });
 
+const comparisonData = {
+
+  braces: `
+
+    <button class="comparison-close" onclick="closeComparisonPopup(event)">×</button>
+
+    <div class="comparison-popup-heading">
+
+      <div class="comparison-popup-icon braces-popup-icon">
+
+        <i class="fa-solid fa-teeth-open"></i>
+
+      </div>
+
+      <h2>BRACES</h2>
+
+    </div>
+
+    <ul>
+
+      <li>Visible brackets and wires are noticeable during treatment</li>
+
+      <li>Fixed in place 24/7 for continuous, effective results</li>
+
+      <li>Ideal for complex cases and severe alignment issues</li>
+
+      <li>More precise control for predictable and detailed adjustments</li>
+
+      <li>More care needed with eating to avoid damaging brackets</li>
+
+      <li>More effort required for thorough cleaning around brackets</li>
+
+      <li>Adjustment visits every 4–8 weeks to monitor progress</li>
+
+      <li>Proven and reliable results for all types of orthodontic cases</li>
+
+    </ul>
+
+  `,
+
+  aligners: `
+
+    <button class="comparison-close" onclick="closeComparisonPopup(event)">×</button>
+
+    <div class="comparison-popup-heading">
+
+      <div class="comparison-popup-icon aligners-popup-icon">
+
+        <i class="fa-solid fa-align-center"></i>
+
+      </div>
+
+      <h2>ALIGNERS</h2>
+
+    </div>
+
+    <ul>
+
+      <li>Virtually invisible trays for a discreet natural look</li>
+
+      <li>Removable for eating, drinking, brushing, and flossing</li>
+
+      <li>Ideal for mild to moderate cases and minor corrections</li>
+
+      <li>Gentle, consistent pressure for comfortable tooth movement</li>
+
+      <li>No food restrictions, eat and enjoy your favorite foods</li>
+
+      <li>Easier to clean, just remove and brush as usual</li>
+
+      <li>Check-ups every 6–10 weeks with fewer in-office visits</li>
+
+      <li>More comfortable and convenient for everyday lifestyle</li>
+
+    </ul>
+
+  `
+
+};
+
+function openComparisonPopup(type) {
+
+  const overlay = document.getElementById("comparisonOverlay");
+
+  const popup = document.getElementById("comparisonPopup");
+
+  popup.className = "comparison-popup " + type + "-popup";
+
+  popup.innerHTML = comparisonData[type];
+
+  overlay.style.display = "flex";
+
+  document.body.style.overflow = "hidden";
+
+}
+
+function closeComparisonPopup(event) {
+
+  if (event) {
+
+    event.stopPropagation();
+
+  }
+
+  const overlay = document.getElementById("comparisonOverlay");
+
+  overlay.style.display = "none";
+
+  document.body.style.overflow = "";
+
+}
+  
 </script>
 
 </body>
