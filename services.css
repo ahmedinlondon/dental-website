@@ -2329,7 +2329,325 @@ body {
 
 }
 
+/* =========================================================
 
+   MOBILE COMPARISON CARDS + POPUP - FINAL
+
+   Mobile only. iPad/Desktop untouched.
+
+   ========================================================= */
+
+.mobile-comparison-cards,
+
+.comparison-overlay {
+
+  display: none;
+
+}
+
+@media (max-width: 600px) {
+
+  .comparison-section {
+
+    background-image: url("beach-background.png") !important;
+
+    background-size: cover !important;
+
+    background-position: center bottom !important;
+
+    background-repeat: no-repeat !important;
+
+    padding: 44px 5% 70px !important;
+
+  }
+
+  .comparison-labels,
+
+  .comparison-text {
+
+    display: none !important;
+
+  }
+
+  .mobile-comparison-cards {
+
+    display: grid !important;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+
+    margin: 34px auto 0;
+
+    max-width: 520px;
+
+  }
+
+  .mobile-comparison-card {
+
+    min-height: 220px;
+
+    border: none;
+
+    border-radius: 0;
+
+    padding: 26px 14px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    text-align: center;
+
+    cursor: pointer;
+
+  }
+
+  .comparison-braces-card {
+
+    background: #062a57;
+
+  }
+
+  .comparison-aligners-card {
+
+    background: #087866;
+
+  }
+
+  .comparison-card-icon {
+
+    width: 68px;
+
+    height: 68px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.95);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 26px;
+
+  }
+
+  .comparison-braces-card .comparison-card-icon {
+
+    color: #062a57;
+
+  }
+
+  .comparison-aligners-card .comparison-card-icon {
+
+    color: #087866;
+
+  }
+
+  .mobile-comparison-card h3 {
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 25px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+  }
+
+  .mobile-comparison-card span {
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    font-weight: 500;
+
+  }
+
+  .comparison-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 12000;
+
+    background: rgba(0,0,0,0.28);
+
+    backdrop-filter: blur(3px);
+
+    -webkit-backdrop-filter: blur(3px);
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 24px 0;
+
+    box-sizing: border-box;
+
+  }
+
+  .comparison-popup {
+
+    width: 86%;
+
+    max-width: 390px;
+
+    max-height: 80vh;
+
+    overflow-y: auto;
+
+    border-radius: 0;
+
+    padding: 24px 22px;
+
+    box-sizing: border-box;
+
+    position: relative;
+
+    border: 1px solid rgba(255,255,255,0.65);
+
+    box-shadow: 0 18px 45px rgba(0,0,0,0.24);
+
+  }
+
+  .braces-popup {
+
+    background: rgba(6,42,87,0.15);
+
+    color: #062a57;
+
+  }
+
+  .aligners-popup {
+
+    background: rgba(8,120,102,0.15);
+
+    color: #087866;
+
+  }
+
+  .comparison-popup-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin-bottom: 18px;
+
+  }
+
+  .comparison-popup-icon {
+
+    width: 56px;
+
+    height: 56px;
+
+    border-radius: 50%;
+
+    color: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 23px;
+
+    flex-shrink: 0;
+
+  }
+
+  .braces-popup-icon {
+
+    background: #062a57;
+
+  }
+
+  .aligners-popup-icon {
+
+    background: #087866;
+
+  }
+
+  .comparison-popup h2 {
+
+    margin: 0;
+
+    font-size: 25px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+  }
+
+  .comparison-popup ul {
+
+    margin: 0;
+
+    padding-left: 20px;
+
+  }
+
+  .comparison-popup li {
+
+    font-size: 14px;
+
+    line-height: 1.45;
+
+    letter-spacing: 0.2px;
+
+    margin-bottom: 10px;
+
+  }
+
+  .comparison-close {
+
+    position: absolute;
+
+    top: 10px;
+
+    right: 14px;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 34px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    color: inherit;
+
+  }
+
+}
+
+/* =========================================================
+
+   END MOBILE COMPARISON CARDS + POPUP - FINAL
+
+   ========================================================= */
 
 
 
