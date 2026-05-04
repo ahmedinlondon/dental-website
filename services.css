@@ -1986,6 +1986,268 @@ body {
 
    ========================================================= */
 
+/* =========================================================
+
+   MOBILE SERVICES CARDS + SERVICE POPUP FINAL PATCH
+
+   Mobile only. iPad/Desktop untouched.
+
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  /* SERVICES SECTION BACKGROUND */
+
+  .services-grid-section,
+
+  .comparison-section {
+
+    background-image: url("beach-background.png") !important;
+
+    background-size: cover !important;
+
+    background-position: center top !important;
+
+    background-repeat: no-repeat !important;
+
+  }
+
+  /* MATCH PRICING PAGE SECTION HEADINGS */
+
+  .services-grid-section h2,
+
+  .comparison-title h2 {
+
+    font-size: 30px !important;
+
+    font-weight: 600 !important;
+
+    line-height: 1.2 !important;
+
+    letter-spacing: 0 !important;
+
+    color: #0f2f57 !important;
+
+  }
+
+  .services-grid-intro,
+
+  .comparison-section p {
+
+    font-size: 15px !important;
+
+    line-height: 1.5 !important;
+
+    color: #0f2f57 !important;
+
+  }
+
+  /* SERVICE CARDS - STACKED RECTANGLES */
+
+  .services-grid,
+
+  .services-interactive.panel-open .services-grid {
+
+    grid-template-columns: 1fr !important;
+
+    gap: 18px !important;
+
+  }
+
+  .service-card,
+
+  .services-interactive.panel-open .service-card {
+
+    min-height: 135px !important;
+
+    aspect-ratio: auto !important;
+
+    padding: 26px 24px !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: space-between !important;
+
+    text-align: left !important;
+
+    flex-direction: row !important;
+
+    border-radius: 0 !important;
+
+  }
+
+  /* remove icons and descriptions on mobile */
+
+  .service-card i,
+
+  .services-interactive.panel-open .service-card i,
+
+  .service-card p,
+
+  .services-interactive.panel-open .service-card p {
+
+    display: none !important;
+
+  }
+
+  .service-card h3,
+
+  .services-interactive.panel-open .service-card h3 {
+
+    margin: 0 !important;
+
+    font-size: 20px !important;
+
+    font-weight: 600 !important;
+
+    line-height: 1.25 !important;
+
+    color: #0f2f57 !important;
+
+  }
+
+  .service-card span {
+
+    margin-left: 16px !important;
+
+    font-size: 15px !important;
+
+    font-weight: 600 !important;
+
+    white-space: nowrap !important;
+
+    color: #0f5fa8 !important;
+
+  }
+
+  /* stronger iPad-style card colours */
+
+  .service-card:nth-child(1) { background: rgba(147,197,253,0.74) !important; }
+
+  .service-card:nth-child(2) { background: rgba(125,211,252,0.70) !important; }
+
+  .service-card:nth-child(3) { background: rgba(96,165,250,0.66) !important; }
+
+  .service-card:nth-child(4) { background: rgba(110,231,183,0.66) !important; }
+
+  .service-card:nth-child(5) { background: rgba(186,230,253,0.74) !important; }
+
+  .service-card:nth-child(6) { background: rgba(134,239,172,0.60) !important; }
+
+  /* MOBILE SERVICE POPUP */
+
+  .service-panel {
+
+    width: 92% !important;
+
+    max-width: none !important;
+
+    height: 82vh !important;
+
+    max-height: 82vh !important;
+
+    overflow-y: auto !important;
+
+    margin: 22px auto 0 !important;
+
+    padding: 22px !important;
+
+    border-radius: 0 !important;
+
+    box-shadow: 0 14px 35px rgba(0,0,0,0.18) !important;
+
+    backdrop-filter: blur(10px) !important;
+
+    -webkit-backdrop-filter: blur(10px) !important;
+
+  }
+
+  .service-panel img {
+
+    height: 190px !important;
+
+    object-fit: cover !important;
+
+    border-radius: 0 !important;
+
+  }
+
+  .service-panel h2 {
+
+    font-size: 25px !important;
+
+    font-weight: 600 !important;
+
+    line-height: 1.2 !important;
+
+    color: #0f2f57 !important;
+
+  }
+
+  .service-panel h3 {
+
+    font-size: 19px !important;
+
+    font-weight: 600 !important;
+
+    color: #0f2f57 !important;
+
+  }
+
+  .service-panel p,
+
+  .service-panel li {
+
+    font-size: 13.2px !important;
+
+    line-height: 1.4 !important;
+
+    letter-spacing: 0.2px !important;
+
+    color: #0f2f57 !important;
+
+  }
+
+  .service-close {
+
+    top: 10px !important;
+
+    right: 14px !important;
+
+    font-size: 30px !important;
+
+    color: #0f2f57 !important;
+
+  }
+
+  /* translucent tint per opened service panel */
+
+  .services-interactive.panel-open .service-panel {
+
+    background: rgba(147,197,253,0.18) !important;
+
+  }
+
+  /* COMPARISON CARDS - KEEP SIDE BY SIDE */
+
+  .comparison-labels {
+
+    display: grid !important;
+
+    grid-template-columns: 1fr 54px 1fr !important;
+
+  }
+
+  .comparison-row {
+
+    font-size: 15px !important;
+
+  }
+
+}
+
 
 
 
