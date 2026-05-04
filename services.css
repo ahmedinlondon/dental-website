@@ -2525,21 +2525,21 @@ body {
 
   }
 
-  .braces-popup {
+.braces-popup {
 
-    background: rgba(6,42,87,0.15);
+  background: #e6edf6 !important;  /* 15% navy feel (solid) */
 
-    color: #062a57;
+  color: #062a57 !important;
 
-  }
+}
 
-  .aligners-popup {
+.aligners-popup {
 
-    background: rgba(8,120,102,0.15);
+  background: #e6f2ef !important;  /* 15% green feel (solid) */
 
-    color: #087866;
+  color: #087866 !important;
 
-  }
+}
 
   .comparison-popup-heading {
 
