@@ -2530,6 +2530,98 @@ body {
 }
 
 
+/* =========================================================
+
+   MOBILE SERVICE CARDS FINAL CLEAN FIX
+
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  /* Remove icons + description */
+
+  .service-card i,
+
+  .service-card p {
+
+    display: none !important;
+
+  }
+
+  /* Center content and make card taller */
+
+  .service-card {
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    justify-content: center !important;
+
+    align-items: center !important;
+
+    text-align: center !important;
+
+    min-height: 160px !important;
+
+    padding: 24px 20px 60px !important;
+
+    position: relative !important;
+
+  }
+
+  /* Remove numbering ONLY (not whole text) */
+
+  .service-card h3 {
+
+    font-size: 20px !important;
+
+    font-weight: 600 !important;
+
+  }
+
+  .service-card h3::first-letter {
+
+    display: none;
+
+  }
+
+  /* Bottom translucent strip */
+
+  .service-card span {
+
+    position: absolute !important;
+
+    bottom: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    padding-right: 20px;
+
+    background: rgba(255,255,255,0.35);
+
+    backdrop-filter: blur(6px);
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #0f5fa8;
+
+  }
+
+}
+
 
 
 
