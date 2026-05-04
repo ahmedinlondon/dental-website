@@ -160,7 +160,7 @@
 
       </div>
 
-      <div class="service-card" onclick="openService('aftercae', event)">
+      <div class="service-card" onclick="openService('retainers', event)">
 
         <i class="fa-solid fa-shield-heart"></i>
 
@@ -600,8 +600,6 @@ function openService(service, event) {
 
   const wrapper = document.querySelector(".services-interactive");
 
-  const clickedCard = event.currentTarget;
-
   if (panel.dataset.open === service) {
 
     closeServicePanel();
@@ -618,23 +616,18 @@ function openService(service, event) {
 
   wrapper.classList.add("panel-open");
 
-  /* 🔥 KEY FIX: position popup under clicked card (mobile only) */
-
   if (window.innerWidth <= 600) {
 
-    clickedCard.insertAdjacentElement("afterend", panel);
+    panel.scrollTop = 0;
 
-    panel.scrollIntoView({
+  } else {
 
-      behavior: "smooth",
-
-      block: "start"
-
-    });
+    panel.scrollIntoView({ behavior: "smooth", block: "start" });
 
   }
 
 }
+  
 function closeService(event) {
 
   if (event) {
