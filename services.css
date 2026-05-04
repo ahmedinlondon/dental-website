@@ -2685,6 +2685,197 @@ body {
 
 }
 
+/* =========================================================
+
+   MOBILE SERVICE CARDS + POPUP FINAL PATCH
+
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .service-card h3::after {
+
+    content: none !important;
+
+    display: none !important;
+
+  }
+
+  .service-card {
+
+    position: relative !important;
+
+    min-height: 155px !important;
+
+    padding: 26px 22px 58px !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    text-align: center !important;
+
+    flex-direction: column !important;
+
+    overflow: hidden !important;
+
+    border-radius: 0 !important;
+
+  }
+
+  .service-card i,
+
+  .service-card p {
+
+    display: none !important;
+
+  }
+
+  .service-card h3 {
+
+    margin: 0 !important;
+
+    font-size: 22px !important;
+
+    font-weight: 600 !important;
+
+    line-height: 1.2 !important;
+
+    color: #0f2f57 !important;
+
+  }
+
+  .service-card span {
+
+    position: absolute !important;
+
+    left: 0 !important;
+
+    right: 0 !important;
+
+    bottom: 0 !important;
+
+    height: 46px !important;
+
+    padding: 0 22px !important;
+
+    margin: 0 !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: flex-end !important;
+
+    background: rgba(255,255,255,0.34) !important;
+
+    backdrop-filter: blur(6px) !important;
+
+    -webkit-backdrop-filter: blur(6px) !important;
+
+    color: #0f5fa8 !important;
+
+    font-size: 15px !important;
+
+    font-weight: 600 !important;
+
+    box-sizing: border-box !important;
+
+  }
+
+  .service-card:nth-child(1) { background: #BFD1F2 !important; }
+
+  .service-card:nth-child(2) { background: #A9C0ED !important; }
+
+  .service-card:nth-child(3) { background: #AEC9FF !important; }
+
+  .service-card:nth-child(4) { background: #98B9FF !important; }
+
+  .service-card:nth-child(5) { background: #7FA7F3 !important; }
+
+  .service-card:nth-child(6) { background: #688FE5 !important; }
+
+  .service-panel {
+
+    width: 100% !important;
+
+    max-width: none !important;
+
+    height: auto !important;
+
+    max-height: 82vh !important;
+
+    overflow-y: auto !important;
+
+    margin: 18px 0 !important;
+
+    padding: 22px !important;
+
+    border-radius: 0 !important;
+
+    background: rgba(169,192,237,0.42) !important;
+
+    backdrop-filter: blur(12px) !important;
+
+    -webkit-backdrop-filter: blur(12px) !important;
+
+    border: 1px solid rgba(255,255,255,0.45) !important;
+
+    box-shadow: 0 14px 35px rgba(0,0,0,0.18) !important;
+
+  }
+
+  .service-panel img {
+
+    height: 190px !important;
+
+    object-fit: cover !important;
+
+    border-radius: 0 !important;
+
+  }
+
+  .service-panel h2 {
+
+    font-size: 25px !important;
+
+    font-weight: 600 !important;
+
+    line-height: 1.2 !important;
+
+    color: #0f2f57 !important;
+
+  }
+
+  .service-panel h3 {
+
+    font-size: 19px !important;
+
+    font-weight: 600 !important;
+
+    color: #0f2f57 !important;
+
+  }
+
+  .service-panel p,
+
+  .service-panel li {
+
+    font-size: 13.2px !important;
+
+    line-height: 1.4 !important;
+
+    letter-spacing: 0.2px !important;
+
+    color: #0f2f57 !important;
+
+  }
+
+}
+
+
 
 
 
