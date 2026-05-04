@@ -2224,10 +2224,15 @@ body {
 
   /* translucent tint per opened service panel */
 
-  .services-interactive.panel-open .service-panel {
+ .services-interactive.panel-open .service-panel {
 
-    background: rgba(147,197,253,0.18) !important;
+  background: rgba(31,111,178,0.15) !important; /* clean blue tint */
 
+  backdrop-filter: blur(12px) !important;
+
+  -webkit-backdrop-filter: blur(12px) !important;
+
+}
   }
 
   /* COMPARISON CARDS - KEEP SIDE BY SIDE */
