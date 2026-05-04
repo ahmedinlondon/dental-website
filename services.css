@@ -2317,6 +2317,18 @@ body {
 
 
 
+@media (max-width: 600px) {
+
+  .comparison-section {
+
+    background-image: none !important;
+
+    background: linear-gradient(180deg, #eef8ff 0%, #f8fbff 100%) !important;
+
+  }
+
+}
+
 
 
 
