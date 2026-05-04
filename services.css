@@ -2645,6 +2645,122 @@ body {
 
 /* =========================================================
 
+   MOBILE COMPARISON SECTION REFINEMENT
+
+   Mobile only. iPad/Desktop untouched.
+
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  /* 1. Remove line under comparison headline */
+
+  .comparison-title span {
+
+    display: none !important;
+
+  }
+
+  /* 2. Match comparison heading style with services/pricing feel */
+
+  .comparison-title p {
+
+    font-size: 13px !important;
+
+    font-weight: 600 !important;
+
+    letter-spacing: 6px !important;
+
+    color: #0f2f57 !important;
+
+    margin-bottom: 14px !important;
+
+  }
+
+  .comparison-title h2 {
+
+    font-size: 30px !important;
+
+    font-weight: 600 !important;
+
+    line-height: 1.2 !important;
+
+    letter-spacing: 0 !important;
+
+    color: #0f2f57 !important;
+
+    margin: 0 !important;
+
+  }
+
+  /* 3. Comparison cards: smaller icon/title, better spacing */
+
+  .mobile-comparison-card {
+
+    min-height: 205px !important;
+
+    padding: 24px 12px 22px !important;
+
+    gap: 0 !important;
+
+  }
+
+  .comparison-card-icon {
+
+    width: 54px !important;
+
+    height: 54px !important;
+
+    font-size: 21px !important;
+
+    margin-bottom: 14px !important;
+
+  }
+
+  .mobile-comparison-card h3 {
+
+    font-size: 22px !important;
+
+    font-weight: 600 !important;
+
+    letter-spacing: 1px !important;
+
+    margin: 0 0 38px !important;
+
+    line-height: 1.2 !important;
+
+  }
+
+  .mobile-comparison-card span {
+
+    font-size: 15px !important;
+
+    font-weight: 600 !important;
+
+    line-height: 1.2 !important;
+
+  }
+
+  /* 4. Braces popup only: stronger 20% navy tint */
+
+  .braces-popup {
+
+    background: #d9e2ef !important;
+
+    color: #062a57 !important;
+
+  }
+
+}
+
+/* =========================================================
+
+   END MOBILE COMPARISON SECTION REFINEMENT
+
+   ========================================================= */
+
+/* =========================================================
+
    END MOBILE COMPARISON CARDS + POPUP - FINAL
 
    ========================================================= */
