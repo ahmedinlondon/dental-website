@@ -594,11 +594,13 @@ const serviceData = {
 
 };
 
-function openService(service) {
+function openService(service, event) {
 
   const panel = document.getElementById("servicePanel");
 
   const wrapper = document.querySelector(".services-interactive");
+
+  const clickedCard = event.currentTarget;
 
   if (panel.dataset.open === service) {
 
@@ -616,14 +618,23 @@ function openService(service) {
 
   wrapper.classList.add("panel-open");
 
-  if (window.innerWidth <= 768) {
+  /* 🔥 KEY FIX: position popup under clicked card (mobile only) */
 
-    panel.scrollIntoView({ behavior: "smooth", block: "start" });
+  if (window.innerWidth <= 600) {
+
+    clickedCard.insertAdjacentElement("afterend", panel);
+
+    panel.scrollIntoView({
+
+      behavior: "smooth",
+
+      block: "start"
+
+    });
 
   }
 
 }
-
 function closeService(event) {
 
   if (event) {
