@@ -706,13 +706,19 @@ body.faq-page {
 
 }
 
+/* Turn off old CSS-made hero */
+
 .faq-section::before,
 
 .faq-section::after {
 
   content: none !important;
 
+  display: none !important;
+
 }
+
+/* New real HTML hero */
 
 .faq-mobile-hero {
 
