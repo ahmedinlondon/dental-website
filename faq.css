@@ -783,6 +783,12 @@ body.faq-page {
 
 /* PHOTO AREA */
 
+  .faq-container img {
+
+  display: none !important;
+
+}
+
 .faq-container {
 
   width: 100% !important;
@@ -791,7 +797,7 @@ body.faq-page {
 
   margin: 0 !important;
 
-  padding: 680px 0 0 !important;
+  padding: 430px 0 0 !important;
 
   box-sizing: border-box !important;
 
@@ -819,17 +825,13 @@ body.faq-page {
 
   width: 100%;
 
-  height: 620px;
+  height: 580px;
 
-  background-image:
+  background-image: url("family.PNG");
 
-    linear-gradient(rgba(255,255,255,0.04), rgba(255,255,255,0.04)),
+  background-size: cover;
 
-    url("family.PNG");
-
-  background-size: 85%;
-
-  background-position: 50% 0%;
+  background-position: 40% 25%;
 
   background-repeat: no-repeat;
 
