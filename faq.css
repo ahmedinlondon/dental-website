@@ -619,9 +619,7 @@ body.faq-page {
 
   margin: 0 !important;
 
-  min-height: 530px !important;
-
-  padding: 0 !important;
+  padding: 310px 0 0 !important;
 
   box-sizing: border-box !important;
 
@@ -658,17 +656,11 @@ body.faq-page {
 
 .faq-intro {
 
-  position: absolute !important;
-
-  left: 5% !important;
-
-  bottom: 42px !important;
-
   width: 78% !important;
 
   max-width: 430px !important;
 
-  margin: 0 !important;
+  margin: 0 0 42px 5% !important;
 
   padding: 16px 20px !important;
 
@@ -701,7 +693,7 @@ body.faq-page {
 
   display: block !important;
 
-  margin-top: 530px !important;
+  margin-top: 0 !important;
 
   background: linear-gradient(180deg, #f3f7f4 0%, #edf5ef 100%) !important;
 
