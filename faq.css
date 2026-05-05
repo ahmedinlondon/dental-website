@@ -625,9 +625,9 @@ body.faq-page {
 
   background-image: url("family.PNG") !important;
 
-  background-size: 115% auto !important;
+  background-size: cover !important;
 
-  background-position: 58% center !important;
+  background-position: 58% 38% !important;
 
   background-repeat: no-repeat !important;
 
