@@ -649,17 +649,17 @@ body.faq-page {
 
   /* SHORTER / WIDER GLASS PANEL */
 
-  .faq-intro {
+   .faq-intro {
 
-    width: 84% !important;
+    width: 80% !important;
 
-    margin: 0 auto 30px 5% !important;
+    margin: 0 auto 28px 5% !important;
 
-    padding: 16px 20px !important;
+    padding: 14px 18px !important;
 
     box-sizing: border-box !important;
 
-    background: rgba(255,255,255,0.46) !important;
+    background: rgba(255,255,255,0.42) !important;
 
     backdrop-filter: blur(8px) !important;
 
@@ -671,18 +671,17 @@ body.faq-page {
 
     color: #0f2f57 !important;
 
-    font-size: 13.2px !important;
+    font-size: 12.8px !important;
 
     font-weight: 400 !important;
 
-    line-height: 1.4 !important;
+    line-height: 1.36 !important;
 
-    letter-spacing: 0.15px !important;
+    letter-spacing: 0.1px !important;
 
     text-align: left !important;
 
   }
-
   /* COMMON QUESTIONS TEXT AREA */
 
   .faq-mobile-body-intro {
