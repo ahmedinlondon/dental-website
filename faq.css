@@ -706,6 +706,8 @@ body.faq-page {
 
 }
 
+/* Main title + subtitle container */
+
 .faq-section::before {
 
   content: "FAQ\A\AYou ask . We answer";
@@ -740,7 +742,7 @@ body.faq-page {
 
 }
 
-/* FAQ title */
+/* Title style ONLY */
 
 .faq-section::before {
 
@@ -750,7 +752,7 @@ body.faq-page {
 
   letter-spacing: 7px;
 
-  line-height: 1.2;
+  line-height: 1.25;
 
 }
 
@@ -766,24 +768,23 @@ body.faq-page {
 
   height: 4px;
 
-  margin: -18px auto 12px;
+  margin: -18px auto 14px;
 
   background: #2b6cb0;
 
 }
 
-/* Subtitle (fix spacing issue) */
+/* FIX subtitle (override spacing) */
 
 .faq-section {
 
-  font-size: 16px;
+  font-size: 16px !important;
 
-  letter-spacing: 1px;
+  letter-spacing: 1px !important;
 
-  line-height: 1.5;
+  line-height: 1.5 !important;
 
-}
-  /* PHOTO AREA (FIXED HEIGHT — KEY FIX) */
+}  /* PHOTO AREA (FIXED HEIGHT — KEY FIX) */
 
 /* PHOTO AREA */
 
