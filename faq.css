@@ -809,6 +809,8 @@ body.faq-page {
 
 .faq-container::before {
 
+  opacity: 0.3 !important;
+
   content: "";
 
   position: absolute;
