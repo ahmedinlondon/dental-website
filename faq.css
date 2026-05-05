@@ -626,6 +626,15 @@ body.faq-page {
 
 /* ================= MOBILE FAQ INTRO ================= */
 
+  .faq-wrapper {
+
+    display: block !important;
+
+    width: 100% !important;
+
+    margin: 0 !important;
+
+  }
 .faq-container {
 
   width: 100% !important;
@@ -666,11 +675,7 @@ body.faq-page {
 
 }
 
-.faq-title {
 
-  display: none !important;
-
-}
 
 .faq-intro {
 
@@ -708,15 +713,13 @@ body.faq-page {
 
 }
 
-     .faq-wrapper {
+     
+  
+  .faq-title {
 
-    display: block !important;
+  display: none !important;
 
-    width: 100% !important;
-
-    margin: 0 !important;
-
-  }
+}
   
   
   /* COMMON QUESTIONS TEXT AREA */
@@ -790,6 +793,8 @@ body.faq-page {
   background: linear-gradient(180deg, #edf5ef 0%, #f3f7f4 100%) !important;
 
 }
+
+
 
   .faq-box {
 
