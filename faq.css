@@ -564,7 +564,7 @@ body.faq-page {
 
   /* HERO */
 
-  .faq-section::before {
+    .faq-section::before {
 
     content: "Frequently Asked Questions";
 
@@ -574,9 +574,9 @@ body.faq-page {
 
     justify-content: center;
 
-    min-height: 205px;
+    min-height: 185px;
 
-    padding: 44px 7% 40px;
+    padding: 38px 7% 34px;
 
     box-sizing: border-box;
 
@@ -601,7 +601,6 @@ body.faq-page {
     border-bottom: 1px solid rgba(15,47,87,0.08);
 
   }
-
   .faq-wrapper {
 
     display: block !important;
