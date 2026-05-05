@@ -905,3 +905,10 @@ body.faq-page {
 /* ================= END MOBILE FAQ - FINAL NEW DESIGN ================= */
 
 /* ================= END FAQ PAGE CLEAN CSS ================= */
+
+
+body.faq-page {
+
+  background: red !important;
+
+}
