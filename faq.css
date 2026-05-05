@@ -633,11 +633,9 @@ body.faq-page {
 
   background-repeat: no-repeat !important;
 
-  display: flex !important;
+  display: block !important;
 
-  align-items: flex-end !important;
-
-  justify-content: flex-start !important;
+  position: relative !important;
 
   border: none !important;
 
@@ -646,8 +644,6 @@ body.faq-page {
   backdrop-filter: none !important;
 
   -webkit-backdrop-filter: none !important;
-
-  position: relative !important;
 
 }
 
@@ -662,11 +658,17 @@ body.faq-page {
 
 .faq-intro {
 
+  position: absolute !important;
+
+  left: 5% !important;
+
+  bottom: 42px !important;
+
   width: 78% !important;
 
   max-width: 430px !important;
 
-  margin: 0 0 42px 5% !important;
+  margin: 0 !important;
 
   padding: 16px 20px !important;
 
@@ -686,11 +688,7 @@ body.faq-page {
 
   font-size: 13.2px !important;
 
-  font-weight: 400 !important;
-
   line-height: 1.4 !important;
-
-  letter-spacing: 0.1px !important;
 
   text-align: left !important;
 
@@ -699,17 +697,19 @@ body.faq-page {
   
   /* COMMON QUESTIONS TEXT AREA */
 
-  .faq-mobile-body-intro {
+ .faq-mobile-body-intro {
 
-    display: block !important;
+  display: block !important;
 
-    background: linear-gradient(180deg, #f3f7f4 0%, #edf5ef 100%) !important;
+  margin-top: 530px !important;
 
-    padding: 34px 6% 20px !important;
+  background: linear-gradient(180deg, #f3f7f4 0%, #edf5ef 100%) !important;
 
-    box-sizing: border-box !important;
+  padding: 42px 6% 20px !important;
 
-  }
+  box-sizing: border-box !important;
+
+}
 
   .faq-mobile-body-intro h2 {
 
@@ -747,25 +747,25 @@ body.faq-page {
 
   /* CATEGORY CARDS */
 
-  .faq-grid {
+.faq-grid {
 
-    width: 100% !important;
+  width: 100% !important;
 
-    margin: 0 !important;
+  margin: 0 !important;
 
-    padding: 20px 5% 34px !important;
+  padding: 20px 5% 34px !important;
 
-    box-sizing: border-box !important;
+  box-sizing: border-box !important;
 
-    display: grid !important;
+  display: grid !important;
 
-    grid-template-columns: 1fr 1fr !important;
+  grid-template-columns: 1fr 1fr !important;
 
-    gap: 12px !important;
+  gap: 12px !important;
 
-    background: linear-gradient(180deg, #edf5ef 0%, #f3f7f4 100%) !important;
+  background: linear-gradient(180deg, #edf5ef 0%, #f3f7f4 100%) !important;
 
-  }
+}
 
   .faq-box {
 
