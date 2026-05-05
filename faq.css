@@ -613,21 +613,21 @@ body.faq-page {
 
   /* PHOTO INTRO SECTION */
 
-  .faq-container {
+   .faq-container {
 
     width: 100% !important;
 
     margin: 0 !important;
 
-    padding: 245px 0 0 !important;
+    padding: 225px 0 0 !important;
 
     box-sizing: border-box !important;
 
     background-image: url("family.PNG") !important;
 
-    background-size: 108% auto !important;
+    background-size: 112% auto !important;
 
-    background-position: 56% top !important;
+    background-position: 61% top !important;
 
     background-repeat: no-repeat !important;
 
