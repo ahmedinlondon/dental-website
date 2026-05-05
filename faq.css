@@ -627,7 +627,7 @@ body.faq-page {
 
     background-size: 110% auto !important;
 
-    background-position: 63%  2% !important;
+    background-position: 72%  -2% !important;
 
     background-repeat: no-repeat !important;
 
@@ -651,9 +651,9 @@ body.faq-page {
 
    .faq-intro {
 
-    width: 70% !important;
+    width: 66% !important;
 
-    margin: -22px auto 28px 5% !important;
+    margin: -28px auto 28px 4% !important;
 
     padding: 12px 16px !important;
 
