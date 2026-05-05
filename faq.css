@@ -458,4 +458,478 @@ body.faq-page {
 
 /* ================= MOBILE FAQ ================= */
 
+/* ================= MOBILE FAQ - FINAL NEW DESIGN v2 ================= */
 
+@media (max-width: 600px) {
+
+  body.faq-page {
+
+    background: #f3f7f4 !important;
+
+  }
+
+  .faq-page .navbar {
+
+    background: #ffffff !important;
+
+  }
+
+  /* MAIN SECTION */
+
+  .faq-section {
+
+    min-height: auto !important;
+
+    padding: 0 !important;
+
+    background: #f3f7f4 !important;
+
+    text-align: center !important;
+
+  }
+
+  /* HERO */
+
+  .faq-section::before {
+
+    content: "Frequently Asked Questions";
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 205px;
+
+    padding: 44px 7% 40px;
+
+    box-sizing: border-box;
+
+    background:
+
+      radial-gradient(circle at 18% 65%, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.55) 22%, transparent 44%),
+
+      radial-gradient(circle at 82% 70%, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.55) 22%, transparent 44%),
+
+      linear-gradient(180deg, #eaf6ff 0%, #f8fbff 58%, #ffffff 100%);
+
+    color: #0f2f57;
+
+    font-size: 34px;
+
+    font-weight: 600;
+
+    line-height: 1.18;
+
+    text-align: center;
+
+    border-bottom: 1px solid rgba(15,47,87,0.08);
+
+  }
+
+  .faq-wrapper {
+
+    display: block !important;
+
+    width: 100% !important;
+
+    margin: 0 !important;
+
+  }
+
+  /* PHOTO INTRO SECTION */
+
+  .faq-container {
+
+    width: 100% !important;
+
+    margin: 0 !important;
+
+    padding: 245px 0 0 !important;
+
+    box-sizing: border-box !important;
+
+    background-image: url("family.PNG") !important;
+
+    background-size: 108% auto !important;
+
+    background-position: 56% top !important;
+
+    background-repeat: no-repeat !important;
+
+    border: none !important;
+
+    box-shadow: none !important;
+
+    backdrop-filter: none !important;
+
+    -webkit-backdrop-filter: none !important;
+
+  }
+
+  .faq-title {
+
+    display: none !important;
+
+  }
+
+  /* SHORTER / WIDER GLASS PANEL */
+
+  .faq-intro {
+
+    width: 84% !important;
+
+    margin: 0 auto 30px 5% !important;
+
+    padding: 16px 20px !important;
+
+    box-sizing: border-box !important;
+
+    background: rgba(255,255,255,0.46) !important;
+
+    backdrop-filter: blur(8px) !important;
+
+    -webkit-backdrop-filter: blur(8px) !important;
+
+    border: 1px solid rgba(255,255,255,0.45) !important;
+
+    border-radius: 0 !important;
+
+    color: #0f2f57 !important;
+
+    font-size: 13.2px !important;
+
+    font-weight: 400 !important;
+
+    line-height: 1.4 !important;
+
+    letter-spacing: 0.15px !important;
+
+    text-align: left !important;
+
+  }
+
+  /* COMMON QUESTIONS TEXT AREA */
+
+  .faq-mobile-body-intro {
+
+    display: block !important;
+
+    background: linear-gradient(180deg, #f3f7f4 0%, #edf5ef 100%) !important;
+
+    padding: 34px 6% 20px !important;
+
+    box-sizing: border-box !important;
+
+  }
+
+  .faq-mobile-body-intro h2 {
+
+    margin: 0 0 12px !important;
+
+    color: #0f2f57 !important;
+
+    font-size: 30px !important;
+
+    font-weight: 600 !important;
+
+    line-height: 1.2 !important;
+
+    text-align: center !important;
+
+  }
+
+  .faq-mobile-body-intro p {
+
+    max-width: 350px !important;
+
+    margin: 0 auto !important;
+
+    color: #0f2f57 !important;
+
+    font-size: 15px !important;
+
+    line-height: 1.5 !important;
+
+    letter-spacing: 0.1px !important;
+
+    text-align: center !important;
+
+  }
+
+  /* CATEGORY CARDS */
+
+  .faq-grid {
+
+    width: 100% !important;
+
+    margin: 0 !important;
+
+    padding: 20px 5% 34px !important;
+
+    box-sizing: border-box !important;
+
+    display: grid !important;
+
+    grid-template-columns: 1fr 1fr !important;
+
+    gap: 12px !important;
+
+    background: linear-gradient(180deg, #edf5ef 0%, #f3f7f4 100%) !important;
+
+  }
+
+  .faq-box {
+
+    aspect-ratio: 1 / 1 !important;
+
+    height: auto !important;
+
+    padding: 14px 10px !important;
+
+    border-radius: 0 !important;
+
+    box-sizing: border-box !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    text-align: center !important;
+
+    box-shadow: none !important;
+
+    border: 1px solid rgba(255,255,255,0.55) !important;
+
+    color: #0f2f57 !important;
+
+    font-size: 18px !important;
+
+    font-weight: 600 !important;
+
+    line-height: 1.2 !important;
+
+  }
+
+  .faq-box i {
+
+    display: none !important;
+
+  }
+
+  .faq-box:nth-child(1) { background: rgba(147,197,253,0.55) !important; }
+
+  .faq-box:nth-child(2) { background: rgba(110,231,183,0.50) !important; }
+
+  .faq-box:nth-child(3) { background: rgba(186,230,253,0.55) !important; }
+
+  .faq-box:nth-child(4) { background: rgba(204,251,241,0.55) !important; }
+
+  /* QUESTIONS POPUP */
+
+  .faq-panel {
+
+    position: fixed !important;
+
+    top: 50% !important;
+
+    left: 50% !important;
+
+    right: auto !important;
+
+    transform: translate(-50%, -50%) !important;
+
+    width: 92% !important;
+
+    max-width: 430px !important;
+
+    height: auto !important;
+
+    max-height: 82vh !important;
+
+    overflow-y: auto !important;
+
+    margin: 0 !important;
+
+    padding: 22px 18px !important;
+
+    background: rgba(255,255,255,0.94) !important;
+
+    backdrop-filter: blur(12px) !important;
+
+    -webkit-backdrop-filter: blur(12px) !important;
+
+    border: 1px solid rgba(255,255,255,0.7) !important;
+
+    box-shadow: 0 18px 45px rgba(0,0,0,0.24) !important;
+
+    border-radius: 0 !important;
+
+    z-index: 12000 !important;
+
+    box-sizing: border-box !important;
+
+  }
+
+  .faq-question {
+
+    width: 100% !important;
+
+    margin: 0 0 12px !important;
+
+    padding: 15px 15px !important;
+
+    border: none !important;
+
+    border-radius: 0 !important;
+
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6) !important;
+
+    color: #ffffff !important;
+
+    font-size: 14.2px !important;
+
+    font-weight: 500 !important;
+
+    line-height: 1.38 !important;
+
+    text-align: left !important;
+
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif !important;
+
+    box-sizing: border-box !important;
+
+  }
+
+  .faq-question span {
+
+    float: right !important;
+
+  }
+
+  .faq-answer {
+
+    display: none !important;
+
+  }
+
+  /* ANSWER POPUP */
+
+  .faq-answer-overlay {
+
+    padding: 24px 0 !important;
+
+    background: rgba(0,0,0,0.28) !important;
+
+    backdrop-filter: blur(3px) !important;
+
+    -webkit-backdrop-filter: blur(3px) !important;
+
+  }
+
+  .faq-answer-popup {
+
+    width: 92% !important;
+
+    max-width: 430px !important;
+
+    max-height: 82vh !important;
+
+    overflow-y: auto !important;
+
+    padding: 24px 22px !important;
+
+    background: rgba(255,255,255,0.94) !important;
+
+    backdrop-filter: blur(8px) !important;
+
+    -webkit-backdrop-filter: blur(8px) !important;
+
+    border: 1px solid rgba(255,255,255,0.7) !important;
+
+    border-radius: 0 !important;
+
+    box-shadow: 0 18px 45px rgba(0,0,0,0.24) !important;
+
+    box-sizing: border-box !important;
+
+  }
+
+  .faq-answer-popup h3 {
+
+    margin: 0 0 16px !important;
+
+    color: #0f2f57 !important;
+
+    font-size: 20px !important;
+
+    font-weight: 600 !important;
+
+    line-height: 1.25 !important;
+
+    text-align: left !important;
+
+  }
+
+  .faq-answer-popup p {
+
+    margin: 0 !important;
+
+    color: #0f2f57 !important;
+
+    font-size: 14px !important;
+
+    line-height: 1.5 !important;
+
+    letter-spacing: 0.1px !important;
+
+    text-align: left !important;
+
+  }
+
+  .faq-answer-close {
+
+    top: 8px !important;
+
+    right: 12px !important;
+
+    font-size: 32px !important;
+
+    color: #0f2f57 !important;
+
+  }
+
+  /* FOOTER */
+
+  footer {
+
+    padding: 26px 5% 28px !important;
+
+    background: #061726 !important;
+
+  }
+
+  footer p {
+
+    font-size: 14px !important;
+
+  }
+
+  .icon {
+
+    width: 40px !important;
+
+    height: 40px !important;
+
+    font-size: 19px !important;
+
+    margin: 0 7px !important;
+
+  }
+
+}
+
+/* ================= END MOBILE FAQ - FINAL NEW DESIGN v2 ================= */
