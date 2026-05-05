@@ -624,7 +624,27 @@ body.faq-page {
 
 }
 
-/* ================= MOBILE FAQ INTRO ================= */
+/* ================= MOBILE FAQ - FINAL NEW DESIGN v3 ================= */
+
+@media (max-width: 600px) {
+
+  body.faq-page {
+
+    background: #f3f7f4 !important;
+
+  }
+
+  .faq-section {
+
+    min-height: auto !important;
+
+    padding: 0 !important;
+
+    background: #f3f7f4 !important;
+
+    text-align: center !important;
+
+  }
 
   .faq-wrapper {
 
@@ -635,108 +655,186 @@ body.faq-page {
     margin: 0 !important;
 
   }
-.faq-container {
 
-  width: 100% !important;
+  /* HERO */
 
-  min-height: 530px !important;
+  .faq-section::before {
 
-  margin: 0 !important;
+    content: "FAQ";
 
-  padding: 0 !important;
+    display: flex;
 
-  box-sizing: border-box !important;
+    align-items: center;
 
-  display: flex !important;
+    justify-content: center;
 
-  align-items: flex-end !important;
+    min-height: 210px;
 
-  justify-content: center !important;
+    padding: 38px 18px 34px;
 
-  background-image:
+    box-sizing: border-box;
 
-    linear-gradient(rgba(255,255,255,0.04), rgba(255,255,255,0.04)),
+    background:
 
-    url("family.PNG") !important;
+      radial-gradient(circle at 18% 65%, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.55) 22%, transparent 44%),
 
-  background-size: cover !important;
+      radial-gradient(circle at 82% 70%, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.55) 22%, transparent 44%),
 
-  background-position: 57% center !important;
+      linear-gradient(180deg, #eaf6ff 0%, #f8fbff 58%, #ffffff 100%);
 
-  background-repeat: no-repeat !important;
+    color: #0f2f57;
 
-  border: none !important;
+    font-size: 34px;
 
-  box-shadow: none !important;
+    font-weight: 600;
 
-  backdrop-filter: none !important;
+    letter-spacing: 7px;
 
-  -webkit-backdrop-filter: none !important;
+    line-height: 1.2;
 
-}
+    text-align: center;
 
+  }
 
+  .faq-section::after {
 
-.faq-intro {
+    content: "";
 
-  width: 86% !important;
+    position: absolute;
 
-  max-width: 430px !important;
+    top: 176px;
 
-  margin: 0 auto 40px !important;
+    left: 50%;
 
-  padding: 16px 20px !important;
+    transform: translateX(-50%);
 
-  box-sizing: border-box !important;
+    width: 78px;
 
-  background: rgba(255,255,255,0.52) !important;
+    height: 4px;
 
-  backdrop-filter: blur(8px) !important;
+    background: #2b6cb0;
 
-  -webkit-backdrop-filter: blur(8px) !important;
+  }
 
-  border: 1px solid rgba(255,255,255,0.45) !important;
+  /* PHOTO + INTRO PANEL */
 
-  border-radius: 0 !important;
+  .faq-container {
 
-  box-shadow: 0 10px 28px rgba(0,0,0,0.12) !important;
+    width: 100% !important;
 
-  color: #0f2f57 !important;
+    margin: 0 !important;
 
-  font-size: 13.2px !important;
+    padding: 330px 0 0 !important;
 
-  line-height: 1.4 !important;
+    box-sizing: border-box !important;
 
-  text-align: left !important;
+    background: transparent !important;
 
-  letter-spacing: 0.2px !important;
+    position: relative !important;
 
-}
+    display: block !important;
 
-     
-  
+    border: none !important;
+
+    box-shadow: none !important;
+
+    overflow: hidden !important;
+
+  }
+
+  .faq-container::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 530px;
+
+    background-image:
+
+      linear-gradient(rgba(255,255,255,0.04), rgba(255,255,255,0.04)),
+
+      url("family.PNG");
+
+    background-size: cover;
+
+    background-position: 57% center;
+
+    background-repeat: no-repeat;
+
+    z-index: 0;
+
+  }
+
   .faq-title {
 
-  display: none !important;
+    display: none !important;
 
-}
-  
-  
-  /* COMMON QUESTIONS TEXT AREA */
+  }
 
- .faq-mobile-body-intro {
+  .faq-intro {
 
-  display: block !important;
+    position: relative !important;
 
-  margin-top: 0 !important;
+    z-index: 1 !important;
 
-  background: linear-gradient(180deg, #f3f7f4 0%, #edf5ef 100%) !important;
+    width: 86% !important;
 
-  padding: 42px 6% 20px !important;
+    max-width: 430px !important;
 
-  box-sizing: border-box !important;
+    margin: 0 auto 40px !important;
 
-}
+    padding: 16px 20px !important;
+
+    box-sizing: border-box !important;
+
+    background: rgba(255,255,255,0.52) !important;
+
+    backdrop-filter: blur(8px) !important;
+
+    -webkit-backdrop-filter: blur(8px) !important;
+
+    border: 1px solid rgba(255,255,255,0.45) !important;
+
+    border-radius: 0 !important;
+
+    box-shadow: 0 10px 28px rgba(0,0,0,0.12) !important;
+
+    color: #0f2f57 !important;
+
+    font-size: 13.2px !important;
+
+    line-height: 1.4 !important;
+
+    text-align: left !important;
+
+    letter-spacing: 0.2px !important;
+
+  }
+
+  /* COMMON QUESTIONS */
+
+  .faq-mobile-body-intro {
+
+    position: relative !important;
+
+    z-index: 2 !important;
+
+    display: block !important;
+
+    background: linear-gradient(180deg, #f3f7f4 0%, #edf5ef 100%) !important;
+
+    padding: 42px 6% 20px !important;
+
+    box-sizing: border-box !important;
+
+  }
 
   .faq-mobile-body-intro h2 {
 
@@ -774,27 +872,29 @@ body.faq-page {
 
   /* CATEGORY CARDS */
 
-.faq-grid {
+  .faq-grid {
 
-  width: 100% !important;
+    position: relative !important;
 
-  margin: 0 !important;
+    z-index: 2 !important;
 
-  padding: 20px 5% 34px !important;
+    width: 100% !important;
 
-  box-sizing: border-box !important;
+    margin: 0 !important;
 
-  display: grid !important;
+    padding: 20px 5% 34px !important;
 
-  grid-template-columns: 1fr 1fr !important;
+    box-sizing: border-box !important;
 
-  gap: 12px !important;
+    display: grid !important;
 
-  background: linear-gradient(180deg, #edf5ef 0%, #f3f7f4 100%) !important;
+    grid-template-columns: 1fr 1fr !important;
 
-}
+    gap: 12px !important;
 
+    background: linear-gradient(180deg, #edf5ef 0%, #f3f7f4 100%) !important;
 
+  }
 
   .faq-box {
 
@@ -1048,4 +1148,4 @@ body.faq-page {
 
 }
 
-/* ================= END MOBILE FAQ - FINAL NEW DESIGN v2 ================= */
+/* ================= END MOBILE FAQ - FINAL NEW DESIGN v3 ================= */
