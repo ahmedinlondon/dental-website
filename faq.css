@@ -831,21 +831,21 @@ body.faq-page {
 
   background-size: cover;
 
-  background-position: 32% 18%;
+  background-position: 50% 22%;   /* centered + slightly higher */
 
   background-repeat: no-repeat;
 
   z-index: 0;
 
 }
-  
-  .faq-title {
 
-    display: none !important;
+/* HIDE TITLE */
 
-  }
+.faq-title {
 
-  /* GLASS PANEL */
+  display: none !important;
+
+}
 
 /* INTRO GLASS PANEL */
 
@@ -853,7 +853,7 @@ body.faq-page {
 
   position: absolute !important;
 
-  top: 440px !important;
+  top: 480px !important;   /* moved DOWN */
 
   left: 6% !important;
 
