@@ -619,15 +619,15 @@ body.faq-page {
 
     margin: 0 !important;
 
-    padding: 225px 0 0 !important;
+    padding: 210px 0 0 !important;
 
     box-sizing: border-box !important;
 
     background-image: url("family.PNG") !important;
 
-    background-size: 112% auto !important;
+    background-size: 110% auto !important;
 
-    background-position: 61% top !important;
+    background-position: 63%  8% !important;
 
     background-repeat: no-repeat !important;
 
@@ -651,9 +651,9 @@ body.faq-page {
 
    .faq-intro {
 
-    width: 80% !important;
+    width: 74% !important;
 
-    margin: 0 auto 28px 5% !important;
+    margin: -10px auto 30px 5% !important;
 
     padding: 14px 18px !important;
 
