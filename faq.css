@@ -634,67 +634,87 @@ body.faq-page {
 
   }
 
-  /* NAVBAR */
+/* ===== MOBILE NAVBAR (MATCH OTHER PAGES) ===== */
 
-  .faq-page .navbar {
+.faq-page .navbar {
 
-    display: flex !important;
+  display: flex !important;
 
-    flex-direction: column !important;
+  flex-direction: column !important;
 
-    align-items: center !important;
+  align-items: center !important;
 
-    justify-content: center !important;
+  justify-content: center !important;
 
-    padding: 18px 6% 16px !important;
+  padding: 16px 6% 14px !important;
 
-    gap: 10px !important;
+  gap: 8px !important;
 
-    background: #ffffff !important;
+  background: #ffffff !important;
 
-  }
+}
 
-  .faq-page .navbar .logo {
+.faq-page .navbar .logo {
 
-    width: 100% !important;
+  width: 100% !important;
 
-    text-align: center !important;
+  text-align: center !important;
 
-    font-size: 20px !important;
+  font-size: 20px !important;
 
-    margin: 0 !important;
+  line-height: 1.2 !important;
 
-  }
+  margin: 0 !important;
 
-  .faq-page .navbar nav {
+  color: #222 !important;
 
-    width: 100% !important;
+}
 
-    display: flex !important;
+.faq-page .navbar nav {
 
-    justify-content: center !important;
+  width: 100% !important;
 
-    gap: 4px !important;
+  display: flex !important;
 
-  }
+  justify-content: center !important;
 
-  .faq-page .navbar nav a {
+  align-items: center !important;
 
-    flex: 1 !important;
+  gap: 4px !important;
 
-    height: 36px !important;
+  flex-wrap: nowrap !important;
 
-    line-height: 36px !important;
+}
 
-    font-size: 14px !important;
+.faq-page .navbar nav a {
 
-    background: #edf3fa !important;
+  flex: 1 1 auto !important;
 
-    color: #1f5f9f !important;
+  min-width: 0 !important;
 
-    text-decoration: none !important;
+  height: 36px !important;
 
-  }
+  padding: 0 6px !important;
+
+  font-size: 14px !important;
+
+  line-height: 36px !important;
+
+  text-align: center !important;
+
+  background: #edf3fa !important;
+
+  color: #1f5f9f !important;
+
+  text-decoration: none !important;
+
+  border-radius: 0 !important;
+
+  box-sizing: border-box !important;
+
+  white-space: nowrap !important;
+
+}
 
 /* HERO */
 
