@@ -613,31 +613,33 @@ body.faq-page {
 
   /* PHOTO INTRO SECTION */
 
- .faq-container {
+.faq-container {
 
   width: 100% !important;
 
   margin: 0 !important;
 
-  padding: 225px 0 0 !important;
+  /* ↓ KEY FIX: reduce vertical push */
+
+  padding: 185px 0 0 !important;
 
   box-sizing: border-box !important;
 
   background-image: url("family.PNG") !important;
 
+  /* ↓ Slight zoom (not too much) */
+
   background-size: 112% auto !important;
 
-  background-position: 63% 2% !important;
+  /* ↓ CRITICAL: move RIGHT + move UP */
+
+  background-position: 78% -18% !important;
 
   background-repeat: no-repeat !important;
 
   border: none !important;
 
   box-shadow: none !important;
-
-  backdrop-filter: none !important;
-
-  -webkit-backdrop-filter: none !important;
 
   position: relative !important;
 
