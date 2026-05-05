@@ -696,60 +696,63 @@ body.faq-page {
 
   }
 
-  /* HERO */
+/* HERO */
 
-  .faq-section {
+.faq-section {
 
-    padding: 0 !important;
+  padding: 0 !important;
 
-    text-align: center !important;
+  text-align: center !important;
 
-  }
+}
 
-  .faq-section::before {
+.faq-section::before {
 
-    content: "FAQ";
+  content: "FAQ\A────────\AYou ask . We answer";
 
-    display: flex;
+  white-space: pre-line;
 
-    align-items: center;
+  display: flex;
 
-    justify-content: center;
+  align-items: center;
 
-    min-height: 170px;
+  justify-content: center;
 
-    background:
+  min-height: 210px;
 
-      radial-gradient(circle at 18% 65%, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.55) 22%, transparent 44%),
+  padding: 38px 18px 34px;
 
-      radial-gradient(circle at 82% 70%, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.55) 22%, transparent 44%),
+  box-sizing: border-box;
 
-      linear-gradient(180deg, #eaf6ff 0%, #f8fbff 58%, #ffffff 100%);
+  background:
 
-    font-size: 34px;
+    radial-gradient(circle at 18% 65%, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.55) 22%, transparent 44%),
 
-    letter-spacing: 7px;
+    radial-gradient(circle at 82% 70%, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.55) 22%, transparent 44%),
 
-    color: #0f2f57;
+    linear-gradient(180deg, #eaf6ff 0%, #f8fbff 58%, #ffffff 100%);
 
-  }
+  color: #0f2f57;
 
-  .faq-section::after {
+  font-size: 34px;
 
-    content: "";
+  font-weight: 600;
 
-    display: block;
+  letter-spacing: 7px;
 
-    width: 78px;
+  line-height: 1.55;
 
-    height: 4px;
+  text-align: center;
 
-    margin: -40px auto 18px;
+}
 
-    background: #2b6cb0;
+/* Hide old separate line */
 
-  }
+.faq-section::after {
 
+  content: none !important;
+
+}
   /* PHOTO AREA (FIXED HEIGHT — KEY FIX) */
 
 /* PHOTO AREA */
