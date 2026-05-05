@@ -809,8 +809,6 @@ body.faq-page {
 
 .faq-container::before {
 
-  opacity: 0.3 !important;
-
   content: "";
 
   position: absolute;
@@ -829,9 +827,9 @@ body.faq-page {
 
     url("family.PNG");
 
-  background-size: 110%;
+  background-size: 85%;
 
-  background-position: 57% 40%;
+  background-position: 50% 0%;
 
   background-repeat: no-repeat;
 
