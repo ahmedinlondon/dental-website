@@ -619,27 +619,33 @@ body.faq-page {
 
   margin: 0 !important;
 
-  /* ↓ KEY FIX: reduce vertical push */
+  min-height: 530px !important;
 
-  padding: 185px 0 0 !important;
+  padding: 0 !important;
 
   box-sizing: border-box !important;
 
   background-image: url("family.PNG") !important;
 
-  /* ↓ Slight zoom (not too much) */
+  background-size: cover !important;
 
-  background-size: 104% auto !important;
-
-  /* ↓ CRITICAL: move RIGHT + move UP */
-
-  background-position: center top !important;
+  background-position: 58% center !important;
 
   background-repeat: no-repeat !important;
+
+  display: flex !important;
+
+  align-items: flex-end !important;
+
+  justify-content: flex-start !important;
 
   border: none !important;
 
   box-shadow: none !important;
+
+  backdrop-filter: none !important;
+
+  -webkit-backdrop-filter: none !important;
 
   position: relative !important;
 
@@ -658,33 +664,37 @@ body.faq-page {
 
   width: 78% !important;
 
-  margin: 0 auto !important;
+  max-width: 430px !important;
 
-  padding: 12px 16px !important;
+  margin: 0 0 42px 5% !important;
+
+  padding: 16px 20px !important;
 
   box-sizing: border-box !important;
 
-  background: rgba(255,255,255,0.85) !important;
+  background: rgba(255,255,255,0.50) !important;
 
-  border: 1px solid rgba(15,47,87,0.08) !important;
+  backdrop-filter: blur(8px) !important;
+
+  -webkit-backdrop-filter: blur(8px) !important;
+
+  border: 1px solid rgba(255,255,255,0.45) !important;
 
   border-radius: 0 !important;
 
-  backdrop-filter: none !important;
-
-  -webkit-backdrop-filter: none !important;
-
   color: #0f2f57 !important;
 
-  font-size: 13px !important;
+  font-size: 13.2px !important;
 
   font-weight: 400 !important;
 
-  line-height: 1.35 !important;
+  line-height: 1.4 !important;
+
+  letter-spacing: 0.1px !important;
 
   text-align: left !important;
 
-} 
+}
   
   
   /* COMMON QUESTIONS TEXT AREA */
