@@ -752,17 +752,30 @@ body.faq-page {
 
   /* PHOTO AREA (FIXED HEIGHT — KEY FIX) */
 
-  .faq-container {
+    .faq-container {
 
-    position: relative !important;
+    width: 100% !important;
+
+    max-width: none !important;
+
+    margin: 0 !important;
 
     height: 620px !important;
 
     padding: 0 !important;
 
+    box-sizing: border-box !important;
+
+    position: relative !important;
+
+    display: block !important;
+
     overflow: hidden !important;
 
+    background: transparent !important;
+
   }
+  
 
   .faq-container::before {
 
@@ -780,7 +793,7 @@ body.faq-page {
 
     background-size: cover;
 
-    background-position: 48% 32%;
+    background-position: 57% 40%;
 
     background-repeat: no-repeat;
 
@@ -802,7 +815,7 @@ body.faq-page {
 
     right: 6% !important;
 
-    bottom: 70px !important;
+    bottom: 40px !important;
 
     padding: 16px 20px !important;
 
