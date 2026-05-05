@@ -831,7 +831,7 @@ body.faq-page {
 
   background-size: cover;
 
-  background-position: -10% 18%;
+  background-position: 0% 18%;
 
   background-repeat: no-repeat;
 
@@ -853,7 +853,7 @@ body.faq-page {
 
   position: absolute !important;
 
-  top: 400px !important;
+  top: 360px !important;
 
   left: 6% !important;
 
