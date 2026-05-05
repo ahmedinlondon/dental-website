@@ -629,11 +629,11 @@ body.faq-page {
 
   /* ↓ Slight zoom (not too much) */
 
-  background-size: 100% auto !important;
+  background-size: 104% auto !important;
 
   /* ↓ CRITICAL: move RIGHT + move UP */
 
-  background-position: 70% 10%  !important;
+  background-position: center top !important;
 
   background-repeat: no-repeat !important;
 
