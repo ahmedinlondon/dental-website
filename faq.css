@@ -958,13 +958,13 @@ body.faq-page {
 
   gap: 10px !important;
 
-  background: rgba(30, 58, 138, 0.15) !important;
+ background: rgba(58, 138, 201, 0.10) !important;
 
   backdrop-filter: blur(10px) !important;
 
   -webkit-backdrop-filter: blur(10px) !important;
 
-  border: 1px solid rgba(30, 58, 138, 0.12) !important;
+  border: 1px solid rgba(58, 138, 201, 0.08) !important;
 
   border-radius: 0 !important;
 
