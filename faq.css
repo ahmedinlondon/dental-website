@@ -956,7 +956,7 @@ body.faq-page {
 
   gap: 10px !important;
 
-  background: rgba(225, 238, 248, 0.42) !important;
+ background: rgba(15, 47, 87, 0.10) !important;
 
   backdrop-filter: blur(10px) !important;
 
@@ -974,8 +974,10 @@ body.faq-page {
 
   box-shadow:
 
-    0 8px 24px rgba(0,0,0,0.04) !important;
+    box-shadow:
 
+  0 10px 30px rgba(15,47,87,0.10) !important;
+  
 }
 
 .faq-box {
