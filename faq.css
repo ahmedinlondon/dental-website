@@ -942,15 +942,13 @@ body.faq-page {
 
 .faq-grid {
 
-  width: 86% !important;
+  width: 100% !important;
 
-  max-width: 430px !important;
+  max-width: none !important;
 
   margin: 0 auto 34px !important;
 
-  padding: 16px !important;
-
-  box-sizing: border-box !important;
+  padding: 18px 5% !important;
 
   display: grid !important;
 
@@ -958,17 +956,25 @@ body.faq-page {
 
   gap: 10px !important;
 
-  background: rgba(255,255,255,0.38) !important;
+  background: rgba(225, 238, 248, 0.42) !important;
 
-  backdrop-filter: blur(8px) !important;
+  backdrop-filter: blur(10px) !important;
 
-  -webkit-backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
 
-  border: 1px solid rgba(255,255,255,0.45) !important;
+  border-top: 1px solid rgba(255,255,255,0.5) !important;
+
+  border-bottom: 1px solid rgba(255,255,255,0.5) !important;
+
+  border-left: none !important;
+
+  border-right: none !important;
 
   border-radius: 0 !important;
 
-  box-shadow: 0 12px 30px rgba(0,0,0,0.08) !important;
+  box-shadow:
+
+    0 8px 24px rgba(0,0,0,0.04) !important;
 
 }
 
