@@ -581,77 +581,97 @@ body.faq-page {
 
   }
 
-  /* COMMON QUESTIONS TEXT BLOCK */
+/* COMMON QUESTIONS TEXT BLOCK */
 
-  .faq-mobile-body-intro {
+.faq-container {
 
-    padding: 0;
+  display: flex;
 
-    margin: 0 0 22px;
+  flex-direction: column;
 
-    background: transparent;
+}
 
-    text-align: center;
+.faq-title {
 
-  }
+  display: none;
 
-  .faq-mobile-body-intro h2 {
+}
 
-    margin: 0 0 18px;
+.faq-mobile-body-intro {
 
-    color: #0f2f57;
+  display: contents;
 
-    font-size: 25px;
+}
 
-    font-weight: 700;
+.faq-mobile-body-intro h2 {
 
-    line-height: 1.2;
+  order: 1;
 
-  }
+  margin: 0 0 18px;
 
-  .faq-mobile-body-intro p {
+  color: #0f2f57;
 
-    margin: 0;
+  font-size: 25px;
 
-    padding: 22px 24px;
+  font-weight: 700;
 
-    background: rgba(255,255,255,0.58);
+  line-height: 1.2;
 
-    backdrop-filter: blur(10px);
+  text-align: center;
 
-    -webkit-backdrop-filter: blur(10px);
+}
 
-    border: 1px solid rgba(255,255,255,0.55);
+.faq-intro {
 
-    box-shadow: 0 10px 24px rgba(15,47,87,0.10);
+  order: 2;
 
-    color: #0f2f57;
+  margin: 0;
 
-    font-size: 15px;
+  padding: 22px 24px 10px;
 
-    line-height: 1.5;
+  background: rgba(255,255,255,0.58);
 
-    text-align: left;
+  border: 1px solid rgba(255,255,255,0.55);
 
-    box-sizing: border-box;
+  border-bottom: none;
 
-  }
+  box-shadow: 0 10px 24px rgba(15,47,87,0.10);
 
-  /* KEEP INTRO TEXT GLASS PANEL */
+}
 
-  .faq-intro {
+.faq-mobile-body-intro p {
 
-    margin-bottom: 22px;
+  order: 3;
 
-    padding: 22px 24px;
+  margin: 0 0 22px;
 
-    background: rgba(255,255,255,0.58);
+  padding: 8px 24px 22px;
 
-    border: 1px solid rgba(255,255,255,0.55);
+  background: rgba(255,255,255,0.58);
 
-    box-shadow: 0 10px 24px rgba(15,47,87,0.10);
+  border: 1px solid rgba(255,255,255,0.55);
 
-  }
+  border-top: none;
+
+  box-shadow: 0 10px 24px rgba(15,47,87,0.10);
+
+  color: #0f2f57;
+
+  font-size: 15px;
+
+  line-height: 1.5;
+
+  text-align: left;
+
+  box-sizing: border-box;
+
+}
+
+.faq-grid {
+
+  order: 4;
+
+}
 
   /* CATEGORY CARDS — TALLER VERTICALLY */
 
@@ -741,17 +761,33 @@ body.faq-page {
 
   }
 
-  /* LIGHT BLUR WHEN Q PANEL OPENS */
+ /* LIGHT FULL-PAGE BLUR WHEN Q PANEL OPENS */
 
-  body.faq-page.faq-q-panel-open .faq-container,
+body.faq-page.faq-q-panel-open::before {
 
-  body.faq-page.faq-q-panel-open .faq-mobile-hero,
+  content: "";
 
-  body.faq-page.faq-q-panel-open footer {
+  position: fixed;
 
-    filter: blur(1.3px);
+  inset: 0;
 
-  }
+  z-index: 9000;
+
+  background: rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(1.6px);
+
+  -webkit-backdrop-filter: blur(1.6px);
+
+  pointer-events: none;
+
+}
+
+body.faq-page.faq-q-panel-open .faq-panel {
+
+  z-index: 12000;
+
+}
 
   /* ANSWER POPUP — BIGGER, STILL SQUARE FEEL */
 
