@@ -904,39 +904,53 @@ body.faq-page {
   text-align: left !important;
 
 }
-  /* TEXT BELOW IMAGE */
+/* TEXT BELOW IMAGE - MATCH PRICING STYLE */
 
-  .faq-mobile-body-intro {
+.faq-mobile-body-intro {
 
-    padding: 40px 6% 20px !important;
+  padding: 34px 6% 18px !important;
 
-    background: #f3f7f4;
+  background: #f3f7f4 !important;
 
-    margin-top: 120px !important;
+  margin-top: 120px !important;
 
-  }
+  box-sizing: border-box !important;
 
-  .faq-mobile-body-intro h2 {
+}
 
-    font-size: 28px;
+.faq-mobile-body-intro h2 {
 
-    margin-bottom: 12px;
+  margin: 0 0 12px !important;
 
-    color: #0f2f57;
+  color: #0f2f57 !important;
 
-  }
+  font-size: 28px !important;
 
-  .faq-mobile-body-intro p {
+  font-weight: 600 !important;
 
-    font-size: 15px;
+  line-height: 1.15 !important;
 
-    line-height: 1.5;
+  text-align: center !important;
 
-    max-width: 350px;
+}
 
-    margin: 0 auto;
+.faq-mobile-body-intro p {
 
-  }
+  max-width: 360px !important;
+
+  margin: 0 auto !important;
+
+  color: #0f2f57 !important;
+
+  font-size: 15px !important;
+
+  line-height: 1.42 !important;
+
+  letter-spacing: 0.1px !important;
+
+  text-align: center !important;
+
+}
 
 /* CATEGORY CARDS */
 
