@@ -938,54 +938,86 @@ body.faq-page {
 
   }
 
- /* CARDS MUST STAY BELOW INTRO SECTION */
+/* CATEGORY CARDS */
 
 .faq-grid {
 
-  position: relative !important;
+  width: 86% !important;
 
-  z-index: 3 !important;
+  max-width: 430px !important;
+
+  margin: 0 auto 34px !important;
+
+  padding: 16px !important;
+
+  box-sizing: border-box !important;
 
   display: grid !important;
 
   grid-template-columns: 1fr 1fr !important;
 
-  gap: 12px !important;
+  gap: 10px !important;
 
-  padding: 20px 5% 30px !important;
+  background: rgba(255,255,255,0.38) !important;
 
-  background: linear-gradient(180deg, #edf5ef 0%, #f3f7f4 100%) !important;
+  backdrop-filter: blur(8px) !important;
+
+  -webkit-backdrop-filter: blur(8px) !important;
+
+  border: 1px solid rgba(255,255,255,0.45) !important;
+
+  border-radius: 0 !important;
+
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08) !important;
+
+}
+
+.faq-box {
+
+  aspect-ratio: 1 / 1 !important;
+
+  height: auto !important;
+
+  padding: 12px 8px !important;
+
+  border-radius: 0 !important;
+
+  box-sizing: border-box !important;
+
+  display: flex !important;
+
+  align-items: center !important;
+
+  justify-content: center !important;
+
+  text-align: center !important;
+
+  color: #0f2f57 !important;
+
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif !important;
+
+  font-size: 16px !important;
+
+  font-weight: 600 !important;
+
+  line-height: 1.25 !important;
+
+  box-shadow: none !important;
+
+  border: 1px solid rgba(255,255,255,0.55) !important;
 
 }
 
-  .faq-box {
+.faq-box i {
 
-    aspect-ratio: 1;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    font-size: 18px;
-
-    border: 1px solid rgba(255,255,255,0.55);
-
-  }
-
-  .faq-box i {
-
-    display: none;
-
-  }
-
-  .faq-box:nth-child(1) { background: rgba(147,197,253,0.55); }
-
-  .faq-box:nth-child(2) { background: rgba(110,231,183,0.50); }
-
-  .faq-box:nth-child(3) { background: rgba(186,230,253,0.55); }
-
-  .faq-box:nth-child(4) { background: rgba(204,251,241,0.55); }
+  display: none !important;
 
 }
+
+.faq-box:nth-child(1) { background: rgba(147,197,253,0.55) !important; }
+
+.faq-box:nth-child(2) { background: rgba(110,231,183,0.50) !important; }
+
+.faq-box:nth-child(3) { background: rgba(186,230,253,0.55) !important; }
+
+.faq-box:nth-child(4) { background: rgba(204,251,241,0.55) !important; }
