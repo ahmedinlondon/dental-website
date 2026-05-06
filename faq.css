@@ -739,6 +739,38 @@ body.faq-page {
 
   }
 
+  .faq-box {
+
+  border: 1px solid rgba(255,255,255,0.28);
+
+  box-shadow: 0 8px 18px rgba(15,47,87,0.08);
+
+}
+
+.faq-box:nth-child(1) {
+
+  background: rgba(147,197,253,0.34);
+
+}
+
+.faq-box:nth-child(2) {
+
+  background: rgba(110,231,183,0.32);
+
+}
+
+.faq-box:nth-child(3) {
+
+  background: rgba(186,230,253,0.34);
+
+}
+
+.faq-box:nth-child(4) {
+
+  background: rgba(204,251,241,0.34);
+
+}
+
   /* Q PANEL */
 
   .faq-panel {
