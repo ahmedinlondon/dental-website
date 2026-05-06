@@ -498,21 +498,59 @@ function openSection(section) {
 
   const panel = document.getElementById("faqPanel");
 
+  const sectionTitles = {
+
+    pre: "Pre-Treatment",
+
+    during: "During Treatment",
+
+    options: "Braces & Aligners",
+
+    post: "Post-Treatment"
+
+  };
+
+  const sectionColors = {
+
+    pre: "rgba(147,197,253,0.55)",
+
+    during: "rgba(110,231,183,0.50)",
+
+    options: "rgba(186,230,253,0.55)",
+
+    post: "rgba(204,251,241,0.55)"
+
+  };
+
   if (panel.dataset.open === section) {
 
     panel.style.display = "none";
 
     panel.dataset.open = "";
 
+    document.body.classList.remove("faq-q-panel-open");
+
     return;
 
   }
 
-  panel.innerHTML = faqData[section];
+  panel.innerHTML = `
+
+    <div class="faq-panel-title" style="background:${sectionColors[section]}">
+
+      ${sectionTitles[section]}
+
+    </div>
+
+    ${faqData[section]}
+
+  `;
 
   panel.style.display = "block";
 
   panel.dataset.open = section;
+
+  document.body.classList.add("faq-q-panel-open");
 
   const questions = panel.querySelectorAll(".faq-question");
 
