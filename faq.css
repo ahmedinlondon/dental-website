@@ -1126,6 +1126,18 @@ body.faq-page {
 
   }
 
+  body.faq-page.faq-q-panel-open .faq-container,
+
+body.faq-page.faq-q-panel-open .faq-mobile-hero,
+
+body.faq-page.faq-q-panel-open .faq-cta,
+
+body.faq-page.faq-q-panel-open footer {
+
+  filter: blur(2px);
+
+}
+
   /* ===== FOOTER ===== */
 
   footer {
