@@ -1,4 +1,4 @@
-/* ================= CONTACT PAGE ================= */
+ff/* ================= CONTACT PAGE ================= */
 
 @font-face {
 
@@ -328,7 +328,7 @@ body.contact-menu-open .contact-menu-overlay {
 
     linear-gradient(rgba(0,0,0,0.38), rgba(0,0,0,0.42)),
 
-  url('contacthero.png');
+  url('contacthero.png?v=1');
 
   background-size: cover;
 
