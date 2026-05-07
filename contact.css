@@ -1567,4 +1567,16 @@ footer p {
 
   }
 
+  .location-card:first-child .location-image img {
+
+  object-position: center top;
+
+}
+
+.location-card:nth-child(2) .location-image img {
+
+  object-position: center 58%;
+
+}
+
 }
