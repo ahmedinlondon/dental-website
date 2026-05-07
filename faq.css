@@ -1,1 +1,115 @@
+/* ================= FAQ PAGE CLEAN CSS ================= */
+
+/* ================= BASE / DESKTOP ================= */
+
+body.faq-page {
+
+  background-image: url("family.PNG");
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+  background-position: center center;
+
+  background-attachment: scroll;
+
+  background-color: #eef7f1;
+
+}
+
+.faq-mobile-hero,
+
+.faq-cta {
+
+  display: none;
+
+}
+
+/* ================= FAQ MAIN LAYOUT ================= */
+
+.faq-section {
+
+  background: transparent;
+
+  min-height: 760px;
+
+  padding: 60px 40px;
+
+  box-sizing: border-box;
+
+}
+
+.faq-wrapper {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  gap: 40px;
+
+}
+
+/* LEFT GLASS PANEL */
+
+.faq-container {
+
+  width: 40%;
+
+  margin-left: 40px;
+
+  background: rgba(255,255,255,0.42);
+
+  backdrop-filter: blur(10px);
+
+  -webkit-backdrop-filter: blur(10px);
+
+  padding: 28px;
+
+  box-sizing: border-box;
+
+}
+
+.faq-title {
+
+  text-align: left;
+
+  margin: 0 0 22px;
+
+  color: #0f2f57;
+
+  font-size: 31px;
+
+  font-weight: 600;
+
+  line-height: 1.2;
+
+}
+
+.faq-intro {
+
+  padding: 24px;
+
+  background: rgba(255,255,255,0.58);
+
+  backdrop-filter: blur(10px);
+
+  -webkit-backdrop-filter: blur(10px);
+
+  text-align: left;
+
+  color: #0f2f57;
+
+  font-size: 15px;
+
+  line-height: 1.55;
+
+  letter-spacing: 0.2px;
+
+  box-sizing: border-box;
+
+}
+
 
