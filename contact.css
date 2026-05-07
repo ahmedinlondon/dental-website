@@ -328,7 +328,7 @@ body.contact-menu-open .contact-menu-overlay {
 
   linear-gradient(rgba(0,0,0,0.38), rgba(0,0,0,0.42)),
     
-  url('https://raw.githubusercontent.com/ahmedinlondon/dental-website/main/contacthero.png');
+  url('contacthero.png');
 
   background-size: cover;
 
