@@ -262,7 +262,11 @@ body.contact-menu-open .contact-menu-overlay {
 
   height: 650px;
 
-  background-image: url("contacthero.png");
+  background:
+
+  linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+
+  url('/dental-website/contacthero.png');
 
   background-size: cover;
 
@@ -273,7 +277,6 @@ body.contact-menu-open .contact-menu-overlay {
   position: relative;
 
 }
-
 .contact-hero-overlay {
 
   position: absolute;
