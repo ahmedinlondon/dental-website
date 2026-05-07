@@ -1092,7 +1092,7 @@ footer p {
 
   .contact-hero-overlay p {
 
-    font-size:26px;
+    font-size:18px;
 
     max-width: 84%;
 
@@ -1172,12 +1172,15 @@ footer p {
 
   .contact-nav-row {
 
-    min-height: 52px;
+  min-height: 0;
 
-    justify-content: flex-end;
+  height: 0;
 
-  }
+  border: none;
 
+  background: transparent;
+
+}
   .contact-nav-strip {
 
     display: none;
@@ -1240,17 +1243,21 @@ footer p {
 
   .contact-hero-overlay p {
 
-    margin-top: 8px;
+  margin-top: 10px;
 
-    font-size: 29px;
+  font-size: 15px;
 
-    line-height: 1.05;
+  line-height: 1.2;
 
-    max-width: 92%;
+  max-width: 88%;
 
-    transform: scaleX(1.04);
+  transform: none;
 
-  }
+  letter-spacing: 0.5px;
+
+  word-spacing: 2px;
+
+}
 
   .contact-locations-section {
 
