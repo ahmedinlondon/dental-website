@@ -1196,16 +1196,13 @@ footer p {
 
     justify-content: flex-end;
 
-    background: rgba(255,255,255,0.11);
+      background: transparent;
 
-    backdrop-filter: blur(14px);
+  backdrop-filter: none;
 
-    -webkit-backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: none;
 
-    border-top: 1px solid rgba(255,255,255,0.20);
-
-    border-bottom: 1px solid rgba(255,255,255,0.20);
-
+  border: none;
   }
 
   .contact-nav-strip {
@@ -1220,7 +1217,7 @@ footer p {
 
     right: 18px;
 
-    top: 50%;
+    top: 22px;
 
     transform: translateY(-50%);
 
@@ -1272,7 +1269,7 @@ footer p {
 
   .contact-hero-overlay {
 
-    padding: 165px 7% 0;
+     padding-top: 135px;
 
   }
 
@@ -1324,7 +1321,7 @@ footer p {
 
   .contact-section-heading span {
 
-    font-size: 15px;
+    font-size: 18px;
 
     letter-spacing: 1.5px;
 
