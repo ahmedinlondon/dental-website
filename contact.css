@@ -328,7 +328,7 @@ body.contact-menu-open .contact-menu-overlay {
 
     linear-gradient(rgba(0,0,0,0.38), rgba(0,0,0,0.42)),
 
-    url('/dental-website/contacthero.png');
+  url('contacthero.png');
 
   background-size: cover;
 
@@ -390,7 +390,7 @@ body.contact-menu-open .contact-menu-overlay {
 
   font-family: 'Kingsley Roman', cursive;
 
-  font-size: 43px;
+  font-size: 30px;
 
   font-weight: 400;
 
