@@ -1581,13 +1581,25 @@ footer p {
 
   }
 
-  footer {
+footer {
 
-    margin-top: 0;
+  margin-top: 26px;
 
-    padding-bottom: 20px;
+  padding-top: 26px;
 
-  }
+  padding-bottom: 28px;
+
+}
+
+.socials a {
+
+  width: 48px;
+
+  height: 48px;
+
+  font-size: 20px;
+
+}
 
   .location-card:first-child .location-image img {
 
