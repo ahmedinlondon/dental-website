@@ -1211,23 +1211,25 @@ footer p {
 
   }
 
-  .contact-menu-btn {
+.contact-menu-btn {
 
-    position: absolute;
+  position: fixed;
 
-    right: 18px;
+  right: 18px;
 
-    top: 0;
+  top: 88px;
 
-    transform: none;
+  transform: none;
 
-    width: 38px;
+  width: 38px;
 
-    height: 38px;
+  height: 38px;
 
-    background: transparent;
+  background: transparent;
 
-    border: none;
+  border: none;
+
+  z-index: 20000;
 
 }
 
@@ -1269,7 +1271,7 @@ footer p {
 
 .contact-hero-overlay {
 
-  padding: 40px 7% 0;
+  padding: 46px 7% 0;
 
 }
 
