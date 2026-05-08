@@ -1433,19 +1433,29 @@ footer p {
 
   }
 
-  .contact-form-card h2,
+.contact-form-card h2 {
 
-  .contact-help-card h2 {
+  font-size: 20px;
 
-    font-size: 24px;
+}
 
-  }
+.contact-form-card .small-line {
 
-  .small-line {
+  display: none;
 
-    margin: 12px 0 18px;
+}
 
-  }
+.contact-help-card h2 {
+
+  font-size: 24px;
+
+}
+
+.contact-help-card .small-line {
+
+  margin: 12px 0 18px;
+
+}
 
   .form-row {
 
