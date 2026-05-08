@@ -1134,21 +1134,19 @@ footer p {
 
   }
 
-  .location-grid {
+ .location-grid {
 
-    grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
 
-    max-width: 860px;
+  max-width: 1180px;
 
-    gap: 28px;
+  gap: 24px;
 
-  }
+}
 
   .location-card {
 
-    grid-template-columns: 40% 60%;
-
-    min-height: 460px;
+    grid-template-columns: 43% 57%;
 
   }
 
@@ -1206,21 +1204,15 @@ footer p {
 
   /* SUPPORT SECTION */
 
-  .contact-support-section {
+.contact-support-section {
 
-    grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
 
-    max-width: 860px;
+  max-width: 1180px;
 
-    padding-left: 4%;
+  gap: 22px;
 
-    padding-right: 4%;
-
-    gap: 28px;
-
-    padding-bottom: 34px;
-
-  }
+}
 
   .contact-form-card,
 
@@ -1284,22 +1276,17 @@ footer p {
 
   /* CTA */
 
-  .contact-cta {
+.contact-cta {
 
-    max-width: 860px;
+  max-width: 1180px;
 
-    margin: 0 auto 34px;
+  flex-direction: row;
 
-    padding: 34px 32px;
+  text-align: left;
 
-    flex-direction: column;
+  padding: 24px 32px;
 
-    text-align: center;
-
-    gap: 24px;
-
-  }
-
+}
   .contact-cta-icon {
 
     width: 82px;
@@ -1326,13 +1313,7 @@ footer p {
 
   .contact-cta-buttons {
 
-    margin-left: 0;
-
-    width: 100%;
-
-    justify-content: center;
-
-    gap: 18px;
+    margin-left: auto;
 
   }
 
