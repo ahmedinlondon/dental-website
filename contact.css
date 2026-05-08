@@ -754,6 +754,10 @@ body.contact-menu-open .contact-menu-overlay {
 
   text-align: center;
 
+  opacity: 0.75;
+
+  line-height: 1.5;
+
 }
 
 .privacy-note i {
