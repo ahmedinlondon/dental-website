@@ -1217,9 +1217,9 @@ footer p {
 
     right: 18px;
 
-    top: 5px;
+    top: 0;
 
-    transform: translateY(-50%);
+    transform: none;
 
     width: 38px;
 
@@ -1229,7 +1229,7 @@ footer p {
 
     border: none;
 
-  }
+}
 
   .contact-menu-btn span {
 
