@@ -1164,6 +1164,14 @@ footer p {
 
   }
 
+  .location-info p,
+
+.location-info a {
+
+  font-size: 15px;
+
+}
+
   .location-info h2 {
 
     font-size: 30px;
@@ -1221,6 +1229,12 @@ footer p {
     padding: 34px 34px 30px;
 
   }
+
+  .contact-help-card {
+
+  padding-bottom: 26px;
+
+}
 
   .contact-form-card h2,
 
