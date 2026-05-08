@@ -1259,51 +1259,53 @@ footer p {
 
   /* HERO */
 
-  .contact-hero {
+.contact-hero {
 
-    height: 390px;
+  height: 350px;
 
-    background-position: center 18%;
-
-  }
-
-.contact-hero-overlay {
-
-  padding: 105px 7% 0;
+  background-position: center 12%;
 
 }
 
-  .contact-hero-overlay h1 {
+.contact-hero-overlay {
 
-    font-size: 34px;
+  padding: 88px 7% 0;
 
-    letter-spacing: 4px;
+}
 
-    line-height: 1;
+.contact-hero-overlay h1 {
 
-  }
+  font-size: 30px;
 
-  .contact-hero-overlay p {
+  letter-spacing: 4px;
 
-    margin-top: 12px;
+  line-height: 1;
 
-    color: #ffffff;
+  margin-bottom: 4px;
 
-    font-size: 24px;
+}
 
-    line-height: 1.15;
+.contact-hero-overlay p {
 
-    max-width: 90%;
+  margin-top: 0;
 
-    text-shadow: 0 3px 14px rgba(0,0,0,0.95);
+  color: #ffffff;
 
-    transform: none;
+  font-size: 26px;
 
-    letter-spacing: 0.5px;
+  line-height: 1;
 
-    word-spacing: 2px;
+  max-width: 90%;
 
-  }
+  text-shadow: 0 3px 14px rgba(0,0,0,0.95);
+
+  transform: none;
+
+  letter-spacing: 0.5px;
+
+  word-spacing: 2px;
+
+}
 
   .contact-hero-subtitle {
 
@@ -1325,13 +1327,13 @@ footer p {
 
   }
 
-  .contact-section-heading span {
+.contact-section-heading span {
 
-    font-size: 18px;
+  font-size: 22px;
 
-    letter-spacing: 1.5px;
+  letter-spacing: 2px;
 
-  }
+}
 
   .location-grid {
 
