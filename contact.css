@@ -1060,11 +1060,15 @@ footer p {
 
     margin-bottom: 20px;
 
+    font-size: 18px;
+
   }
 
   .contact-nav-strip {
 
     gap: 30px;
+
+    height: 62px;
 
   }
 
@@ -1073,6 +1077,8 @@ footer p {
     right: 22px;
 
   }
+
+  /* HERO */
 
   .contact-hero {
 
@@ -1096,15 +1102,35 @@ footer p {
 
   .contact-hero-overlay p {
 
-    font-size:18px;
+    font-size: 30px;
 
     max-width: 84%;
 
+    margin-top: 18px;
+
+    letter-spacing: 1px;
+
   }
+
+  /* LOCATIONS */
 
   .contact-locations-section {
 
-    padding: 42px 4% 26px;
+    padding: 42px 4% 30px;
+
+  }
+
+  .contact-section-heading {
+
+    margin-bottom: 28px;
+
+  }
+
+  .contact-section-heading span {
+
+    font-size: 22px;
+
+    letter-spacing: 3px;
 
   }
 
@@ -1112,43 +1138,239 @@ footer p {
 
     grid-template-columns: 1fr;
 
-    max-width: 820px;
+    max-width: 860px;
+
+    gap: 28px;
 
   }
 
   .location-card {
 
-    grid-template-columns: 42% 58%;
+    grid-template-columns: 40% 60%;
+
+    min-height: 460px;
 
   }
+
+  .location-image img {
+
+    height: 100%;
+
+    object-fit: cover;
+
+  }
+
+  .location-info {
+
+    padding: 28px 26px 24px;
+
+  }
+
+  .location-info h2 {
+
+    font-size: 30px;
+
+    line-height: 1.15;
+
+    margin-bottom: 18px;
+
+  }
+
+  .location-details p {
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    margin-bottom: 10px;
+
+  }
+
+  .location-map iframe {
+
+    height: 180px;
+
+    margin-top: 18px;
+
+  }
+
+  .location-btn {
+
+    height: 52px;
+
+    font-size: 16px;
+
+    margin-top: 12px;
+
+  }
+
+  /* SUPPORT SECTION */
 
   .contact-support-section {
 
     grid-template-columns: 1fr;
 
-    max-width: 820px;
+    max-width: 860px;
 
     padding-left: 4%;
 
     padding-right: 4%;
 
+    gap: 28px;
+
+    padding-bottom: 34px;
+
   }
+
+  .contact-form-card,
+
+  .contact-help-card {
+
+    padding: 34px 34px 30px;
+
+  }
+
+  .contact-form-card h2,
+
+  .contact-help-card h2 {
+
+    font-size: 34px;
+
+  }
+
+  .contact-form-card input,
+
+  .contact-form-card textarea {
+
+    padding: 16px;
+
+    font-size: 16px;
+
+  }
+
+  .contact-form-card textarea {
+
+    min-height: 180px;
+
+  }
+
+  .contact-form-card button {
+
+    height: 56px;
+
+    font-size: 17px;
+
+  }
+
+  .help-intro {
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+  }
+
+  .help-item {
+
+    margin-bottom: 24px;
+
+  }
+
+  .help-item i {
+
+    font-size: 30px;
+
+  }
+
+  /* CTA */
 
   .contact-cta {
 
-    max-width: 820px;
+    max-width: 860px;
 
-    margin: 0 4%;
+    margin: 0 auto 34px;
+
+    padding: 34px 32px;
 
     flex-direction: column;
 
     text-align: center;
+
+    gap: 24px;
+
+  }
+
+  .contact-cta-icon {
+
+    width: 82px;
+
+    height: 82px;
+
+    font-size: 32px;
+
+  }
+
+  .contact-cta-text h2 {
+
+    font-size: 38px;
+
+    line-height: 1.2;
+
+  }
+
+  .contact-cta-text p {
+
+    font-size: 19px;
 
   }
 
   .contact-cta-buttons {
 
     margin-left: 0;
+
+    width: 100%;
+
+    justify-content: center;
+
+    gap: 18px;
+
+  }
+
+  .contact-cta-buttons a {
+
+    min-width: 240px;
+
+    height: 56px;
+
+    font-size: 17px;
+
+  }
+
+  /* FOOTER */
+
+  footer {
+
+    padding-top: 22px;
+
+    padding-bottom: 32px;
+
+  }
+
+  .footer-socials {
+
+    gap: 22px;
+
+    margin-top: 18px;
+
+  }
+
+  .footer-socials a {
+
+    width: 52px;
+
+    height: 52px;
+
+    font-size: 22px;
 
   }
 
