@@ -1598,5 +1598,17 @@ footer p {
   object-position: center 62%;
 
 }
+.contact-navbar .contact-menu-btn {
 
+  position: fixed !important;
+
+  top: 115px !important;
+
+  right: 22px !important;
+
+  transform: none !important;
+
+  z-index: 99999 !important;
+
+}
 }
