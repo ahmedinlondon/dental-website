@@ -1261,15 +1261,15 @@ footer p {
 
   .contact-hero {
 
-    height: 440px;
+    height: 390px;
 
-    background-position: center top;
+    background-position: center 18%;
 
   }
 
   .contact-hero-overlay {
 
-     padding-top: 135px;
+     padding-top: 118px 7%. 0;
 
   }
 
@@ -1304,6 +1304,12 @@ footer p {
     word-spacing: 2px;
 
   }
+
+  .contact-hero-subtitle {
+
+  text-shadow: 0 2px 10px rgba(0,0,0,0.55);
+
+}
 
   /* LOCATIONS */
 
@@ -1351,7 +1357,7 @@ footer p {
 
   .location-image img {
 
-    height: 155px;
+    height: 130px;
 
     min-height: auto;
 
@@ -1569,13 +1575,13 @@ footer p {
 
   .location-card:first-child .location-image img {
 
-  object-position: center top;
+  object-position: center 18%;
 
 }
 
 .location-card:nth-child(2) .location-image img {
 
-  object-position: center 58%;
+  object-position: center 62%;
 
 }
 
